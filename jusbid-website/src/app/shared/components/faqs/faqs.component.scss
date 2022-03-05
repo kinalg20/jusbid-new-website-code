@@ -1,0 +1,96 @@
+section {
+  padding: 5% 0;
+  .faq-section {
+    padding: 0 90px;
+    .desktop-screen {
+      .heading-section {
+        display: flex;
+        h1 {
+          font-size: 2.2rem;
+          font-weight: bold;
+        }
+        .img-section {
+          img {
+            margin-top: 20px;
+          }
+        }
+      }
+      .faq-body {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        justify-content: space-between;
+        .half-body {
+          h3 {
+            font-size: 1.4rem;
+            font-weight: bold;
+          }
+          p {
+            font-size: 1.2rem;
+            line-height: 30px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+    .responsive-faq {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1115px) {
+  main {
+    .faq-section {
+      .faq-body {
+        .half-body {
+          h3 {
+            font-size: 1.2rem;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  section {
+    .faq-section {
+      .desktop-screen {
+        display: none;
+      }
+      .responsive-faq {
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  section {
+    .faq-section {
+      padding: 0 15px;
+    }
+  }
+}
+@media (max-width: 610px) {
+  .sc-ion-label-md-s h3,
+  .sc-ion-label-md-s h4,
+  .sc-ion-label-md-s h5,
+  .sc-ion-label-md-s h6 {
+    font-size: 1rem !important;
+  }
+}
+.item.sc-ion-label-md-h,
+.item .sc-ion-label-md-h {
+  white-space: inherit;
+}
+.sc-ion-label-md-s h3,
+.sc-ion-label-md-s h4,
+.sc-ion-label-md-s h5,
+.sc-ion-label-md-s h6 {
+  font-size: 1.2rem;
+}
+.sc-ion-label-md-s > p {
+  text-align: justify;
+}

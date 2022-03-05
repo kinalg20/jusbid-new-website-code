@@ -1,0 +1,59 @@
+<section>
+  <div class="hotels-slider">
+    <div class="card-header">
+      <div>
+        <h1>{{ content.heading }}</h1>
+        <div class="sub-head-section">
+          <p>{{ content.sub_heading }}</p>
+          <img src="\assets\images\icons\Verified.svg" />
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button
+          type="button"
+          class="control-btn back-btn"
+          (click)="this.slides.slidePrev()"
+          [disabled]="disabled_back"
+        >
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <button
+          type="button"
+          class="control-btn next-btn"
+          (click)="this.slides.slideNext()"
+          [disabled]="disabled_next"
+        >
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <ion-content class="slider">
+      <ion-slides
+        [options]="slideOpts"
+        (ionSlideDidChange)="slideChanged()"
+        (ionSlideReachStart)="getNextIndex($event)"
+        (ionSlideReachEnd)="getNextIndex($event)"
+        #slides
+      >
+        <ng-container *ngFor="let item of content.data">
+          <ion-slide>
+            <div class="blog-page">
+              <div class="card">
+                <div class="blank"></div>
+                <div class="blog-body">
+                  <div class="img-hover-zoom">
+                    <img [src]="item.previewImageSrc" />
+                  </div>
+                  <div class="blog-title">
+                    <h1>{{ item.title }}</h1>
+                    <p>{{ item.sub_title }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-slide>
+        </ng-container>
+      </ion-slides>
+    </ion-content>
+  </div>
+</section>

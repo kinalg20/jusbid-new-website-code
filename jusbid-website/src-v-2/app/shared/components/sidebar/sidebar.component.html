@@ -1,0 +1,19 @@
+<section class="side-bar" *ngIf="this.isShowSideBar">
+
+    <div class="side-bar-header">
+        <div>
+            <h2>Menu</h2>
+        </div>
+        <div>
+            <button class="close-btn" type="button" (click)="this.closeSiderBar(false)">
+                <ion-icon name="close-outline" mode="ios"></ion-icon>
+            </button>
+        </div>
+    </div>
+
+    <ul>
+        <li *ngFor="let menu of sideMenuList;">
+            <a href="#" [ngClass]="this.href=='menu.slug' ? 'active' : ''">{{menu.name}}</a>
+        </li>
+    </ul>
+</section>

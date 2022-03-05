@@ -1,0 +1,1126 @@
+// .list-card {
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: 39% auto 19%;
+//   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+//   background-color: var(--white);
+//   position: relative;
+//   border: 1px solid #e1e2e3;
+//   margin-top: 20px;
+//   border-radius: 0.8rem;
+//   .list-card-image {
+//     position: inherit;
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       border-top-left-radius: 0.8rem;
+//       border-bottom-left-radius: 0.8rem;
+//     }
+//   }
+//   .list-card-desc {
+//     padding: 12px;
+//     position: inherit;
+//     .hotelname-rating {
+//       display: flex;
+//       align-items: center;
+//       margin: 5px 0;
+//       .list-hotel-name {
+//         h3 {
+//           margin: 0;
+//           padding: 0;
+//           font-weight: 600;
+//         }
+//       }
+//       .hotel-star {
+//         margin-left: 5px;
+//         color: #f99e00;
+//       }
+//     }
+//     .hotel-address {
+//       margin: 10px 0;
+//       p {
+//         display: flex;
+//         align-items: center;
+//         margin: 0;
+//         color: #4a4a4a;
+//         span {
+//           margin-left: 5px;
+//           font-size: 13px;
+//         }
+//         ion-icon {
+//           font-size: 20px;
+//         }
+//       }
+//     }
+//     .hotel-distance {
+//       margin: 10px 0;
+//       p {
+//         display: flex;
+//         align-items: center;
+//         margin: 0;
+//         span {
+//           margin-left: 5px;
+//           font-size: 13px;
+//           color: #4266cf;
+//         }
+//         ion-icon {
+//           font-size: 20px;
+//           color: #4a4a4a;
+//         }
+//       }
+//     }
+//     .hotel-aminities {
+//       margin-left: 2px;
+//       display: flex;
+//       flex-wrap: wrap;
+//       .aminity-border {
+//         width: fit-content;
+//         height: fit-content;
+//         border: 1.7px solid #f99e00;
+//         border-radius: 4px;
+//         color: #f99e00;
+//         padding: 3px 6px;
+//         margin: 2px 3px;
+//       }
+//       p {
+//         display: flex;
+//         align-items: center;
+//         span {
+//           margin-left: 7px;
+//         }
+//       }
+//     }
+//     .extra-facility {
+//       .Free-Cancellation {
+//         display: none;
+//       }
+//       .Discount-Applied {
+//         display: none;
+//       }
+//       .Book-Now {
+//         display: none;
+//       }
+//     }
+//     .suggestion-box-container {
+//       margin-left: 5px;
+//       margin-top: 10px;
+//       .column-5 {
+//         color: #fff;
+//         h6 {
+//           background-color: #f99e00;
+//           font-size: 13px;
+//           padding: 6px 3px;
+//         }
+//       }
+//       .column-7 {
+//         h6 {
+//           border: 1.5px solid #f99e00;
+//           width: 100%;
+//           font-size: 13px;
+//           padding: 4.5px 5px;
+//         }
+//       }
+//     }
+//   }
+//   .list-card-price {
+//     padding: 0 10px;
+//     .responsive-price-section {
+//       position: initial;
+//       width: 100%;
+//       height: 100%;
+//       padding: 8px;
+//       margin: 30px 0;
+//     }
+//     position: inherit;
+//     border-left: 1px solid #dedede;
+//     .total-rating-section {
+//       display: flex;
+//       justify-content: end;
+//       .total-rating {
+//         display: flex;
+//         align-items: center;
+//         background-color: #f99e00;
+//         padding: 8px;
+//         border-radius: 5px;
+//         width: fit-content;
+//         height: fit-content;
+//         color: var(--white);
+//         ion-icon{
+//           margin-right: 4px;
+//         }
+//       }
+//       .excellent {
+//         font-size: 15px;
+//         max-width: 70px;
+//         margin-left: 5px;
+//         span {
+//           font-weight: 600;
+//         }
+//       }
+//     }
+//     .hotel-price-section {
+//       .disc-price {
+//         width: 100%;
+//         font-size: 15px;
+//         text-decoration: line-through;
+//         text-align: right;
+//         color: #929292;
+//       }
+//       .hotel-price {
+//         display: flex;
+//         justify-content: right;
+//         .total-price {
+//           font-weight: 700;
+//           display: flex;
+//           align-items: center;
+//           margin: 0;
+//         }
+//         p {
+//           font-size: 12px;
+//           text-align: right;
+//           color: #747171;
+//         }
+//       }
+//     }
+//     .detail-button {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       width: 100%;
+//       margin-left: auto;
+//       margin-top: 20px;
+//       button {
+//         padding: 12px 0px;
+//         width: 100%;
+//         color: var(--white);
+//         background-color: #ef6515;
+//         border-radius: 0.3rem;
+//         font-size: 14px;
+//       }
+//     }
+//     .cancellation {
+//       float: right;
+//       padding: 10px;
+//       p {
+//         display: flex;
+//         align-items: center;
+//         color: #f99e00;
+//         font-weight: 500;
+//         white-space: nowrap;
+//         margin: 0;
+//         span {
+//           font-size: 9.9px;
+//           // flex-wrap: wrap;
+//         }
+//         ion-icon {
+//           font-size: 15px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 1090px) {
+//   .list-card .list-card-price .cancellation {
+//     padding: 0 2px;
+//   }
+//   .list-card .list-card-desc .suggestion-box-container {
+//     .column-5 h6 {
+//       background-color: #f99e00;
+//       font-size: 12px;
+//       padding: 6px 3px;
+//     }
+//   }
+//   .list-card .list-card-desc .suggestion-box-container .column-7 h6 {
+//     padding: 4px 4px;
+//   }
+//   .list-card .list-card-price .detail-button {
+//     bottom: 10px;
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .list-card {
+//     grid-template-columns: 100%;
+//     border-radius: 5px;
+//     .list-card-image {
+//       height: 200px;
+//       border-radius: 5px;
+//       img {
+//         object-fit: cover;
+//         border-radius: 5px;
+//       }
+//     }
+//     .list-card-desc {
+//       padding: 10px;
+//       .hotelname-rating {
+//         justify-content: space-between;
+//       }
+//       .suggestion-box-container {
+//         display: none;
+//       }
+//       .hotel-aminities {
+//         display: none;
+//       }
+//       .extra-facility {
+//         display: flex;
+//         justify-content: space-between;
+//         max-width: 360px;
+//         margin-top: 70px;
+//         .Free-Cancellation {
+//           display: block;
+//           width: fit-content;
+//           color: #019605;
+//           border-radius: 20px;
+//           background-color: #cff8d0;
+//           padding: 5px;
+//           font-size: 10px;
+//           p {
+//             display: flex;
+//             align-items: center;
+//             span {
+//               margin-left: 3px;
+//               flex-wrap: wrap;
+//             }
+//           }
+//         }
+//         .Discount-Applied {
+//           display: block;
+//           width: fit-content;
+//           color: #4976b6;
+//           border-radius: 20px;
+//           background-color: #deebfe;
+//           padding: 5px;
+//           font-size: 10px;
+//           p {
+//             display: flex;
+//             align-items: center;
+//             span {
+//               margin-left: 3px;
+//             }
+//           }
+//         }
+//         .Book-Now {
+//           display: block;
+//           width: fit-content;
+//           color: #000;
+//           border-radius: 20px;
+//           background-color: #feefc2;
+//           padding: 5px;
+//           font-size: 10px;
+//           p {
+//             display: flex;
+//             align-items: center;
+//             span {
+//               margin-left: 3px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .list-card-price {
+//       .responsive-price-section {
+//         position: absolute;
+//         bottom: 115px;
+//         right: 0;
+//         padding: 8px;
+//         width: 0;
+//         height: 0;
+//         h3 {
+//           margin-bottom: 0;
+//         }
+//       }
+//       .detail-button {
+//         display: none;
+//       }
+//       .cancellation {
+//         display: none;
+//       }
+//       .total-rating-section {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 1024px) {
+//   .list-card {
+//     .list-card-price {
+//       .total-rating-section {
+//         text-align: right;
+//         margin-left: 67px;
+//         .total-rating {
+//           padding: 5px;
+//           font-size: 13px;
+//         }
+//         .excellent {
+//           font-size: 10px;
+//           margin-right: 10px;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 900px) {
+//   .list-card {
+//     .list-card-price {
+//       .hotel-price-section {
+//         .hotel-price {
+//           .total-price {
+//             font-size: 20px;
+//           }
+//         }
+//       }
+//       .detail-button {
+//         button {
+//           font-size: 11px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// --------------------------- New UI
+
+// @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+// .list-card {
+//   font-family: "Montserrat";
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: 39% auto 19%;
+//   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+//   background-color: var(--white);
+//   position: relative;
+//   margin-top: 20px;
+//   background-color: white;
+//   border-radius: 10px;
+//   .list-card-image {
+//     position: inherit;
+//     padding: 10px;
+//     img {
+//       border-radius: 10px;
+//       width: 100%;
+//       min-height: 380px;
+//       max-height: 400px;
+//       object-fit: cover;
+//     }
+//   }
+//   .list-card-desc {
+//     padding: 30px;
+//     position: inherit;
+//     .hotelname-rating {
+//       margin-bottom: 20px;
+//       display: flex;
+//       align-items: center;
+//       .list-hotel-name {
+//         h3 {
+//           margin: 0;
+//           padding: 0;
+//           font-weight: 600;
+//         }
+//       }
+//       .hotel-star {
+//         margin-left: 5px;
+//         color: #f99e00;
+//       }
+//     }
+//     .hotel-address {
+//       p {
+//         display: flex;
+//         align-items: center;
+//         margin: 0;
+//         color: #4a4a4a;
+//         margin-bottom: 10px;
+
+//         span {
+//           margin-left: 5px;
+//           font-size: 15px;
+//           font-weight: 500;
+//           color: #8d99af;
+//         }
+//         ion-icon {
+//           font-size: 20px;
+//         }
+//       }
+//     }
+//     .hotel-distance {
+//       margin: 5px 0;
+//       p {
+//         display: flex;
+//         align-items: center;
+//         margin: 0;
+//         margin-bottom: 20px;
+//         span {
+//           margin-left: 5px;
+//           font-size: 15px;
+//           color: #4266cf;
+//         }
+//         ion-icon {
+//           font-size: 20px;
+//           color: #4a4a4a;
+//         }
+//       }
+//     }
+//     .hotel-aminities {
+//       margin-left: 2px;
+//       display: flex;
+//       flex-wrap: wrap;
+//       .aminity-border {
+//         width: fit-content;
+//         height: fit-content;
+//         border: 1.7px solid #dbbd71;
+//         border-radius: 2px;
+//         color: #b98e24;
+//         padding: 3px 6px;
+//         margin: 2px 3px;
+//       }
+//       p {
+//         display: flex;
+//         align-items: center;
+//         span {
+//           margin-left: 7px;
+//         }
+//       }
+//     }
+//     .extra-facility {
+//       .Free-Cancellation {
+//         display: none;
+//       }
+//       .Discount-Applied {
+//         display: none;
+//       }
+//       .Book-Now {
+//         display: none;
+//       }
+//     }
+//     .suggestion-box-container {
+//       margin-left: 5px;
+//       margin-top: 10px;
+//       .column-5 {
+//         color: rgb(0, 0, 0);
+//         h6 {
+//           background-color: #d0b0c2;
+//           border-radius: 10px;
+//           font-size: 13px;
+//           padding: 7px 5px;
+//         }
+//       }
+//       .column-7 {
+//         margin-left: 5px;
+//         h6 {
+//           border: 1.5px solid #d0b0c2;
+//           width: 100%;
+//           font-size: 13px;
+//           padding: 4.5px 5px;
+//           border-radius: 10px;
+//         }
+//       }
+//     }
+//     .bedroom {
+//       display: flex;
+//       align-items: center;
+//       p {
+//         margin-left: 10px;
+//         color: #212529;
+//       }
+//       img {
+//         width: 10%;
+//       }
+//     }
+//     .bathroom {
+//       display: flex;
+//       align-items: center;
+//       p {
+//         margin-left: 10px;
+//         color: #212529;
+//       }
+//       img {
+//         width: 10%;
+//       }
+//     }
+//   }
+//   .list-card-price {
+//     padding: 30px;
+//     .responsive-price-section {
+//       width: 100%;
+//       height: 100%;
+//       padding: 8px;
+//       margin: 30px 0;
+//     }
+//     position: inherit;
+//     .total-rating-section {
+//       display: flex;
+//       justify-content: center;
+//       .total-rating {
+//         background-color: #6c757d;
+//         padding: 8px;
+//         border-radius: 5px;
+//         width: fit-content;
+//         height: fit-content;
+//         color: var(--white);
+//       }
+//       .excellent {
+//         font-size: 15px;
+//         max-width: 70px;
+//         margin-left: 10px;
+//         span {
+//           font-weight: 600;
+//         }
+//       }
+//     }
+//     .hotel-price-section {
+//       .disc-price {
+//         width: 100%;
+//         font-size: 15px;
+//         text-decoration: line-through;
+//         text-align: center;
+//         color: #929292;
+//       }
+//       .hotel-price {
+//         display: flex;
+//         justify-content: center;
+//         .total-price {
+//           font-weight: 700;
+//           display: flex;
+//           align-items: center;
+//           margin: 0;
+//         }
+//         p {
+//           font-size: 12px;
+//           text-align: center;
+//           color: #747171;
+//         }
+//       }
+//     }
+//     .detail-button {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       width: 100%;
+//       margin-left: auto;
+//       margin-top: 20px;
+//       button {
+//         padding: 12px 0px;
+//         width: 100%;
+//         color: var(--white);
+//         background: var(--primary-gradient);
+//         border-radius: 0.3rem;
+//         font-size: 14px;
+//       }
+//     }
+//     .cancellation {
+//       float: right;
+//       padding: 10px;
+//       p {
+//         display: flex;
+//         align-items: center;
+//         color: #04a74c;
+//         font-weight: 500;
+//         white-space: nowrap;
+//         margin: 0;
+//         span {
+//           font-size: 9.9px;
+//           // flex-wrap: wrap;
+//         }
+//         ion-icon {
+//           font-size: 15px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 1440px) {
+//   .list-card {
+//     .list-card-price {
+//       margin-top: 10px;
+//       //   .cancellation {
+//       //     padding: 0 35px;
+//       //   }
+//     }
+//   }
+// }
+
+// @media (max-width: 1090px) {
+//   .list-card .list-card-price .cancellation {
+//     padding: 0 2px;
+//   }
+//   .list-card .list-card-desc .suggestion-box-container {
+//     .column-5 h6 {
+//       background-color: #04a74c;
+//       font-size: 12px;
+//       padding: 6px 3px;
+//     }
+//   }
+//   .list-card .list-card-desc .suggestion-box-container .column-7 h6 {
+//     padding: 4px 4px;
+//   }
+//   .list-card .list-card-price .detail-button {
+//     bottom: 10px;
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .list-card {
+//     grid-template-columns: 100%;
+//     border-radius: 5px;
+//     .list-card-image {
+//       height: 200px;
+//       border-radius: 5px;
+//       img {
+//         object-fit: cover;
+//         border-radius: 5px;
+//       }
+//     }
+//     .list-card-desc {
+//       padding: 10px;
+//       .hotelname-rating {
+//         justify-content: space-between;
+//       }
+//       .suggestion-box-container {
+//         display: none;
+//       }
+//       .hotel-aminities {
+//         display: none;
+//       }
+//       .extra-facility {
+//         display: flex;
+//         justify-content: space-between;
+//         max-width: 360px;
+//         margin-top: 70px;
+//         .Free-Cancellation {
+//           display: block;
+//           width: fit-content;
+//           color: #019605;
+//           border-radius: 20px;
+//           background-color: #cff8d0;
+//           padding: 5px;
+//           font-size: 10px;
+//           p {
+//             display: flex;
+//             align-items: center;
+//             span {
+//               margin-left: 3px;
+//               flex-wrap: wrap;
+//             }
+//           }
+//         }
+//         .Discount-Applied {
+//           display: block;
+//           width: fit-content;
+//           color: #4976b6;
+//           border-radius: 20px;
+//           background-color: #deebfe;
+//           padding: 5px;
+//           font-size: 10px;
+//           p {
+//             display: flex;
+//             align-items: center;
+//             span {
+//               margin-left: 3px;
+//             }
+//           }
+//         }
+//         .Book-Now {
+//           display: block;
+//           width: fit-content;
+//           color: #000;
+//           border-radius: 20px;
+//           background-color: #feefc2;
+//           padding: 5px;
+//           font-size: 10px;
+//           p {
+//             display: flex;
+//             align-items: center;
+//             span {
+//               margin-left: 3px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .list-card-price {
+//       .responsive-price-section {
+//         position: absolute;
+//         bottom: 115px;
+//         right: 0;
+//         padding: 8px;
+//         width: 0;
+//         height: 0;
+//         h3 {
+//           margin-bottom: 0;
+//         }
+//       }
+//       .detail-button {
+//         display: none;
+//       }
+//       .cancellation {
+//         display: none;
+//       }
+//       .total-rating-section {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 1024px) {
+//   .list-card {
+//     .list-card-price {
+//       .total-rating-section {
+//         text-align: right;
+//         margin-left: 67px;
+//         .total-rating {
+//           padding: 5px;
+//           font-size: 13px;
+//         }
+//         .excellent {
+//           font-size: 10px;
+//           margin-right: 10px;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 900px) {
+//   .list-card {
+//     .list-card-price {
+//       .hotel-price-section {
+//         .hotel-price {
+//           .total-price {
+//             font-size: 20px;
+//           }
+//         }
+//       }
+//       .detail-button {
+//         button {
+//           font-size: 11px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.listing-card {
+  padding: 20px;
+  border-bottom: 1px solid #dedede;
+  .list-card {
+    display: grid;
+    grid-template-columns: 40% auto 15%;
+    grid-gap: 20px;
+    height: 100%;
+    .list-card-image {
+      max-width: 500px;
+      position: relative;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 1px solid #e5e7eb;
+      }
+    }
+
+    .list-card-desc {
+      .hotel-address {
+        // padding: 5px 0;
+        p {
+          margin: 0;
+          padding: 0;
+          color: #808080;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0em;
+        }
+      }
+      .list-hotel-name {
+        padding: 10px 0;
+        h1 {
+          font-size: 28px;
+          line-height: 38.19px;
+          font-weight: 600;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .list-hotel-desc {
+        max-width: 400px;
+        text-align: justify;
+        p {
+          // font-size: 14px;
+          font-weight: 300;
+          line-height: 19px;
+          letter-spacing: 0em;
+          color: #00000080;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .list-hotel-amenities {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 400px;
+        .hotel-aminity {
+          flex-wrap: wrap;
+          display: flex;
+          align-items: center;
+          min-width: 120px;
+          max-width: 250px;
+          height: 25px;
+          margin-top: 5px;
+          border: 1px solid #ff9e54;
+          box-sizing: border-box;
+          border-radius: 3px;
+          margin-right: 10px;
+          padding: 0 10px;
+          span.amenity-name {
+            font-size: 11px;
+            flex-wrap: wrap;
+            margin-left: 10px;
+          }
+
+          img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+
+      .list-suggestion-box {
+        display: flex;
+        align-items: center;
+        .highly-recomm {
+          background: #409fff;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 2px;
+          width: fit-content;
+          padding: 5px;
+          margin-right: 10px;
+          .highly-recomm-logo {
+            width: 14px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .highly-recomm-text {
+            margin-left: 5px;
+            p {
+              color: #fff;
+              font-size: 14px;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+        .santized-room {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: fit-content;
+          padding: 2px 5px;
+          border: 1px solid #ff9e54;
+          border-radius: 2px;
+          // margin-top: 5px;
+          .santized-room-logo {
+            width: 20px;
+            height: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .santized-room-text {
+            margin-left: 5px;
+            color: #ff9e54;
+            p {
+              font-size: 13px;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      .list-hotel-distance {
+        padding: 10px 0;
+        .hotel-distance-icon {
+          padding-top: 50px;
+          display: flex;
+          align-items: center;
+          ion-icon {
+            color: #006000;
+          }
+          span {
+            color: #006000;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .list-card-price {
+      position: relative;
+      .list-hotel-rating {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 31% 59%;
+        grid-gap: 15px;
+        .rating {
+          padding: 10px;
+          color: #fff;
+          font-weight: 500;
+          background: #409fff;
+          border-radius: 5px;
+          font-size: 20px;
+          cursor: default;
+          width: fit-content;
+        }
+        p {
+          max-width: 70px;
+        }
+      }
+
+      .hotel-price-detail {
+        position: absolute;
+        bottom: 12px;
+        left: 5px;
+        width: 100%;
+        .hotel-price {
+          font-size: 22px;
+          font-weight: 700;
+          text-align: center;
+        }
+        .view-detail-button {
+          text-align: center;
+          margin-top: 10px;
+          width: 100%;
+          .detail-button {
+            padding: 15px 0;
+            background: #de3151;
+            width: 100%;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1399px) {
+  .listing-card {
+    .list-card {
+      grid-template-columns: 36% auto 15%;
+      grid-gap: 17px;
+
+      .list-card-desc {
+        .hotel-address {
+          p {
+            font-size: 15px;
+            line-height: 22px;
+          }
+        }
+        .list-hotel-name {
+          h1 {
+            font-size: 26px;
+            line-height: 32.19px;
+          }
+        }
+        .list-hotel-desc {
+          display: none;
+        }
+
+        .list-hotel-distance {
+          display: none;
+        }
+      }
+
+      .list-card-price {
+        .list-hotel-rating {
+          display: grid;
+          grid-template-columns: 34% 54%;
+          align-items: center;
+          grid-gap: 9px;
+          .rating {
+            padding: 8px;
+            font-size: 18px;
+          }
+        }
+
+        .hotel-price-detail {
+          left: 0;
+          bottom: 0;
+          .hotel-price {
+            font-size: 20px;
+          }
+          .view-detail-button {
+            .detail-button {
+              padding: 11px 0;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .listing-card {
+    .list-card {
+      grid-template-columns: 36% auto 15%;
+      grid-gap: 17px;
+
+      .list-card-desc {
+        .list-hotel-name {
+          h1 {
+            font-size: 24px;
+            line-height: 24.19px;
+          }
+        }
+        .list-hotel-desc {
+          display: none;
+        }
+
+        .list-hotel-distance {
+          display: none;
+        }
+      }
+      .list-card-price {
+        .list-hotel-rating {
+          display: grid;
+          grid-template-columns: 37% 54%;
+          align-items: center;
+          grid-gap: 9px;
+          .rating {
+            padding: 7px;
+            font-size: 17px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+
+        .hotel-price-detail {
+          left: 0;
+          bottom: 0;
+          .hotel-price {
+            font-size: 17px;
+          }
+          .view-detail-button {
+            .detail-button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

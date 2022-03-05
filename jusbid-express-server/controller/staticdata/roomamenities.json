@@ -1,0 +1,435 @@
+[
+    {
+        "responseCode": 200,
+        "msg": "Room category data fetched",
+        "data": [
+            {
+                "createdAt": "2021-05-28T09:51:38.475Z",
+                "updatedAt": "2021-05-28T09:51:38.475Z",
+                "id": "60b0bd2ac05b686816a15ec3",
+                "name": "Reading Lamp",
+                "icon": "/images/icons/amenities/3c920a8e-4318-4009-9887-c3c53f8a4ad5.png"
+            },
+            {
+                "createdAt": "2021-06-15T04:18:46.696Z",
+                "updatedAt": "2021-06-15T04:18:46.696Z",
+                "id": "60c82a263f01cb1d0f528757",
+                "name": "Hot & Cold Water\t",
+                "icon": "/images/icons/amenities/ee33ceda-773d-48b6-b9c1-0c696182de5e.png"
+            },
+            {
+                "createdAt": "2021-05-14T09:02:01.786Z",
+                "updatedAt": "2021-05-14T09:02:01.786Z",
+                "id": "609e3c899fe25f5f9088249f",
+                "name": "Scissors and Comb",
+                "icon": "/images/icons/amenities/854c237c-d5a6-419f-a561-9b813c9a93b8.png"
+            },
+            {
+                "createdAt": "2021-06-15T06:37:21.476Z",
+                "updatedAt": "2021-06-15T06:37:21.476Z",
+                "id": "60c84aa13f01cb1d0f52877f",
+                "name": "iPod Docking Station\t",
+                "icon": "/images/icons/amenities/6fbddb13-7a02-4364-b411-7b76b69ee8b8.png"
+            },
+            {
+                "createdAt": "2021-06-15T03:57:20.591Z",
+                "updatedAt": "2021-06-15T03:57:20.591Z",
+                "id": "60c825203f01cb1d0f52874c",
+                "name": "Shower Cubicle\t",
+                "icon": "/images/icons/amenities/bad2b50a-0ca9-49d9-bd54-1f8d3fcfc302.png"
+            },
+            {
+                "createdAt": "2021-05-28T08:32:24.916Z",
+                "updatedAt": "2021-05-28T08:32:24.916Z",
+                "id": "60b0aa98c05b686816a15eb4",
+                "name": "Fruit Wine",
+                "icon": "/images/icons/amenities/480517aa-4ad5-4b31-b503-409bfa0d8353.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:45:23.293Z",
+                "updatedAt": "2021-05-14T08:45:23.293Z",
+                "id": "609e38a39fe25f5f90882493",
+                "name": "Iron",
+                "icon": "/images/icons/amenities/ecb9feaf-d0e1-4cb9-ae2f-9cdc6c6cbecf.png"
+            },
+            {
+                "createdAt": "2021-05-14T09:06:51.129Z",
+                "updatedAt": "2021-05-14T09:06:51.129Z",
+                "id": "609e3dab9fe25f5f908824a2",
+                "name": "Shower",
+                "icon": "/images/icons/amenities/f5cfbc88-0955-4652-9572-5e7b618b4844.png"
+            },
+            {
+                "createdAt": "2021-06-15T03:34:43.115Z",
+                "updatedAt": "2021-06-15T03:34:43.115Z",
+                "id": "60c81fd33f01cb1d0f528747",
+                "name": "Lower Bathroom Sink\t",
+                "icon": "/images/icons/amenities/abd205ba-be37-4f4a-b0c9-99b00c84786c.png"
+            },
+            {
+                "createdAt": "2021-05-28T08:26:10.966Z",
+                "updatedAt": "2021-05-28T08:26:10.966Z",
+                "id": "60b0a922c05b686816a15eaf",
+                "name": "Free Cake",
+                "icon": "/images/icons/amenities/cc6abfa4-4595-40d3-9b3b-c4f7892a3c15.png"
+            },
+            {
+                "createdAt": "2021-05-28T09:43:44.364Z",
+                "updatedAt": "2021-05-28T09:43:44.364Z",
+                "id": "60b0bb50c05b686816a15ebe",
+                "name": "Clothes Rack",
+                "icon": "/images/icons/amenities/0e79a108-a2c3-4ad7-85f8-f44606991d2d.png"
+            },
+            {
+                "createdAt": "2021-06-15T06:40:24.179Z",
+                "updatedAt": "2021-06-15T06:40:24.179Z",
+                "id": "60c84b583f01cb1d0f528783",
+                "name": "Charging Points\t",
+                "icon": "/images/icons/amenities/c4a871b4-ab07-4d9d-a013-b6a8df5a27dd.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:40:33.409Z",
+                "updatedAt": "2021-05-14T08:40:33.409Z",
+                "id": "609e37819fe25f5f90882487",
+                "name": "Telephone",
+                "icon": "/images/icons/amenities/19cab413-05fe-4829-abc9-1e3265e8534b.png"
+            },
+            {
+                "createdAt": "2021-05-14T09:07:22.704Z",
+                "updatedAt": "2021-05-14T09:07:22.704Z",
+                "id": "609e3dca9fe25f5f908824a3",
+                "name": "Alarm Clock",
+                "icon": "/images/icons/amenities/905f4df6-31fa-4d58-a957-b5c043508a0d.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:41:12.910Z",
+                "updatedAt": "2021-05-14T08:41:12.910Z",
+                "id": "609e37a89fe25f5f90882489",
+                "name": "Shampoo",
+                "icon": "/images/icons/amenities/ff8269fb-5c9b-4db5-8ca4-50e0f5a8ba64.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:49:33.737Z",
+                "updatedAt": "2021-05-14T08:49:33.737Z",
+                "id": "609e399d9fe25f5f9088249b",
+                "name": "Double Bed",
+                "icon": "/images/icons/amenities/1d0a6157-4df6-45bc-9e46-c6a02b8c9369.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:46:08.937Z",
+                "updatedAt": "2021-05-14T08:46:08.937Z",
+                "id": "609e38d09fe25f5f90882496",
+                "name": "Refrigerator",
+                "icon": "/images/icons/amenities/ef37d016-f757-4aa0-8e89-365bf954e1b4.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:43:27.030Z",
+                "updatedAt": "2021-05-14T08:43:27.030Z",
+                "id": "609e382f9fe25f5f9088248e",
+                "name": "Fire Extinguisher",
+                "icon": "/images/icons/amenities/052a83f8-c8ca-4619-8772-9cd0833fc19a.png"
+            },
+            {
+                "createdAt": "2021-06-15T03:31:35.701Z",
+                "updatedAt": "2021-06-15T03:31:35.701Z",
+                "id": "60c81f173f01cb1d0f528746",
+                "name": "Sound Proofing",
+                "icon": "/images/icons/amenities/568b4f51-8424-40d5-8293-2ede1e97356a.png"
+            },
+            {
+                "createdAt": "2021-06-15T06:46:41.086Z",
+                "updatedAt": "2021-06-15T06:46:41.086Z",
+                "id": "60c84cd13f01cb1d0f52878a",
+                "name": "Blackout Curtains\t",
+                "icon": "/images/icons/amenities/d0d6552e-f32b-4b11-927d-1034ff455c53.png"
+            },
+            {
+                "createdAt": "2021-06-15T03:43:50.627Z",
+                "updatedAt": "2021-06-15T03:43:50.627Z",
+                "id": "60c821f63f01cb1d0f528748",
+                "name": "Snack Basket\t",
+                "icon": "/images/icons/amenities/9349c673-8678-4354-bed8-4053597b266b.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:45:38.871Z",
+                "updatedAt": "2021-05-14T08:45:38.871Z",
+                "id": "609e38b29fe25f5f90882494",
+                "name": "Toothbrush",
+                "icon": "/images/icons/amenities/dcbe2b15-cfd3-48be-b393-41f29e7eec11.png"
+            },
+            {
+                "createdAt": "2021-05-28T06:59:36.334Z",
+                "updatedAt": "2021-05-28T06:59:36.334Z",
+                "id": "60b094d8c05b686816a15ea4",
+                "name": "Weighing Scale",
+                "icon": "/images/icons/amenities/37e1d7b8-a2d2-4482-aadf-247dc819e227.png"
+            },
+            {
+                "createdAt": "2021-06-15T06:41:09.423Z",
+                "updatedAt": "2021-06-15T06:41:09.423Z",
+                "id": "60c84b853f01cb1d0f528787",
+                "name": "Dining Area\t",
+                "icon": "/images/icons/amenities/5de0834a-a7a7-4732-a068-b5f88c6dcfad.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:44:30.442Z",
+                "updatedAt": "2021-05-14T08:44:30.442Z",
+                "id": "609e386e9fe25f5f90882491",
+                "name": "First Aid Kit",
+                "icon": "/images/icons/amenities/3347d56f-3b55-4b9a-9f2e-621ef27dd91f.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:45:53.069Z",
+                "updatedAt": "2021-05-14T08:45:53.069Z",
+                "id": "609e38c19fe25f5f90882495",
+                "name": "Pool",
+                "icon": "/images/icons/amenities/c8ce56ef-4ca9-423e-95de-1a460ef9ffb9.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:44:04.382Z",
+                "updatedAt": "2021-05-14T08:44:04.382Z",
+                "id": "609e38549fe25f5f90882490",
+                "name": "Bed",
+                "icon": "/images/icons/amenities/aba04243-5f7a-407d-b060-a239bfd68b97.png"
+            },
+            {
+                "createdAt": "2021-05-28T06:40:55.173Z",
+                "updatedAt": "2021-05-28T06:40:55.173Z",
+                "id": "60b09077c05b686816a15e9f",
+                "name": "Toilet Paper",
+                "icon": "/images/icons/amenities/8fa523e3-e87d-4f17-91f7-e008ee31a31b.png"
+            },
+            {
+                "createdAt": "2021-05-28T06:37:52.710Z",
+                "updatedAt": "2021-05-28T06:37:52.710Z",
+                "id": "60b08fc0c05b686816a15e9c",
+                "name": "Balcony",
+                "icon": "/images/icons/amenities/a52ef6ff-278d-451e-b973-12bbd00e69ae.png"
+            },
+            {
+                "createdAt": "2021-06-15T06:39:30.455Z",
+                "updatedAt": "2021-06-15T06:39:30.455Z",
+                "id": "60c84b223f01cb1d0f528782",
+                "name": "Sparkling Wine - additional charge\t",
+                "icon": "/images/icons/amenities/1fa2f109-2b41-4d35-a768-fb59fad4af64.png"
+            },
+            {
+                "createdAt": "2021-05-28T08:27:37.781Z",
+                "updatedAt": "2021-05-28T08:27:37.781Z",
+                "id": "60b0a979c05b686816a15eb0",
+                "name": "Fruit Basket",
+                "icon": "/images/icons/amenities/26680669-fadf-405a-ad0f-d9f1f5bb579d.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:45:09.267Z",
+                "updatedAt": "2021-05-14T08:45:09.267Z",
+                "id": "609e38959fe25f5f90882492",
+                "name": "Washing Machine",
+                "icon": "/images/icons/amenities/05fe04be-56ba-4f65-948d-596492ae542c.png"
+            },
+            {
+                "createdAt": "2021-05-28T06:30:02.585Z",
+                "updatedAt": "2021-05-28T06:30:02.585Z",
+                "id": "60b08deac05b686816a15e99",
+                "name": "Newspaper",
+                "icon": "/images/icons/amenities/a465dcd8-b010-40fe-b7d9-f62c269d542b.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:48:34.185Z",
+                "updatedAt": "2021-05-14T08:48:34.185Z",
+                "id": "609e39629fe25f5f90882499",
+                "name": "Cutlery",
+                "icon": "/images/icons/amenities/5ec798ce-b98d-47b8-86b9-37c606a0a26b.png"
+            },
+            {
+                "createdAt": "2021-06-15T06:35:59.689Z",
+                "updatedAt": "2021-06-15T06:35:59.689Z",
+                "id": "60c84a4f3f01cb1d0f52877e",
+                "name": "Western Toilet Seat\t",
+                "icon": "/images/icons/amenities/890c823f-1b2c-45d2-9d52-6950273125d1.png"
+            },
+            {
+                "createdAt": "2021-05-28T09:45:27.286Z",
+                "updatedAt": "2021-05-28T09:45:27.286Z",
+                "id": "60b0bbb7c05b686816a15ec0",
+                "name": "Hangers",
+                "icon": "/images/icons/amenities/59eb32ee-f43b-452c-82e0-a6eaacff26cb.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:42:15.717Z",
+                "updatedAt": "2021-05-14T08:42:15.717Z",
+                "id": "609e37e79fe25f5f9088248c",
+                "name": "Towel",
+                "icon": "/images/icons/amenities/d5fc9dfe-e3c8-4092-803b-a3c43f0c735f.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:41:59.965Z",
+                "updatedAt": "2021-05-14T08:41:59.965Z",
+                "id": "609e37d79fe25f5f9088248b",
+                "name": "Do Not Disturb",
+                "icon": "/images/icons/amenities/d6831baa-1cf1-4a9a-b231-ff604e9c99c9.png"
+            },
+            {
+                "createdAt": "2021-05-28T09:37:55.152Z",
+                "updatedAt": "2021-05-28T09:37:55.152Z",
+                "id": "60b0b9f3c05b686816a15eb8",
+                "name": "Pillows",
+                "icon": "/images/icons/amenities/87c32d61-eff0-46c3-928d-0c3043fa32ee.png"
+            },
+            {
+                "createdAt": "2021-05-28T08:30:04.670Z",
+                "updatedAt": "2021-05-28T08:30:04.670Z",
+                "id": "60b0aa0cc05b686816a15eb3",
+                "name": "Free Assorted Chocolates",
+                "icon": "/images/icons/amenities/6e71f7f7-b1c2-4a1a-87b8-a95a8f375cdd.png"
+            },
+            {
+                "createdAt": "2021-05-28T09:47:10.600Z",
+                "updatedAt": "2021-05-28T09:47:10.600Z",
+                "id": "60b0bc1ec05b686816a15ec1",
+                "name": "Kitchenette",
+                "icon": "/images/icons/amenities/b1a488ae-616d-4240-b110-aaae2473b8f7.png"
+            },
+            {
+                "createdAt": "2021-05-28T08:47:43.484Z",
+                "updatedAt": "2021-05-28T08:47:43.484Z",
+                "id": "60b0ae2fc05b686816a15eb7",
+                "name": "Cookies",
+                "icon": "/images/icons/amenities/0a76deb7-ede7-462a-adc9-3def5bd5c8f4.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:41:36.148Z",
+                "updatedAt": "2021-05-14T08:41:36.148Z",
+                "id": "609e37c09fe25f5f9088248a",
+                "name": "Teapot",
+                "icon": "/images/icons/amenities/8f738b54-b921-43cc-bbda-14aacd990696.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:50:04.505Z",
+                "updatedAt": "2021-05-14T08:50:04.505Z",
+                "id": "609e39bc9fe25f5f9088249c",
+                "name": "Bath",
+                "icon": "/images/icons/amenities/f8130ee4-0074-46f3-8945-c04e0eaaf471.png"
+            },
+            {
+                "createdAt": "2021-06-15T03:22:44.761Z",
+                "updatedAt": "2021-06-15T03:22:44.761Z",
+                "id": "60c81d043f01cb1d0f528745",
+                "name": "Mosquito Net\t",
+                "icon": "/images/icons/amenities/f52a2702-5f67-41f3-8695-915b72d6bcbb.png"
+            },
+            {
+                "createdAt": "2021-05-28T09:39:40.558Z",
+                "updatedAt": "2021-05-28T09:39:40.558Z",
+                "id": "60b0ba5cc05b686816a15eba",
+                "name": "Cribs",
+                "icon": "/images/icons/amenities/b0d84886-5b2e-4ade-9028-59608a09d3bf.png"
+            },
+            {
+                "createdAt": "2021-05-28T08:28:44.408Z",
+                "updatedAt": "2021-05-28T08:28:44.408Z",
+                "id": "60b0a9bcc05b686816a15eb2",
+                "name": "Drinks",
+                "icon": "/images/icons/amenities/90426e12-5cee-413f-b704-3d79900c673e.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:49:06.384Z",
+                "updatedAt": "2021-05-14T08:49:06.384Z",
+                "id": "609e39829fe25f5f9088249a",
+                "name": "Sofa",
+                "icon": "/images/icons/amenities/3ce4df8b-a154-4c28-8f4c-b2552810871c.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:46:39.163Z",
+                "updatedAt": "2021-05-14T08:46:39.163Z",
+                "id": "609e38ef9fe25f5f90882497",
+                "name": "Hair Dryer",
+                "icon": "/images/icons/amenities/50ad494a-acc2-418b-a9d2-32b08ef2e5c5}.png"
+            },
+            {
+                "createdAt": "2021-05-28T09:50:28.939Z",
+                "updatedAt": "2021-05-28T09:50:28.939Z",
+                "id": "60b0bce4c05b686816a15ec2",
+                "name": "Electric Kettle",
+                "icon": "/images/icons/amenities/d0da56bd-9df3-4058-9e77-9a90ea28bcf3.png"
+            },
+            {
+                "createdAt": "2021-05-28T09:38:54.336Z",
+                "updatedAt": "2021-05-28T09:38:54.336Z",
+                "id": "60b0ba2ec05b686816a15eb9",
+                "name": "Cushions",
+                "icon": "/images/icons/amenities/62bf36ee-2a71-48a7-8139-dedb36c84c91.png"
+            },
+            {
+                "createdAt": "2021-05-28T08:34:50.080Z",
+                "updatedAt": "2021-05-28T08:34:50.080Z",
+                "id": "60b0ab2ac05b686816a15eb6",
+                "name": "Champagne",
+                "icon": "/images/icons/amenities/b638a897-ae8f-448c-8a19-04d01dec8b09.png"
+            },
+            {
+                "createdAt": "2021-05-28T07:52:00.624Z",
+                "updatedAt": "2021-05-28T07:52:00.624Z",
+                "id": "60b0a120c05b686816a15ea6",
+                "name": "Dental Kit",
+                "icon": "/images/icons/amenities/3385ba56-28df-43ed-b928-e7a2d278bdf8.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:37:14.966Z",
+                "updatedAt": "2021-05-14T08:37:14.966Z",
+                "id": "609e36ba9fe25f5f90882486",
+                "name": "Bathrobe",
+                "icon": "/images/icons/amenities/17ff8648-9519-4ddb-abf9-71884e11178d.png"
+            },
+            {
+                "createdAt": "2021-05-28T09:44:28.533Z",
+                "updatedAt": "2021-05-28T09:44:28.533Z",
+                "id": "60b0bb7cc05b686816a15ebf",
+                "name": "Chair",
+                "icon": "/images/icons/amenities/d0273f17-fb4a-4cc0-a86f-a4486e9e2025.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:46:58.439Z",
+                "updatedAt": "2021-05-14T08:46:58.439Z",
+                "id": "609e39029fe25f5f90882498",
+                "name": "Cupboard",
+                "icon": "/images/icons/amenities/f25bfb59-f9ca-49ee-a346-03db320da483.png"
+            },
+            {
+                "createdAt": "2021-05-28T06:42:57.326Z",
+                "updatedAt": "2021-05-28T06:42:57.326Z",
+                "id": "60b090f1c05b686816a15ea0",
+                "name": "Dustbins",
+                "icon": "/images/icons/amenities/667f82d2-3347-49cf-90d7-d7c5981c78f8.png"
+            },
+            {
+                "createdAt": "2021-05-28T09:41:10.837Z",
+                "updatedAt": "2021-05-28T09:41:10.837Z",
+                "id": "60b0bab6c05b686816a15ebb",
+                "name": "Dining Table",
+                "icon": "/images/icons/amenities/4a512db7-ac92-471d-9d1a-5b7c0a00f752.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:43:46.029Z",
+                "updatedAt": "2021-05-14T08:43:46.029Z",
+                "id": "609e38429fe25f5f9088248f",
+                "name": "Mirror",
+                "icon": "/images/icons/amenities/28369e58-6eda-49b9-99f8-23649634c8c3.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:40:55.173Z",
+                "updatedAt": "2021-05-14T08:40:55.173Z",
+                "id": "609e37979fe25f5f90882488",
+                "name": "Air Conditioner",
+                "icon": "/images/icons/amenities/d28a404b-974e-4f88-87e3-a4e68ef2eaaf.png"
+            },
+            {
+                "createdAt": "2021-05-14T08:42:38.976Z",
+                "updatedAt": "2021-05-14T08:42:38.976Z",
+                "id": "609e37fe9fe25f5f9088248d",
+                "name": "Free Wifi",
+                "icon": "/images/icons/amenities/0a892b6e-9bf3-4eba-ac87-22e2560dab4c.png"
+            }
+        ]
+    }
+]

@@ -1,0 +1,80 @@
+<div class="search-bar-container">
+  <div class="search-location-input">
+    <input
+      type="text"
+      name="searchLocation"
+      id=""
+      class="input-search"
+      placeholder="Search Hotel by City"
+      [(ngModel)]="searchLocation"
+    />
+
+    <button class="current-location" (click)="getCurrentLocation()">
+      <span>
+        <ion-icon name="locate-outline" *ngIf="!loadLocation"></ion-icon>
+        <div
+          class="spinner-border spinner-border-sm"
+          role="status"
+          *ngIf="loadLocation"
+          style="margin-right: 4px"
+        ></div>
+      </span>
+      <span>Near Me</span>
+    </button>
+
+    <!-- Suggestions Box  -->
+    <div class="suggestion-box" *ngIf="false">
+      <ul>
+        <ng-container *ngFor="let i of [].constructor(50)">
+          <li>
+            <div class="location-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <div class="location">
+                <p>Location address is here</p>
+              </div>
+            </div>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+
+  <div class="checkin-checkout-input">
+    <p-calendar
+      [(ngModel)]="rangeDates"
+      [touchUI]="false"
+      [showTransitionOptions]="'2ms'"
+      [hideTransitionOptions]="'2ms'"
+      selectionMode="range"
+      class="input-datepicker"
+      dateFormat="D, dd M"
+      [minDate]="today"
+      [readonlyInput]="true"
+    ></p-calendar>
+  </div>
+
+  <div class="guest-select-input">
+    <input
+      type="text"
+      name=""
+      id=""
+      class="guest-input"
+      value="{{ totalRoomGuestCount.roomQty }} Room, {{
+        totalRoomGuestCount.guestQty
+      }} Guest"
+      style="cursor: pointer"
+      (click)="guests_n_rooms_picker_toggle = !guests_n_rooms_picker_toggle"
+      readonly
+    />
+    <guests-and-rooms-picker
+      *ngIf="guests_n_rooms_picker_toggle"
+      (closeContainer)="isCloseContainer($event)"
+      (roomGuestCount)="getTotalRoomAndGuestCount($event)"
+    >
+    </guests-and-rooms-picker>
+  </div>
+
+  <div class="search-button">
+    <button class="search-btn" (click)="searchHotel()">Search</button>
+  </div>
+</div>

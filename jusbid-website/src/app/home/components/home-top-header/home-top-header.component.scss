@@ -1,0 +1,124 @@
+main {
+  background: #000;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  .header {
+    // height: 70%;
+    .header-background {
+      .heading {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+        color: #fff;
+        text-align: center;
+        h1 {
+          font-weight: 600;
+          font-size: 2.5rem;
+        }
+      }
+      .back-image {
+        .left-top-img {
+          img {
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 8%;
+            left: 15%;
+          }
+        }
+        .left-bottom-img {
+          img {
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 40%;
+            left: 8%;
+          }
+        }
+        .right-top-img {
+          img {
+            position: absolute;
+            border-radius: 100%;
+            right: 0;
+            width: 250px;
+            height: 250px;
+            top: 12%;
+            right: 10%;
+            object-fit: cover;
+          }
+        }
+        .right-bottom-img {
+          img {
+            position: absolute;
+            border-radius: 100%;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            top: 45%;
+            right: 10%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1300px) {
+    .header {
+      .header-background {
+        .back-image {
+          .left-top-img {
+            img {
+              width: 220px;
+              height: 220px;
+            }
+          }
+          .right-top-img {
+            img {
+              width: 220px;
+              height: 220px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width : 1150px) {
+    .header {
+      .header-background {
+        .back-image {
+          .left-top-img {
+            img {
+              width: 180px;
+              height: 180px;
+            }
+          }
+          .right-top-img {
+            img {
+              width: 180px;
+              height: 180px;
+            }
+          }
+          .left-bottom-img {
+            img {
+              width: 130px;
+              height: 130px;
+            }
+          }
+          .right-bottom-img {
+            img {
+              width: 130px;
+              height: 130px;
+            }
+          }
+        }
+      }
+    } 
+  }
+}

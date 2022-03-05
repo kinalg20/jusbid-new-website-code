@@ -1,0 +1,35 @@
+        .desc-desc {
+            font-family: "Google Sans", "Roboto", Arial, sans-serif;
+
+            p{
+                margin: 0;
+                color: #646161;
+                padding: 0;
+                line-height: 1.4rem;
+            }
+            button {
+                margin-top: 20px;
+                border-bottom: 1px solid;
+                font-size: 16px;
+                cursor: pointer;
+                background: transparent;
+                font-weight: 600;
+            }
+        }
+        .desc-details {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            margin-top: 50px;
+            .check-in {
+                .check-in-heading {
+                    color: #a7a4a4;
+                    margin-bottom: 0.7rem;
+                    font-family: "Lato", sans-serif;
+                }
+                .check-in-info {
+                    color: #000;
+                    font-weight: 600;
+                    font-family: "Lato", sans-serif;
+                }
+            }
+        }

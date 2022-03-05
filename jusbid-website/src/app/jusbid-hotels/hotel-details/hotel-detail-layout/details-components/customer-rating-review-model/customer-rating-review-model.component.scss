@@ -1,0 +1,78 @@
+.customer-rating-container {
+    padding: 20px;
+    background: #ffff;
+    width: 900px;
+    border-radius: 12px;
+    .close-div{
+       text-align: right;
+       margin-right: 28px;
+    }
+    .customer-rating-review-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 30px;
+        .rating-measures-section {
+            .rating-measure-heading {
+                .ratings {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 25px;
+                    span.rating-total {
+                        margin-left: 5px;
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+                    span.rating {
+                        font-size: 30px;
+                        font-weight: 700;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .rating-measures-style {
+                display: grid;
+                grid-template-columns: 40% auto 35%;
+                align-items: center;
+                line-height: 20px;
+                padding: 8px 0;
+                .measure-line {
+                    span.rating-range-line {
+                        position: absolute;
+                        height: 4px;
+                        width: 5%;
+                        // margin-right: 4px;
+                        background: #dedede;
+                        border-radius: 2px;
+                        margin-top: -3px;
+                    }
+                }
+                span.customer-total-rating {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    text-align: left;
+                }
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+        .rating-desc-section {
+            height: 600px;
+            overflow-y: scroll;
+        }
+    }
+
+}
+::ng-deep{
+    .customer-star {
+        font-size: 28px;
+        color: var(--primary-gradient);
+    }
+    
+    .close-outline{
+        font-size: 28px; 
+        cursor: pointer;
+    }
+}
+

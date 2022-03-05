@@ -1,0 +1,257 @@
+header.shadow{
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+header{
+    background: var(--white);
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.9rem;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    .brand-logo{
+        img{
+            max-width: 100px;
+            cursor: pointer;
+        }
+    }
+    
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            button{
+                background: transparent;
+                border: none;
+                font-size: 1rem;
+                font-weight: 600;
+                &:focus{
+                    outline: none;
+                }
+            }
+            button.user-profile-btn, button.login-button{
+                display: flex;
+                align-items: center;
+                ion-icon{
+                    font-size: 1.4rem;
+                    margin-right: 0.5rem;
+                }
+                ion-icon.login-icon{
+                    font-size: 1.8rem;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+//hotel search-bar-container
+.search-bar-container{
+    // border: 1px solid hsla(0,0%,60%,.4);
+    // border: 1px solid var(--primary);
+    background: whitesmoke;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 10%);
+    border-radius: .5rem;
+    width: 70%;
+    height: 46px;
+    display: grid;
+    grid-template-columns: 35% 30% 20% 15%;
+    align-items: center;
+    input{
+        width: 100%;
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        &:focus{
+            outline: none;
+        }
+    }
+    .search-location-input{
+        display: flex;
+        align-items: center;
+        input{
+            padding: 0 10px 0 20px;
+        }
+        button.current-location{
+            padding: 4px 8px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #dedede;
+            ion-icon{
+                margin-right: 5px;
+            }
+            &:hover{
+                background: #f2f2f2;
+            }
+        }
+    }
+    .search-button {
+        height: 100%;
+        button.search-btn{
+            width: 100%;
+            height: 100%;
+            background: var(--primary-gradient);
+            border-left: 1px solid var(--primary);
+            color: #fff;
+            border-top-right-radius: 0.4rem;
+            border-bottom-right-radius: 0.4rem;
+            font-weight: 600;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span ion-icon{
+                margin: 0 4px -3px 0;
+            }
+         }
+    }
+
+    .checkin-checkout-input{
+        border-left: 1px solid hsla(0,0%,60%,.4);
+        border-right: 1px solid hsla(0,0%,60%,.4);
+        margin: 0 10px;
+        padding: 0 10px;
+    }
+}
+
+.suggestion-box{
+    min-width: 350px;
+    min-height: 4rem;
+    max-height: 20rem;
+    border-radius: 0.8rem;
+    position: absolute;
+    overflow-y: scroll;
+    top: 4.3rem;
+    opacity: 1;
+    border: 1px solid rgb(207, 207, 207);
+    box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+    transition: opacity 0.25s ease 0s, top 0.25s ease 0s;
+    padding: 0;
+    background: #fff;
+    transition: all 5s;
+    z-index: 99;
+
+    ul{
+        margin: 0;
+        list-style: none;
+        padding: 0;
+
+        li{
+            padding: 1rem;
+            border-bottom: 1px solid hsla(0,0%,60%,.4);
+            cursor: pointer;
+
+            &:hover{
+                background: whitesmoke;
+            }
+
+            &:last-child{
+                border-bottom: none;
+            }
+
+            .location-item{
+                display: flex;
+                align-items: center;
+                ion-icon{
+                    font-size: 1.4rem;
+                    margin-right: .5rem;
+                }
+                .location{
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+::ng-deep {
+    p-calendar{
+        .p-calendar{
+            display: flex !important;
+            .p-datepicker{
+                border: 1px solid rgb(207, 207, 207);
+                box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+                transition: opacity 0.4s ease 0s, top 0.4s ease 0s;
+                border-radius: 0.8rem;
+                top: 48px !important;
+                
+                span.p-highlight{
+                    background: var(--primary) !important;
+                    color: var(--white) !important;
+                }
+            }
+            
+        }
+        .p-inputtext{
+            background: transparent;
+            width: 100%;
+            color: #000;
+            font-weight: 600;
+            font-size: 0.875rem;
+            border: none !important;
+            cursor: pointer;
+    
+            &:focus{
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+        .p-datepicker-today{
+            span{
+                background: transparent !important;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .p-datepicker table td {
+            padding: 1px !important;
+        }
+    }
+    @media (max-width: 1300px) {
+        p-calendar {
+            .p-inputtext {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .search-bar-container {
+        input {
+            font-size: 0.8rem;
+        }
+    }
+    p-calendar {
+        .p-inputtext {
+            font-size: 0.8rem;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .search-bar-container {
+        display: none;
+    }
+}
+
+input{
+    font-size: 0.875rem;
+}

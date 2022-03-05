@@ -1,0 +1,128 @@
+main {
+  .container {
+    padding: 30px;
+    .card {
+      padding: 30px;
+      background: #fff;
+      margin: 20px;
+      .card-header {
+        h1 {
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+      }
+      .card-body {
+        .guest-data {
+          border-bottom: 1px solid #dfdfdf;
+        }
+        h1 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin: 30px 0;
+        }
+        .date {
+          margin-bottom: 30px;
+          .checkin-checkout-date {
+            display: flex;
+            justify-content: space-between;
+            label {
+              font-size: 1rem;
+              margin-bottom: 10px;
+              font-weight: 600;
+            }
+            .edit-btn {
+              button {
+                text-decoration: underline;
+                background: none;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .guests {
+          margin-bottom: 30px;
+
+          .guest-count {
+            display: flex;
+            justify-content: space-between;
+            label {
+              font-size: 1rem;
+              margin-bottom: 10px;
+              font-weight: 600;
+            }
+            .edit-btn {
+              button {
+                text-decoration: underline;
+                background: none;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .coupon {
+          border-bottom: 1px solid #dfdfdf;
+          h1 {
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: underline;
+          }
+        }
+        .cancellation-policy {
+          border-bottom: 1px solid #dfdfdf;
+          margin-bottom: 20px;
+          p {
+            margin-bottom: 20px;
+            text-align: justify;
+            a {
+              color: #000;
+              font-weight: 600;
+            }
+          }
+        }
+        .refund {
+          p {
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            text-align: justify;
+            b {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+        .pay-button {
+          margin-top: 30px;
+          button {
+            background: var(--primary-gradient);
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+::ng-deep {
+  p-calendar {
+    .p-calendar {
+      .p-datepicker {
+        top: none !important;
+      }
+    }
+  }
+
+  .p-datepicker-touch-ui,
+  .p-calendar .p-datepicker-touch-ui {
+    min-width: 40vw;
+  }
+  .guest-toggle {
+    .guests-and-rooms-picker-container {
+      top: 25rem !important;
+      position: absolute !important;
+      right: 28% !important;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<main>
+  <section class="container">
+    <div class="bid-confirmation-card">
+      <div class="card-header">
+        <div class="succes-icon">
+          <img src="\assets\images\icons\success.PNG" />
+        </div>
+        <div class="bid-info">
+          <h1>Hi Gunjan Soni</h1>
+          <p>Your Bid has been placed successfully</p>
+        </div>
+      </div>
+      <div class="card-bottom"></div>
+      <div class="card-body">
+        <div class="hotel-details">
+          <p>Hotel and Room Details</p>
+        </div>
+        <div class="date">
+          <p>Sun 6 Feb, 2022 11.42 PM</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="hotel-name">
+          <h1>Rafhiya Haveli</h1>
+          <p>Front of leela hotel Udaipur Rajasthan (313001) India</p>
+        </div>
+        <div class="room-type">
+          <div>
+            <h5>Delux Cottage Room X 1</h5>
+            <p>1 Room, 2 Guest, 2 Night</p>
+          </div>
+          <div class="room-price">
+            <h5><set-price [price]="'4000'" [symbol]="'INR'"></set-price> / night</h5>
+          </div>
+        </div>
+        <div class="hotel-room-price">
+          <ul>
+            <li>
+              <div class="bid-amt">
+                <p>Bid Amount</p>
+                <span><set-price [price]="'4000'" [symbol]="'INR'"></set-price></span>
+              </div>
+            </li>
+            <li>
+              <div class="bid-amt">
+                <p>Jusbid Discount Applied</p>
+                <span><set-price [price]="'4000'" [symbol]="'INR'"></set-price></span>
+              </div>
+            </li>
+            <li>
+              <div class="bid-amt">
+                <p>Service Fee</p>
+                <span><set-price [price]="'4000'" [symbol]="'INR'"></set-price></span>
+              </div>
+            </li>
+            <li>
+              <div class="bid-amt">
+                <p>CGST + SGST</p>
+                <span><set-price [price]="'4000'" [symbol]="'INR'"></set-price></span>
+              </div>
+            </li>
+            <li>
+              <div class="bid-amt">
+                <p><b>Grand Total</b></p>
+                <span><b><set-price [price]="'4000'" [symbol]="'INR'"></set-price></b></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="response-btn">
+        <button type="button" class="primary-button" (click)="booknow()">{{bidStatus}}</button>
+      </div>
+    </div>
+  </section>
+</main>

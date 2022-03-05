@@ -1,0 +1,56 @@
+<section class="room-section">
+    <div class="section-card">
+        <div class="room-cards">
+            <div class="room-card-image">
+                <img [src]="getRoomImageUrl(roomDetails.image)" alt="">
+                <div (click)="isShowImageModel=!isShowImageModel"
+                    style="position: absolute; bottom: 15px; right: 15px; z-index: 3; background: rgba(0, 0, 0, 0.5); border-radius: 100%; padding: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" style="margin-bottom: -1px;"
+                        >
+                        <path fill="white" fill-rule="evenodd"
+                            d="M1.016.467h14.48c.267 0 .483.207.483.463v10.978c0 .256-.216.678-.483.678H1.016c-.266 0-.483-.422-.483-.678V.93c0-.256.217-.463.483-.463zm.483 8.984v2.142h9.025L5.183 6.096a.404.404 0 00-.295-.128.403.403 0 00-.291.135L1.499 9.45zm9.653-2.494c-1.065 0-1.93-.832-1.93-1.855 0-1.022.865-1.854 1.93-1.854s1.931.832 1.931 1.854c0 1.023-.866 1.855-1.93 1.855zm0-2.782c-.532 0-.965.417-.965.927 0 .511.433.928.965.928s.966-.417.966-.928c0-.51-.434-.927-.966-.927zm3.862 7.418v-10.2H1.499v6.662l2.376-2.568a1.374 1.374 0 011.001-.446c.385-.004.744.146 1.013.423l5.955 6.129h3.17z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="room-type">
+                <div style="display: flex;" class="room-select">
+                    <h4>{{roomDetails.room_type}}</h4>
+                </div>
+                <div [innerHtml]="roomDetails.description.slice(0,98)" class="room-desc"></div>
+                <!-- <div class="room-aminities">
+                    <ng-container *ngFor="let room_amenities of fetchedRoomAmenity.slice(0,4)">
+                        <p>{{room_amenities.name}} &nbsp;</p>
+                    </ng-container>
+                </div> -->
+                <p><span>Complementary:</span> Breakfast</p>
+                <p> <span>Room size:</span> {{roomDetails.size}}</p>
+                <p><span>Bed size:</span> {{roomDetails.bed_size?roomDetails.bed_size:"null"}}</p>
+            </div>
+            <div class="room-price-detail">
+                <div class="room-price">
+                    <h1 class="roomprice">
+                        <set-price [price]="roomDetails.price" [symbol]="'INR'"></set-price>
+                    </h1><sub style="font-size: 16px; margin-left: 3px;">/ night</sub>
+                </div>
+                <div class="select-button">
+                    <button class="btn btn-more" (click)="isShowRoomDetails=!isShowRoomDetails" (click)="stopwindoescroller()">View more</button>
+                    <button class="buttonenable" (click)="getSelectedRoomDetails(roomDetails)"
+                        [disabled]="roomDetails.id === selectedRoom.id">
+                        {{roomDetails.id === selectedRoom.id ? 'Selected' : 'Select'}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<jusbid-model [isShowJusbidModel]="isShowImageModel" (closeJusbidModel)="closeImageModel($event)">
+    <image-gallery [isShowThumnails]="isShowImageModel" [isNotShowThumnails]="false" [imagecrousel]="roomDetails.room_images">
+    </image-gallery>
+</jusbid-model>
+
+<jusbid-model [isShowJusbidModel]="isShowRoomDetails" (closeJusbidModel)="closeRoomDetails($event)"
+    [isShowClose]="false">
+    <room-details (closeRoomDetailModel)="closeRoomDetailModel($event)" [RoomDetails]="roomDetails" [FetchedAmenity]="fetchedRoomAmenity">
+    </room-details>
+</jusbid-model>

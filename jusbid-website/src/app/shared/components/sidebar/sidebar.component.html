@@ -1,0 +1,29 @@
+<section class="side-bar" *ngIf="this.isShowSideBar">
+
+    <div class="side-bar-header">
+        <div>
+            <h2>Menu</h2>
+        </div>
+        <div>
+            <button class="close-btn" type="button" (click)="this.closeSiderBar(false)">
+                <ion-icon name="close-outline" mode="ios"></ion-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="side-bar-body">
+        <ul>
+            <li class="homeactive">
+                <a href="/" [ngClass]='"active"' (click)="this.closeSiderBar(false)">Home</a>
+            </li>
+            <ng-container *ngFor="let menu of sideMenuList; index as i;">
+                <li>
+                    <a [ngClass]="i==0 ? 'active' : ''" (click)="routeTab(menu.slug)" (click)="this.closeSiderBar(false)">{{menu.name}}</a>
+                </li>
+            </ng-container>
+            <li>
+                <a href="#" (click)="logOutUser()">Logout</a>
+            </li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,78 @@
+<div style="  position: sticky;
+top: 15%;">
+    <div class="bid-form-container">
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+            <h3 style="margin: 0; padding: 0;">Bid Form</h3>
+            <div style="display: block;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <h3 style="margin: 0; padding: 0;">
+                        <set-price [price]="'4500'" [symbol]="'INR'"></set-price>
+                    </h3><sub style="font-size: 16px; margin-left: 3px;">/ night</sub>
+                </div>
+                <div style=" text-align: right;">
+                    <small style="color: gray; text-decoration: underline; cursor: pointer;">including of all taxes</small>
+                </div>
+            </div>
+        </div>
+        <div class="bid-form">
+            <div class="row">
+                <div class="column">
+                    <div class="form-control">
+                        <input type="date" style="border: none;" placeholder="Date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column" style="border-right: 1px solid rgb(185, 182, 182);">
+                    <div class="form-control">
+                        <input type="text" placeholder="Adult">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="form-control">
+                        <input type="text" placeholder="Rooms">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="form-control">
+                        <div class="room-type">
+                            <!-- <select name="plan" id="plan">
+                                <option value="free">Deluxe</option>
+                                <option value="starter" selected>Select Room Type</option>
+                                <option value="professional">Super Delux</option>
+                            </select> -->
+                            <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name"></p-dropdown>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="border-bottom: none;">
+                <div class="column">
+                    <div class="form-control">
+                        <input type="text" placeholder="Please Enter Your bid price">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="form-control">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <label for="checkbox">Child Below 6 years old</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button class="bid-jusbid-submit">Bid Now</button>
+        </div>
+
+    </div>
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="" style="color: #222;">Terms & Conditions</a>
+    </div>
+</div>

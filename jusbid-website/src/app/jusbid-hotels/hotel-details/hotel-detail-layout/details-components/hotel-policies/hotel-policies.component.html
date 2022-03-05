@@ -1,0 +1,27 @@
+<div class="policies-details">
+    <div class="refund-policy" *ngIf="Refund_Policy.length>0">
+        <h4>Refund Policy</h4>
+        <div [innerHtml]="Refund_Policy" class="hoteldes">
+        </div>
+    </div>
+    <div class="refund-policy" *ngIf="Cancellation_Policy.length>0">
+        <h4>Cancellation Policy</h4>
+        <div [innerHtml]="Cancellation_Policy" class="hoteldes">
+        </div>
+    </div>
+    <div class="refund-policy" *ngIf="TermsConditions.length>0">
+        <h4>Terms and Conditions</h4>
+        <div [innerHtml]="TermsConditions" class="hoteldes">
+        </div>
+    </div>
+    <div class="refund-policy" *ngIf="Notice.length>0">
+        <h4>Notice</h4>
+        <div [innerHtml]="Notice" class="hoteldes">
+        </div>
+    </div>
+    <div class="refund-policy" *ngIf="Policy.length>0">
+        <h4>Policy</h4>
+        <div [innerHtml]="Policy" class="hoteldes">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<form action="" #signUpForm="ngForm" (submit)="SignUp(signUpForm)">
+    <ng-container *ngIf="resMsg">
+        <span class="alert error" role="alert" id="loginAlert">
+            {{ resMsg }}
+        </span>
+    </ng-container>
+    <div class="row">
+        <div class="column-6">
+            <div class="form-control">
+                <label for="first-name">First Name</label>
+                <input type="text" id="firstname" autocomplete="off" name="firstname" maxlength='50'  ngModel required>
+            </div>
+        </div>
+        <div class="column-6">
+            <div class="form-control">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="lastname" autocomplete="off"  maxlength='50'  name="lastname" ngModel required>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-6">
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="off" name="email"  ngModel required>
+            </div>
+        </div>
+        <div class="column-6">
+            <div class="form-control">
+                <label for="phone-number">Phone Number</label>
+                <input type="text" id="phonenumber" autocomplete="off" name="phonenumber" maxlength="10" ngModel required >
+             
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-6">
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="text" id="password" autocomplete="off" name="password" ngModel required>
+            </div>
+        </div>
+        <div class="column-6">
+            <div class="form-control">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="text" id="confirmpassword" autocomplete="off"   ngModelname="confirmpassword"  required>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-12">
+            <button class="jusbid-btn" type="submit">Sign Up</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,11 @@
+<section class="images-model" *ngIf="isShowJusbidModel">
+    <div class="show-images">
+        <div class="header" *ngIf="isShowClose">
+            <div class="close-model" (click)="closeModel(false)">
+                <ion-icon name="close-outline"></ion-icon>
+                <button>Close</button>
+            </div>
+        </div>
+        <ng-content></ng-content>
+    </div>
+</section>

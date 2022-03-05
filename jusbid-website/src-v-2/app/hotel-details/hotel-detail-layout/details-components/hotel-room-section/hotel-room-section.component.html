@@ -1,0 +1,42 @@
+<section class="room-section">
+    <div class="section-card">
+        <div class="room-cards">
+            <div class="room-card-image">
+                <img src="assets/images/backgrounds/login-background.jpg" alt="">
+            </div>
+            <div class="room-type">
+                <div style="display: flex;" class="room-select">
+                    <h4>Deluxe Cottage Room</h4>
+                    <!-- <button class="btn btn-select">Select</button> -->
+                </div>
+                <h5>Room with modern amenities</h5>
+                <div class="room-aminities">
+                    <ng-container *ngFor="let data of [].constructor(4)">
+                        <p>Shower</p>
+                    </ng-container>
+                </div>
+                <p><span>Complementary:</span> Breakfast</p>
+                <p> <span>Room size:</span> 324sqft</p>
+                <p><span>Bed size:</span> King Bed</p>
+            </div>
+            <div class="room-price-detail">
+                <div class="room-price">
+                    <h1 class="roomprice">
+                        <set-price [price]="'4500'" [symbol]="'INR'"></set-price>
+                    </h1><sub style="font-size: 16px; margin-left: 3px;">/ night</sub>
+                </div> 
+                <div class="select-button">
+                    <button class="btn btn-more" (click)="ShowroomAminity()">View more</button>
+                    <button class="btn btn-select">Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="room-aminity-model" *ngIf="Showroomaminities">
+    <div class="amenity-model">
+        <!-- <h1>What this place offers</h1>
+        <ion-icon class="close"></ion-icon> -->
+    </div>
+</div>

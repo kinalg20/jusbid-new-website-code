@@ -1,0 +1,62 @@
+.room-details-section {
+    padding: 0;
+    background: #fff;
+    width: 800px;
+    height: 600px;
+    // max-height: 800px;
+    border-radius: 12px;
+
+    .card-body {
+        overflow-y: scroll;
+        height: 525px;
+        .room-details-container {
+            padding: 0 0 50px 0;
+            margin-top: 150px;
+            .room-desc-container {
+                padding: 20px 0;
+                h4 {
+                    margin: 0;
+                    padding: 0;
+                    padding: 10px 0;
+                }
+                a {
+                    color: #000;
+                    font-weight: 600;
+                }
+                .room-amenities {
+                    display: flex;
+                    align-items: center;
+                    max-width: 100%;
+                    flex-wrap: wrap;
+                    padding-bottom: 10px;
+                    span {
+                        font-size: 15px;
+                        margin-left: 3px;
+                    }
+                    .model-room-amenity {
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #dedede;
+                        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+                        width: fit-content;
+                        padding: 5px;
+                        border-radius: 5px;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                .room-policy {
+                    .hotel_desc {
+                        line-height: 28px;
+                    }
+                }
+                .room-desc{
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

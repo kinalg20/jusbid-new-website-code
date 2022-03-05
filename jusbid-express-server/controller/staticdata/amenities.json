@@ -1,0 +1,674 @@
+[
+    {
+        "createdAt": "2021-06-14T08:00:20.804Z",
+        "updatedAt": "2021-06-14T08:00:20.804Z",
+        "id": "60c70c94beff0a0e65708a87",
+        "name": "PPE (Personal Protective Equipment) kits\t",
+        "icon": "/images/icons/amenities/a39585b7-2a96-4737-8aba-c91f97cd98b9.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:56:51.989Z",
+        "updatedAt": "2021-05-13T05:56:51.989Z",
+        "id": "609cbfa3fc530d38fa198890",
+        "name": "Telephone",
+        "icon": "/images/icons/amenities/a953de5a-2200-4af2-a907-a1c3024eda63.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:17:18.146Z",
+        "updatedAt": "2021-05-14T08:17:18.146Z",
+        "id": "609e320e9fe25f5f9088247e",
+        "name": "Breakfast",
+        "icon": "/images/icons/amenities/d0c4485e-6bb2-405b-a9c1-45a481f10f18.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:27:41.676Z",
+        "updatedAt": "2021-05-28T05:27:41.676Z",
+        "id": "60b07f4dc05b686816a15e84",
+        "name": "Business Services",
+        "icon": "/images/icons/amenities/325af4e4-f936-4826-bde3-ca2af6a1132a.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T09:35:55.793Z",
+        "updatedAt": "2021-06-14T09:35:55.793Z",
+        "id": "60c722fb6dd2b015e6a7bf2b",
+        "name": "Reflexology",
+        "icon": "/images/icons/amenities/7562852c-6a98-43a2-bb42-10cf159ed1b7.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T09:25:27.671Z",
+        "updatedAt": "2021-06-14T09:25:27.671Z",
+        "id": "60c720876dd2b015e6a7bf26",
+        "name": "Shower Cap\t",
+        "icon": "/images/icons/amenities/76bf27ea-17be-4c90-b46f-64541cc1f143.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:51:14.362Z",
+        "updatedAt": "2021-05-14T08:51:14.362Z",
+        "id": "609e3a029fe25f5f9088249d",
+        "name": "24-hour-signal",
+        "icon": "/images/icons/amenities/88e5f88c-e507-49e8-b711-97e6ee570398.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T06:02:09.147Z",
+        "updatedAt": "2021-05-28T06:02:09.147Z",
+        "id": "60b08761c05b686816a15e8e",
+        "name": "Housekeeping",
+        "icon": "/images/icons/amenities/17de5805-23e3-4662-9f47-a88c9d8d0a26.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:19:22.046Z",
+        "updatedAt": "2021-05-28T05:19:22.046Z",
+        "id": "60b07d5ac05b686816a15e7a",
+        "name": "Business Centre",
+        "icon": "/images/icons/amenities/95afd4ee-166f-4057-80c9-652abf8d1a66.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T06:27:02.018Z",
+        "updatedAt": "2021-05-28T06:27:02.018Z",
+        "id": "60b08d36c05b686816a15e98",
+        "name": "Swimming Pool",
+        "icon": "/images/icons/amenities/3977a181-d987-4141-a56c-bdfc1b53e7a7.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:22:42.734Z",
+        "updatedAt": "2021-06-14T08:22:42.734Z",
+        "id": "60c711d2beff0a0e65708a99",
+        "name": "Disinfection",
+        "icon": "/images/icons/amenities/3e2d3008-7e4a-4f6d-9709-9e55d87800de.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T04:59:58.013Z",
+        "updatedAt": "2021-05-28T04:59:58.013Z",
+        "id": "60b078cec05b686816a15e66",
+        "name": "Currency Exchange",
+        "icon": "/images/icons/amenities/1392ac70-2fb6-4f9d-9046-7d0f03abae85.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:23:54.974Z",
+        "updatedAt": "2021-05-28T05:23:54.974Z",
+        "id": "60b07e6ac05b686816a15e82",
+        "name": "Masks",
+        "icon": "/images/icons/amenities/6a138b76-d8c3-4dfa-82b4-5f6431dca7c5.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:20:31.205Z",
+        "updatedAt": "2021-05-14T08:20:31.205Z",
+        "id": "609e32cf9fe25f5f90882481",
+        "name": "Contactless check-in",
+        "icon": "/images/icons/amenities/aedf0e94-0118-4771-b5e0-e1b6d6b2571f.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:19:57.385Z",
+        "updatedAt": "2021-06-14T08:19:57.385Z",
+        "id": "60c7112dbeff0a0e65708a97",
+        "name": "Sanitizers Installed\t",
+        "icon": "/images/icons/amenities/e2eed341-40ef-48b8-a6ba-f2455f9db3d0.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:20:52.415Z",
+        "updatedAt": "2021-06-14T08:20:52.415Z",
+        "id": "60c71164beff0a0e65708a98",
+        "name": "meditation",
+        "icon": "/images/icons/amenities/52de3d5e-7325-4f39-895a-0c5d7a7a38df.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:56:18.189Z",
+        "updatedAt": "2021-05-13T05:56:18.189Z",
+        "id": "609cbf82fc530d38fa19888e",
+        "name": "Washing Machine",
+        "icon": "/images/icons/amenities/5546bfe6-8a62-4d0f-925c-f5d09002a4b3.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:28:35.260Z",
+        "updatedAt": "2021-06-14T08:28:35.260Z",
+        "id": "60c71333beff0a0e65708a9f",
+        "name": "Paid Airport Transfers\t",
+        "icon": "/images/icons/amenities/ebef824b-0dc7-49d2-b6e0-927958b41abb.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T06:08:44.862Z",
+        "updatedAt": "2021-05-28T06:08:44.862Z",
+        "id": "60b088ecc05b686816a15e91",
+        "name": "Public Restrooms",
+        "icon": "/images/icons/amenities/855f7c04-48cb-430b-a1e1-578fe736a422.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:25:39.392Z",
+        "updatedAt": "2021-06-14T08:25:39.392Z",
+        "id": "60c71283beff0a0e65708a9d",
+        "name": "Activity Centre\t",
+        "icon": "/images/icons/amenities/6ff25cc7-3e20-4f79-a62e-bd03b99fb52a.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:49:07.534Z",
+        "updatedAt": "2021-05-28T05:49:07.534Z",
+        "id": "60b08453c05b686816a15e8b",
+        "name": "Free Parking",
+        "icon": "/images/icons/amenities/a1db6982-5975-4e3f-b752-1b32fcdd7e35.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T06:23:59.951Z",
+        "updatedAt": "2021-05-28T06:23:59.951Z",
+        "id": "60b08c7fc05b686816a15e97",
+        "name": "Smoke Detector",
+        "icon": "/images/icons/amenities/ed836d83-20c8-4681-92dd-2fe9b3797232.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:18:50.293Z",
+        "updatedAt": "2021-05-14T08:18:50.293Z",
+        "id": "609e326a9fe25f5f90882480",
+        "name": "Newspaper",
+        "icon": "/images/icons/amenities/dbaa81e2-4fe0-49bb-bb54-54f8d0a2bc86.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:11:19.841Z",
+        "updatedAt": "2021-05-14T08:11:19.841Z",
+        "id": "609e30a79fe25f5f90882479",
+        "name": "Power Backup",
+        "icon": "/images/icons/amenities/11860ec1-1135-4ead-9c75-5e4b6cef4224.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T06:06:39.333Z",
+        "updatedAt": "2021-06-14T06:06:39.333Z",
+        "id": "60c6f1ef2e722d09b7b34d43",
+        "name": "Tours and Travels",
+        "icon": "/images/icons/amenities/056c3714-5f53-489c-9580-d8cc9cf425f3.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:58:00.591Z",
+        "updatedAt": "2021-05-13T05:58:00.591Z",
+        "id": "609cbfe8fc530d38fa198893",
+        "name": "Game",
+        "icon": "/images/icons/amenities/5b78daf2-4928-42e9-93fd-b1dd17450695.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:16:03.598Z",
+        "updatedAt": "2021-05-14T08:16:03.598Z",
+        "id": "609e31c39fe25f5f9088247b",
+        "name": "Smoking Rooms",
+        "icon": "/images/icons/amenities/4b9490de-1f4c-4a89-aed1-7a92a75b8e0b.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:24:49.067Z",
+        "updatedAt": "2021-05-28T05:24:49.067Z",
+        "id": "60b07ea1c05b686816a15e83",
+        "name": "Photocopying",
+        "icon": "/images/icons/amenities/e3a50411-dc83-4613-ba99-40403f38be56.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T06:07:02.632Z",
+        "updatedAt": "2021-05-28T06:07:02.632Z",
+        "id": "60b08886c05b686816a15e90",
+        "name": "Game Room",
+        "icon": "/images/icons/amenities/f591497a-cb85-4259-8b66-b0fff761100a.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:32:23.061Z",
+        "updatedAt": "2021-05-14T08:32:23.061Z",
+        "id": "609e35979fe25f5f90882483",
+        "name": "Indoor Games",
+        "icon": "/images/icons/amenities/ca17a9c9-f57b-42ce-89ab-66652bd82276.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:34:53.581Z",
+        "updatedAt": "2021-05-14T08:34:53.581Z",
+        "id": "609e362d9fe25f5f90882485",
+        "name": "Reading Lamp",
+        "icon": "/images/icons/amenities/63fc7649-bf34-475e-a094-f14d20b6c5d7.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T09:05:43.175Z",
+        "updatedAt": "2021-05-14T09:05:43.175Z",
+        "id": "609e3d679fe25f5f908824a0",
+        "name": "Restroom",
+        "icon": "/images/icons/amenities/bac4af9d-093c-4397-b12a-04fcefdb1fc4.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:33:56.329Z",
+        "updatedAt": "2021-05-14T08:33:56.329Z",
+        "id": "609e35f49fe25f5f90882484",
+        "name": "Work Desk",
+        "icon": "/images/icons/amenities/8648e22b-1f01-49f1-b2de-92382215fbf9.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:42:46.980Z",
+        "updatedAt": "2021-05-28T05:42:46.980Z",
+        "id": "60b082d6c05b686816a15e86",
+        "name": "Banquet",
+        "icon": "/images/icons/amenities/b056808a-ed3c-43a1-94e6-c95a500529fb.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:26:58.823Z",
+        "updatedAt": "2021-06-14T08:26:58.823Z",
+        "id": "60c712d2beff0a0e65708a9e",
+        "name": "Disposable serve-ware\t",
+        "icon": "/images/icons/amenities/56ea017f-7401-47bf-abf8-2b628705aa64.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:21:43.499Z",
+        "updatedAt": "2021-05-14T08:21:43.499Z",
+        "id": "609e33179fe25f5f90882482",
+        "name": "Staff Hygiene",
+        "icon": "/images/icons/amenities/d15829bb-57d5-4772-8759-d8d731b48132.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T06:03:35.103Z",
+        "updatedAt": "2021-06-14T06:03:35.103Z",
+        "id": "60c6f1372e722d09b7b34d42",
+        "name": "Golf",
+        "icon": "/images/icons/amenities/8020d17d-b646-4711-901e-457645495f86.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:45:48.221Z",
+        "updatedAt": "2021-05-28T05:45:48.221Z",
+        "id": "60b0838cc05b686816a15e89",
+        "name": "Fax Service",
+        "icon": "/images/icons/amenities/98ee26af-4159-4201-adeb-f46fba9c4ef3.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T06:15:57.238Z",
+        "updatedAt": "2021-05-28T06:15:57.238Z",
+        "id": "60b08a9dc05b686816a15e96",
+        "name": "Shops",
+        "icon": "/images/icons/amenities/7073594a-1979-41ce-8bc3-4462b3e2757b.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T09:34:50.485Z",
+        "updatedAt": "2021-06-14T09:34:50.485Z",
+        "id": "60c722ba6dd2b015e6a7bf2a",
+        "name": "Aerobics - additional charge\t",
+        "icon": "/images/icons/amenities/90450d3a-a87d-4054-99ca-c9350278202b.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T06:11:46.789Z",
+        "updatedAt": "2021-05-28T06:11:46.789Z",
+        "id": "60b089a2c05b686816a15e93",
+        "name": "Umbrellas",
+        "icon": "/images/icons/amenities/0934e247-7fd1-4f9c-afb8-b3b32860f112.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:16:08.202Z",
+        "updatedAt": "2021-05-28T05:16:08.202Z",
+        "id": "60b07c98c05b686816a15e70",
+        "name": "Conference Room",
+        "icon": "/images/icons/amenities/9043c24d-e69c-44e4-af0e-d4a8c06d7bec.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:57:10.243Z",
+        "updatedAt": "2021-05-13T05:57:10.243Z",
+        "id": "609cbfb6fc530d38fa198891",
+        "name": "Free Wifi",
+        "icon": "/images/icons/amenities/1d0d6834-8cab-4b0e-9607-b6c4d1b931f1.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:13:05.942Z",
+        "updatedAt": "2021-05-14T08:13:05.942Z",
+        "id": "609e31119fe25f5f9088247a",
+        "name": "Dry Cleaning Service",
+        "icon": "/images/icons/amenities/90fc8de3-b3c2-4fc6-9db2-37ca0f5e96c5.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:10:07.637Z",
+        "updatedAt": "2021-05-14T08:10:07.637Z",
+        "id": "609e305f9fe25f5f90882478",
+        "name": "24-hour Room Service",
+        "icon": "/images/icons/amenities/6ac77a52-e2c3-44f7-a9ec-198ed4110819.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:43:57.048Z",
+        "updatedAt": "2021-05-28T05:43:57.048Z",
+        "id": "60b0831dc05b686816a15e87",
+        "name": "Massage",
+        "icon": "/images/icons/amenities/d8f0df8b-6666-453c-9381-0ec371767b3f.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:18:01.773Z",
+        "updatedAt": "2021-05-14T08:18:01.773Z",
+        "id": "609e32399fe25f5f9088247f",
+        "name": "Slippers",
+        "icon": "/images/icons/amenities/648e9333-ae1b-43c1-a838-4d8552580dea.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T09:29:09.274Z",
+        "updatedAt": "2021-06-14T09:29:09.274Z",
+        "id": "60c721656dd2b015e6a7bf27",
+        "name": "Paid Pickup/Drop\t",
+        "icon": "/images/icons/amenities/23e0798f-f90d-41ea-aed2-cce6810dd489.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:16:55.132Z",
+        "updatedAt": "2021-05-14T08:16:55.132Z",
+        "id": "609e31f79fe25f5f9088247d",
+        "name": "Spa",
+        "icon": "/images/icons/amenities/bb101a1e-cc5b-4da8-967c-50f67261f6a4.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:33:53.920Z",
+        "updatedAt": "2021-06-14T08:33:53.920Z",
+        "id": "60c71471beff0a0e65708aa5",
+        "name": "Paid Bus Station Transfers\t",
+        "icon": "/images/icons/amenities/7985f3ce-f2c0-47f2-94d5-8b687c641fdb.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:53:30.843Z",
+        "updatedAt": "2021-05-13T05:53:30.843Z",
+        "id": "609cbedafc530d38fa198888",
+        "name": "Bell",
+        "icon": "/images/icons/amenities/66bb8614-a802-434a-bcd0-d999dbce96c0.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:16:42.588Z",
+        "updatedAt": "2021-05-14T08:16:42.588Z",
+        "id": "609e31ea9fe25f5f9088247c",
+        "name": "Intercom",
+        "icon": "/images/icons/amenities/561a0ea2-2950-424b-9ca0-c813408a983c.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:55:36.711Z",
+        "updatedAt": "2021-05-13T05:55:36.711Z",
+        "id": "609cbf58fc530d38fa19888c",
+        "name": "Pool",
+        "icon": "/images/icons/amenities/74082a51-3a15-4500-b9b9-38a9a8a9f750.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:29:45.614Z",
+        "updatedAt": "2021-06-14T08:29:45.614Z",
+        "id": "60c71379beff0a0e65708aa2",
+        "name": "Hospital in the vicinity\t",
+        "icon": "/images/icons/amenities/dc9efe90-e655-445c-bbe0-c507bb218ee8.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:54:44.713Z",
+        "updatedAt": "2021-05-13T05:54:44.713Z",
+        "id": "609cbf24fc530d38fa19888a",
+        "name": "Luggage Cart",
+        "icon": "/images/icons/amenities/3d52d611-5888-4f27-b4dd-e59b5b474028.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T09:37:27.505Z",
+        "updatedAt": "2021-06-14T09:37:27.505Z",
+        "id": "60c723576dd2b015e6a7bf2c",
+        "name": "Pub",
+        "icon": "/images/icons/amenities/e0fc826d-4f24-4e56-88fa-f386a4b56fa1.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T06:01:11.696Z",
+        "updatedAt": "2021-05-13T06:01:11.696Z",
+        "id": "609cc0a7fc530d38fa198899",
+        "name": "Elevator",
+        "icon": "/images/icons/amenities/a215946c-4cba-4ed8-88d2-22c39209a07f.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:09:31.447Z",
+        "updatedAt": "2021-06-14T08:09:31.447Z",
+        "id": "60c70ebbbeff0a0e65708a92",
+        "name": "Cycling",
+        "icon": "/images/icons/amenities/0ff311a9-8086-4c9b-9234-55640fcdd855.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:08:55.314Z",
+        "updatedAt": "2021-06-14T08:08:55.314Z",
+        "id": "60c70e97beff0a0e65708a91",
+        "name": "Water Sports\t",
+        "icon": "/images/icons/amenities/3177fa76-4635-4faf-b120-4a8cef4c8022.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:07:40.600Z",
+        "updatedAt": "2021-06-14T08:07:40.600Z",
+        "id": "60c70e4cbeff0a0e65708a90",
+        "name": "Beach",
+        "icon": "/images/icons/amenities/3da62dca-5f5b-4738-af0a-ba3dbb613eff.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:02:59.054Z",
+        "updatedAt": "2021-06-14T08:02:59.054Z",
+        "id": "60c70d33beff0a0e65708a8b",
+        "name": "Boat Ride\t",
+        "icon": "/images/icons/amenities/ff9bf2c5-9d33-4961-a794-5098e99f9115.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-14T08:51:31.647Z",
+        "updatedAt": "2021-05-14T08:51:31.647Z",
+        "id": "609e3a139fe25f5f9088249e",
+        "name": "Restaurant",
+        "icon": "/images/icons/amenities/89d60c3b-9892-451d-ac4b-ac9067e2455b.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:31:07.838Z",
+        "updatedAt": "2021-06-14T08:31:07.838Z",
+        "id": "60c713cbbeff0a0e65708aa3",
+        "name": "Contactless room service\t",
+        "icon": "/images/icons/amenities/10e236f6-02e8-43b9-8c32-c103ba0d3a3d.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:36:29.061Z",
+        "updatedAt": "2021-06-14T08:36:29.061Z",
+        "id": "60c7150dbeff0a0e65708aa6",
+        "name": "Paid Railway Transfers\t",
+        "icon": "/images/icons/amenities/b6545ccf-e42c-4806-aec9-f0f89a11f38e.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T06:09:35.985Z",
+        "updatedAt": "2021-06-14T06:09:35.985Z",
+        "id": "60c6f29f2e722d09b7b34d44",
+        "name": "Outdoor Sports\t",
+        "icon": "/images/icons/amenities/b48a17a0-ada3-4885-ac58-8253a4c08ede.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T09:38:28.598Z",
+        "updatedAt": "2021-06-14T09:38:28.598Z",
+        "id": "60c723946dd2b015e6a7bf2d",
+        "name": "Electrical Adapters\t",
+        "icon": "/images/icons/amenities/356a0989-91bf-475c-9818-aaa2cf94f85c.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:06:00.244Z",
+        "updatedAt": "2021-06-14T08:06:00.244Z",
+        "id": "60c70de8beff0a0e65708a8d",
+        "name": "Dispensers for disinfectants",
+        "icon": "/images/icons/amenities/bc0aebac-696b-4469-9b54-df99be8b535a.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:55:19.177Z",
+        "updatedAt": "2021-05-13T05:55:19.177Z",
+        "id": "609cbf47fc530d38fa19888b",
+        "name": "CCTV Camera",
+        "icon": "/images/icons/amenities/63bd321f-4fed-46b0-9a5e-36bfc8b2920c.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T06:03:34.678Z",
+        "updatedAt": "2021-05-13T06:03:34.678Z",
+        "id": "609cc136fc530d38fa19889a",
+        "name": "First Aid Kit",
+        "icon": "/images/icons/amenities/81816841-5ca3-4a33-a313-274a1ed49b48.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T04:29:28.952Z",
+        "updatedAt": "2021-05-28T04:29:28.952Z",
+        "id": "60b071a8c05b686816a15e59",
+        "name": "Gloves",
+        "icon": "/images/icons/amenities/49ee0946-63e5-4eb5-bc88-c78c622bf1e7.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:57:41.621Z",
+        "updatedAt": "2021-05-13T05:57:41.621Z",
+        "id": "609cbfd5fc530d38fa198892",
+        "name": "Fire Extinguisher",
+        "icon": "/images/icons/amenities/d9fd2c95-6f1b-4dbd-8cce-6ef7f54699cb.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:31:48.819Z",
+        "updatedAt": "2021-06-14T08:31:48.819Z",
+        "id": "60c713f4beff0a0e65708aa4",
+        "name": "Safety authorization certificate\t",
+        "icon": "/images/icons/amenities/0e34c2ea-9c5a-4c38-aa2d-a2fa3980c3c3.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:58:19.666Z",
+        "updatedAt": "2021-05-28T05:58:19.666Z",
+        "id": "60b0867bc05b686816a15e8d",
+        "name": "Refrigerator",
+        "icon": "/images/icons/amenities/7784df44-a73e-4ab4-89b9-6668558d4ef5.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T06:10:31.416Z",
+        "updatedAt": "2021-05-28T06:10:31.416Z",
+        "id": "60b08957c05b686816a15e92",
+        "name": "Souvenir Shop",
+        "icon": "/images/icons/amenities/6f04e56d-a622-4f40-8f20-42abeb3d0060.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:19:05.713Z",
+        "updatedAt": "2021-06-14T08:19:05.713Z",
+        "id": "60c710f9beff0a0e65708a96",
+        "name": "Casino",
+        "icon": "/images/icons/amenities/44ff29fb-9043-475d-bb57-ce0888f5f5f9.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T08:18:15.440Z",
+        "updatedAt": "2021-06-14T08:18:15.440Z",
+        "id": "60c710c7beff0a0e65708a95",
+        "name": "Thermal Screening\t",
+        "icon": "/images/icons/amenities/890e153c-e7fe-47de-ae1e-66b56194ecae.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:58:20.300Z",
+        "updatedAt": "2021-05-13T05:58:20.300Z",
+        "id": "609cbffcfc530d38fa198894",
+        "name": "Bar Counter",
+        "icon": "/images/icons/amenities/4707429d-fc3f-42ae-80ab-e9e1066b2ba4.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:45:23.445Z",
+        "updatedAt": "2021-05-28T05:45:23.445Z",
+        "id": "60b08373c05b686816a15e88",
+        "name": "Steam and Sauna",
+        "icon": "/images/icons/amenities/90ef59a5-2f50-4f08-a772-aafa0cdfe5c9.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T09:30:14.438Z",
+        "updatedAt": "2021-06-14T09:30:14.438Z",
+        "id": "60c721a66dd2b015e6a7bf28",
+        "name": "Childcare Services\t",
+        "icon": "/images/icons/amenities/dd4a270b-a13a-45ac-9017-014eade994ae.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-06-14T09:33:30.089Z",
+        "updatedAt": "2021-06-14T09:33:30.089Z",
+        "id": "60c7226a6dd2b015e6a7bf29",
+        "name": "Kids' Club\t",
+        "icon": "/images/icons/amenities/cf2f92a2-759c-4b58-beaa-10fcc671a668.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:01:47.726Z",
+        "updatedAt": "2021-05-28T05:01:47.726Z",
+        "id": "60b0793bc05b686816a15e67",
+        "name": "Yoga",
+        "icon": "/images/icons/amenities/90f40451-bf9f-4f90-bfcb-870c659e12bb.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-28T05:52:15.638Z",
+        "updatedAt": "2021-05-28T05:52:15.638Z",
+        "id": "60b0850fc05b686816a15e8c",
+        "name": "Air Conditioning",
+        "icon": "/images/icons/amenities/fc0f1bdc-d079-4950-9b07-6da4e86c0992.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:56:36.491Z",
+        "updatedAt": "2021-05-13T05:56:36.491Z",
+        "id": "609cbf94fc530d38fa19888f",
+        "name": "Safe Box",
+        "icon": "/images/icons/amenities/0ef90350-fb4f-46ee-b6cf-a749084fe12a.png",
+        "is_custom": false
+    },
+    {
+        "createdAt": "2021-05-13T05:54:22.018Z",
+        "updatedAt": "2021-05-13T05:54:22.018Z",
+        "id": "609cbf0efc530d38fa198889",
+        "name": "Gym",
+        "icon": "/images/icons/amenities/cab6b34b-2f2b-422d-a6ee-ec328fe8474c.png",
+        "is_custom": false
+    }
+]

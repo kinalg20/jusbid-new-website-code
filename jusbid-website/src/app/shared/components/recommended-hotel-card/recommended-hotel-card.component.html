@@ -1,0 +1,32 @@
+<div class="recommended-hotels-card">
+    <div class="hotel-image">
+        <img [src]="getImageUrl(recommendedCard.image)" alt="">
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="hotel-name">
+            <h3>{{recommendedCard.name}}</h3>
+        </div>
+        <div class="hotel-name">
+            <!-- <div class="star-rating">
+                <ng-container *ngFor="let star of recommendedCard.rating">
+                    <ion-icon name="star"></ion-icon>
+                </ng-container>
+            </div> -->
+        </div>
+    </div>
+    <div class="hotel-city">
+        <h5>{{recommendedCard.city}}</h5>
+    </div>
+
+    <div class="hotel-facility">
+        <ul>
+            <li>Breakfast included on extra charges</li>
+        <li>Free Cancellation Policy</li>
+        </ul>
+    </div>
+
+    <div class="hotel-price">
+        <p class="lowest-price">Starts from<span class="room-price">₹</span><span class="room-price">{{recommendedCard.room_price}}</span></p>
+        <p>per room per night</p>
+    </div>
+</div>

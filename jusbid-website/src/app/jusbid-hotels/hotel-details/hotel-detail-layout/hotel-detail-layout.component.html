@@ -1,0 +1,85 @@
+<app-header [isHome]="false"></app-header>
+<section>
+    <div class="hotel-details-container">
+        <div class="container">
+            <app-hotel-detail-image [hotelImageDetail]="hotelDetailObj.hotel_images"></app-hotel-detail-image>
+            <div class="hotel-detail-body">
+                <section class="hotel-detail-section">
+                    <section class="hotel_name">
+                        <div class="hotel-detail-hotel-name">
+                            <h1>{{hotelDetailObj.data.name}}</h1>
+                            <div class="hotel-rating">
+                                <p class="hotel-ratings">
+                                    <!-- <ion-icon name="star"></ion-icon> -->
+                                    <span>{{hotelDetailObj.data.star_rating}}</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hotel-address">
+                            <p>
+                                <ion-icon name="pin-outline"></ion-icon><span>{{hotelDetailObj.data.address}}</span>
+                            </p>
+                        </div>
+                    </section>
+                    <div style="max-width: 97%;">
+                        <!-- About Hotel Description -->
+                        <section class="hotel-description">
+                            <div class="hotel-description-body">
+                                <section-title [title]="'About Hotel ' + hotelDetailObj.data.name"></section-title>
+                                <app-hotel-description [hotelDescDetail]="hotelDetailObj.data.description">
+                                </app-hotel-description>
+                            </div>
+                        </section>
+                        <!-- Amenities -->
+                        <section class="Aminities-section">
+                            <div class="hotel-aminities-body">
+                                <section-title [title]="'Amenities'"></section-title>
+                                <app-hotel-aminity [amenities]="hotelDetailObj.Amenities"></app-hotel-aminity>
+                            </div>
+                        </section>
+                        <!-- Rooms -->
+                        <section class="select-room-section">
+                            <section-title [title]="'Select Room'"></section-title>
+                            <ng-container *ngFor="let room of hotelDetailObj.hotel_rooms">
+                                <app-hotel-room-section [roomDetails]="room" (getRoomDetails)="getSelectedRoom($event)">
+                                </app-hotel-room-section>
+                            </ng-container>
+
+                        </section>
+                        <!-- hotel-policies -->
+                        <section class="policy-section" *ngIf="hotelDetailObj.HotelOtherInfo.length>0">
+                            <section-title [title]="'Things to Know'"></section-title>
+                            <app-hotel-policies [hotelPolicy]="hotelDetailObj.HotelOtherInfo"></app-hotel-policies>
+                        </section>
+                    </div>
+                </section>
+                <section class="bid-form" *ngIf="hotelDetailObj.hotel_rooms">
+                    <app-bid-form [hotel_rooms]="hotelDetailObj.hotel_rooms"></app-bid-form>
+                </section>
+            </div>
+        </div>
+        <!-- Reviews and Ratings -->
+        <section class="hotel-rating" *ngIf="false">
+            <div class="container">
+                <hotels-reviews></hotels-reviews>
+            </div>
+        </section>
+        <!--Google map-->
+        <section class="google-map" *ngIf="hotelDetailObj.data.latitude && hotelDetailObj.data.longitude">
+            <div class="container">
+                <section-title [title]="'Where you will be'"></section-title>
+                <app-google-map [latlong]="[hotelDetailObj.data.latitude,hotelDetailObj.data.longitude]"
+                    [hotelName]="hotelDetailObj.data.name"></app-google-map>
+            </div>
+        </section>
+        <!--Recommendation hotel-->
+        <section class="recommendation-model" *ngIf="hotelDetailObj.recommended_hotels.length>0">
+            <div class="container">
+                <!-- <section-title [title]="'Recommendation Hotels For You'"></section-title> -->
+                <recommendation-hotels [recommendationHotel]="hotelDetailObj.recommended_hotels">
+                </recommendation-hotels>
+            </div>
+        </section>
+    </div>
+</section>
+<app-footer></app-footer>

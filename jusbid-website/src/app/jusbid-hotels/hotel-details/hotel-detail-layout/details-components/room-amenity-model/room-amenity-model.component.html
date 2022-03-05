@@ -1,0 +1,18 @@
+<div class="amenity-model">
+    <div class="modal-header">
+        <h4>What this place offers</h4>
+        <ion-icon name="close-circle-outline" (click)="CloseRoomAminityModel(false)" style="cursor: pointer;"></ion-icon>
+    </div>
+    <div class="modal-body">       
+    <ul>
+        <ng-container *ngFor="let amenity of aminityModel">
+            <li style="border-bottom: 1px solid #dedede;">
+                <div>
+                    <img [src]="getImageUrl(amenity.icon)" alt="" class="amenity-icon">
+                    <span style="margin-left: 5px;">{{amenity.name}}</span>
+                </div>
+            </li>
+        </ng-container>
+    </ul>
+</div>
+</div>

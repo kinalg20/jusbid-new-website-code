@@ -1,0 +1,113 @@
+.container {
+  padding: 30px;
+  .header-details {
+    padding-top: 5%;
+    .account {
+      li {
+        display: inline-block;
+        .errow {
+          display: inline-block;
+        }
+        a {
+          margin: 0px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1.28571em;
+          color: rgb(72, 72, 72);
+          text-decoration: none;
+        }
+        .account-setting {
+          margin: 0px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1.28571em;
+          color: rgb(72, 72, 72);
+        }
+      }
+    }
+  }
+  .profile-info-header {
+    margin-top: 20px;
+    h1 {
+      margin: 0px;
+      font-size: 32px;
+      font-weight: 700;
+      color: rgb(72, 72, 72);
+    }
+  }
+  .user-data {
+      margin: 3% 0;
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+    .user-details {
+      border-bottom: 1px solid rgb(235, 235, 235);
+      .name {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-radius: 1px;
+        .profile-name {
+          display: flex;
+          .legal-user-name {
+            flex: 1 1 0%;
+            .row-title {
+              color: rgb(34, 34, 34);
+              .legalName {
+                font-size: 1em;
+                margin: 0px;
+              }
+            }
+            .row-subtitle {
+              color: rgb(113, 113, 113);
+              margin-top: 4px;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+          .edit {
+            margin-left: 16px;
+            max-width: 30%;
+          }
+          .edit-btn {
+            font-size: 1rem;
+            background: transparent;
+            cursor: pointer;
+            color: rgb(34, 34, 34);
+            text-decoration: underline;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:1200px) {
+  .container {
+    .header-details {
+      padding-top: 8%;
+    }
+  }
+}
+@media (max-width:992px) {
+  .container {
+    .header-details {
+      padding-top: 13%;
+    }
+  }
+}
+@media (max-width:768px) {
+  .container {
+    .header-details {
+      padding-top: 20%;
+    }
+  }
+}
+@media (max-width:500px) {
+  .container {
+    .header-details {
+      padding-top: 25%;
+    }
+  }
+}

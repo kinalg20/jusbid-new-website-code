@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="heading">
+    <h1>{{ heading }}</h1>
+    <p>
+      {{ sub_heading }}
+    </p>
+  </div>
+  <div class="search-bar">
+    <div class="card">
+      <img src="\assets\images\icons\hotel.png" />
+      <button class="hotels-search" (click)="routeTab('hotels')"
+        [ngClass]="activeTab==='hotels' ? 'active' : ''">Hotels</button>
+      <img src="\assets\images\icons\plane.png" />
+      <button class="Flight-search" (click)="routeTab('flights')" [ngClass]="activeTab==='flights' ? 'active' : ''">
+        Flights
+      </button>
+      <img src="\assets\images\icons\property.png" />
+      <button class="Flight-search" (click)="routeTab('realestate')"
+        [ngClass]="activeTab==='realestate' ? 'active' : ''">
+        Real Estate
+      </button>
+      <br /><br />
+      <search-form></search-form>
+    </div>
+  </div>
+</div>

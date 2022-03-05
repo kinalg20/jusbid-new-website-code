@@ -1,0 +1,66 @@
+<app-header [isHome]="false" [isSearchForm]="true"></app-header>
+<main>
+    <div class="container">
+        <!-- start app body -->
+        <section class="app__body">
+
+            <!-- start filter section -->
+            <section class="filter__section" *ngIf="hotelId.length>0">
+                <app-filters [hotelData]="hotelId" (sendRangeValue)="getRangeValue($event)"></app-filters>
+            </section>
+            <!-- end filter section -->
+
+
+            <!-- start listing section -->
+            <section class="listing__section">
+                <div class="list-card-header">
+                    <div class="total-hotels-count">
+                        <h5>200 + stays in Udaipur</h5>
+                    </div>
+                    <div class="popularity-filter">
+                        <h6>Sort By</h6>
+                        <p-dropdown [options]="popularity" [(ngModel)]="selectedPopularity" optionLabel="name"
+                            (onChange)="getDropdown()" placeholder="Select Sort by"></p-dropdown>
+                    </div>
+                    <div class="searchby-filter">
+                        <input type="text" pInputText [(ngModel)]="getValue" placeholder="Search by Hotel Name">
+                        <div (click)="onClick()">
+                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.6383 13.2213L10.5133 10.0963M1.55493 6.34627C1.55493 3.46979 3.88678 1.13794 6.76326 1.13794C9.63975 1.13794 11.9716 3.46979 11.9716 6.34627C11.9716 9.22275 9.63975 11.5546 6.76326 11.5546C3.88678 11.5546 1.55493 9.22275 1.55493 6.34627Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- List of Text Items -->
+                <ng-container *ngFor="let hotel of hotelId;">
+                    <app-list-card [hotelData]="hotel"></app-list-card>
+                </ng-container>
+
+                <!-- <div class="loader" *ngIf="!hotels">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                    </div> -->
+                <!-- 
+                <div style="width: 100%;display: flex;justify-content: center;align-items: center;margin: 5% 0;">
+                    <button
+                        style="background: transparent;font-size: 1rem;font-weight: 600;display: flex;align-items: center;">
+                        <ion-icon name="refresh-outline" style="font-size: 1.5rem;margin: 5px;"></ion-icon>
+                        <span>Load more</span>
+                    </button>
+                </div> -->
+                <p-paginator [rows]="10" [totalRecords]="100"></p-paginator>
+            </section>
+            <!-- end listing section -->
+
+            <!-- end app body -->
+
+        </section>
+    </div>
+</main>
+<app-footer></app-footer>

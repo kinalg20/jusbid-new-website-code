@@ -1,0 +1,130 @@
+main {
+  .hotels-slider {
+    width: 100%;
+    padding: 40px 90px;
+    .card-header {
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+      p {
+        color: rgba(0, 0, 0, 0.4);
+        display: flex;
+      }
+    }
+    .blog-page {
+      .card {
+        cursor: pointer;
+        .blog-image {
+          overflow: hidden;
+          border-radius: 15px;
+          img {
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 500ms;
+          }
+          img:hover {
+            cursor: pointer;
+            transform: scale(1.08);
+          }
+        }
+        .blog-title {
+          text-align: justify;
+          position: absolute;
+          bottom: 5%;
+          padding: 10px 20px;
+          color: white;
+          h1 {
+            font-size: 2.8rem;
+          }
+          p {
+            font-size: 1.8rem;
+            letter-spacing: 5px;
+          }
+        }
+      }
+    }
+    .slider-button {
+      display: flex;
+      align-items: center;
+      .back-btn {
+        font-size: 25px;
+        z-index: 2;
+        cursor: pointer;
+        padding: 10px;
+        background: whitesmoke;
+        color: #222;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+      }
+      .back-btn:hover {
+        box-shadow: 0 0 10px #ccc;
+      }
+      .next-btn {
+        font-size: 25px;
+        z-index: 2;
+        cursor: pointer;
+        background: #fff;
+        border-radius: 100%;
+        padding: 10px;
+        background: whitesmoke;
+        color: #222;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .next-btn:hover {
+        box-shadow: 0 0 10px #ccc;
+      }
+    }
+  }
+  @media (max-width: 1281px) {
+    .hotels-slider {
+      .blog-page {
+        .card {
+          .blog-title {
+            h1 {
+              font-size: 2.2rem;
+            }
+            p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+    .swiper-slide img {
+      height: 450px;
+    }
+  }
+}
+
+::ng-deep {
+  ion-slides {
+    z-index: -1 !important;
+  }
+  .swiper-slide img {
+    height: 500px;
+  }
+  ion-content {
+    height: 500px;
+    --offset-bottom: auto !important;
+    --overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<div class="child-adult-model-container">
+    <div class="child-adult-model">
+        <div class="adult">
+            <div class="adult-label">
+                <p style="margin: 0; padding: 0;">Adults:</p>
+            </div>
+            <div class="adult-counter-control">
+                <button class="adult-count" (click)="decrementadult()" [disabled]="disableAdultCountbutton">-</button>
+                <span>{{initialAdultchildCount.adultCount}}</span>
+                <button class="adult-count" (click)="incrementadult()">+</button>
+            </div>
+        </div>
+
+        <div class="child">
+            <div class="child-label">
+                <p style="margin: 0; padding: 0;">Child:</p>
+            </div>
+            <div class="child-counter-control">
+                <button class="child-count" (click)="decrementchild()" [disabled]="disableChildCountbutton">-</button>
+                <span>{{initialAdultchildCount.childCount}}</span>
+                <button class="child-count" (click)="incrementchild()">+</button>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #dedede; padding-top: 10px;">    
+            <div>
+                <a style="color: #000; text-decoration: underline; cursor: pointer;" (click)="closemodel(false)">close</a>
+            </div>
+            <div class="apply-button">
+                <button class="apply" (click)="totaladultchildcount()">Apply</button>
+            </div>
+        </div>
+    </div>
+</div>

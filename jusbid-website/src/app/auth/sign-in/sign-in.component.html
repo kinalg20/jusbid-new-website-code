@@ -1,0 +1,35 @@
+<form action="" #signinWithEmailForm="ngForm" (submit)="signinWithEmail(signinWithEmailForm)">
+    <div class="row">
+        <div class="column-12">
+            <div class="form-control">
+                <label for="email">Email or Mobile Number</label>
+                <input type="email" id="email" name="email" [ngClass]="error.errorMsg ? 'error-input' : ''" ngModel
+                    required autocomplete="off" maxlength="100">
+                <span class="error" *ngIf="error.errorMsg">{{error.errorMsg}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-12">
+            <div class="form-control">
+                <div style="display: flex;justify-content: space-between;align-items: center;">
+                    <label for="password">Password</label>
+                    <span style="cursor: pointer;" (click)="isShowPassword=!isShowPassword">
+                        <ion-icon name="eye{{isShowPassword ? '-off-' : '-'}}outline"
+                            style="margin: 0;padding: 0;line-height: 0;"></ion-icon>
+                    </span>
+                </div>
+                <input [type]="!isShowPassword ? 'password' : 'text'" id="password" name="password" ngModel required
+                    autocomplete="off">
+            </div>
+        </div>
+    </div>
+    <div class="forgot-password form-control">
+        <a class="link" routerLink="/auth/forgot-password">Forgot Password ?</a>
+    </div>
+    <div class="row">
+        <div class="column-12" style="text-align: center;">
+            <button class="jusbid-btn" type="submit" style="width: 40%;">Sign In</button>
+        </div>
+    </div>
+</form>

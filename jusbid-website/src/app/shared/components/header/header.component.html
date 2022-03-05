@@ -1,0 +1,32 @@
+<!-- Home Page Header -->
+
+<header [ngClass]="addShadow ? 'shadow' : ''" [ngStyle]="{'background': bgColor}" *ngIf="isShowOnHomePage">
+    <div class="header-container">
+        <div class="brand-logo">
+            <img [src]="bgColor === 'white' ? 'assets/images/logo.png' : 'assets/images/jusbid_white_logo.png'" alt="Jusbid Logo" (click)="gotoHome()">
+        </div>
+        <ng-container *ngIf="isShowSearchForm">
+            <search-form></search-form>
+        </ng-container>
+        <ul> 
+            <li *ngIf="!user.firstname">
+                <button class="login-button" (click)="gotoAuth()">
+                    <ion-icon name="log-in-outline" mode="ios" class="login-icon" [ngStyle]="{'color': bgColor === 'white' ? '#000' : '#fff' }"></ion-icon>
+                    <span [ngStyle]="{'color': bgColor === 'white' ? '#000' : '#fff' }">Login / Signup</span>
+                </button>
+            </li>
+            <li *ngIf="user.firstname">
+                <button class="user-profile-btn" type="button" (click)="this.isShowSideBar = !this.isShowSideBar">
+                    <ion-icon name="person-outline" mode="ios" [ngClass]="bgColor!='white'? 'color-white':'color-black'"></ion-icon>
+                    <span style="text-transform: capitalize;" [ngClass]="bgColor!='white'? 'color-white':'color-black'">Hi, {{user.firstname}}</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!-- Hotel Listing page header -->
+
+
+
+<app-sidebar [isShowSideBar]="this.isShowSideBar" (closeSiderbar)="this.closeSiderbar($event)"></app-sidebar>

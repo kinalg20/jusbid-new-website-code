@@ -1,0 +1,52 @@
+<div>
+    <div class="rating-review-section">
+        <p class="ratings">
+            <span>
+                <ion-icon name="star"></ion-icon>
+            </span>
+            <span class="rating-total">4.80</span>
+            <span class="rating"><span>.</span> 5 reviews</span>
+        </p>
+        <div class="rating-measures">
+            <ng-container *ngFor="let rating of [].constructor(6)">
+                <div class="rating-measures-1">
+                    <div>
+                        <span>Cleanliness</span>
+                    </div>
+                    <div class="line">
+                        <span class="rating-range"></span>
+                    </div>
+                    <span class="total-rating">4.6</span>
+                </div>
+            </ng-container>
+        </div>
+        <div class="rating-details">
+            <ng-container *ngFor="let data of [].constructor(6)">
+                <div>
+                    <div class="rating-detail-people">
+                        <div class="detail-people-image">
+                            <img src="https://a0.muscache.com/im/pictures/user/03bb274d-6f90-490c-b386-6daae8d2ae6a.jpg?im_w=240"
+                                alt="">
+                        </div>
+                        <div class="people-detail">
+                            <h6 class="name">Kinal Kukda</h6>
+                            <span class="rating-timing">January 2022 .Last minute trip</span>
+                        </div>
+                    </div>
+                    <div class="rating-desc">
+                        <p>Great place. Just need to keep in mind location because private cars are not permitted and
+                            need to walk down in city lanes.</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="show-all-review-button">
+        <button class="show-all-review" (click)="openRatingModel()">Show all reviews</button>
+    </div>
+</div>
+
+<jusbid-model [isShowJusbidModel]="isOpenRatingModel" [isShowClose]="false">
+    <customer-rating-review-model (isCloseReviewModel)="closeRatingModel($event)"></customer-rating-review-model>
+</jusbid-model>

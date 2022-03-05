@@ -1,0 +1,85 @@
+<div class="filter">
+  <div class="filter-header">
+    <h1>Select Filters</h1>
+  </div>
+
+  <section class="price-range">
+    <div class="section-heading">
+      <h2>Price</h2>
+    </div>
+    <p-slider [(ngModel)]="rangeValues" [range]="true"></p-slider>
+    <div style="display: flex;justify-content: space-between;align-items: center;margin-top: 15px;">
+      <b>{{rangeValues[0] | currency: 'INR'}}</b>
+      <b>{{rangeValues[1] | currency: 'INR'}}</b>
+    </div>
+  </section>
+
+  <section class="filter-section">
+    <div class="popular-filters">
+      <div class="section-heading">
+        <h2>Popular Filters</h2>
+      </div>
+      <ul>
+        <ng-container *ngFor="let i of [].constructor(8)">
+          <li>
+            <div class="filter-details">
+              <div class="chkbox-input">
+                <input type="checkbox" class="chkbox" />
+                <p>Free Cancellation, Zero Payment Now</p>
+              </div>
+              <span>(0)</span>
+            </div>
+          </li>
+        </ng-container>
+      </ul>
+      <div class="show-btn">
+        <button>Show 4 More</button>
+      </div>
+    </div>
+  </section>
+  <section class="filter-section">
+    <div class="popular-filters">
+      <div class="section-heading">
+        <h2>Price</h2>
+      </div>
+      <ul>
+        <ng-container *ngFor="let i of [].constructor(8)">
+          <li>
+            <div class="filter-details">
+              <div class="chkbox-input">
+                <input type="checkbox" class="chkbox" />
+                <p><span>&#8377;</span>0 - <span>&#8377;</span> 2000</p>
+              </div>
+              <span>(621)</span>
+            </div>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </section>
+  <section class="filter-section">
+    <div class="popular-filters">
+      <div class="section-heading">
+        <h2>Your Budget</h2>
+      </div>
+      <div class="budget">
+        <input type="text" class="budget-box" name="min" placeholder="Min" />
+        <p>to</p>
+        <input type="text" class="budget-box" name="min" placeholder="Max" />
+        <a>
+          <span class="right-arrow"> &#8594;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="filter-section">
+    <div class="popular-filters">
+      <div class="section-heading">
+        <h2>Locality</h2>
+      </div>
+      <p>Other Popular Areas</p>
+    </div>
+  </section>
+</div>
+
+<!-- <img src="assets/images/filter.png" alt="" /> -->

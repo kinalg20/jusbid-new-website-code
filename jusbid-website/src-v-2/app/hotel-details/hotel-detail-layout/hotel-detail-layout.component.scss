@@ -1,0 +1,77 @@
+.hotel-details-container {
+    padding: 1% 0;
+    .hotel-detail-header {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        padding: 15px;
+    }
+    .hotel-detail-body {
+        display: grid;
+        grid-template-columns: auto 30%;
+        grid-gap: 30px;
+    }
+}
+
+.Aminities-section {
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+}
+.hotel-description {
+    padding: 50px 0;
+    border-bottom: 1px solid #dedede;
+}
+.select-room-section{
+    padding: 30px 0;
+    .room-card-heading{
+        h2{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.section-card {
+    box-shadow: 0 0.125rem 0.35rem rgba(0, 0, 0, 0.075);
+    border-radius: 15px;
+    padding: 30px 30px;
+}
+.card-heading {
+    h2 {
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+// .bid-form{
+//     position: sticky;
+//     top: 80px;
+// }
+
+// @media (max-width: 1500px) {
+//     .hotel-details-container {
+//         padding: 2% 0;
+//     }
+// }
+// @media (max-width: 1100px) {
+//     .hotel-details-container {
+//         padding: 4% 0;
+//     }
+// }
+// @media (max-width: 900px) {
+//     .hotel-details-container {
+//         padding: 6% 0;
+//     }
+// }
+// @media (max-width: 600px) {
+//     .hotel-details-container {
+//         padding: 17% 0;
+//         .hotel-detail-body .column-7 .hotel-detail-section {
+//             height: 350px;
+//         }
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .hotel-details-container .hotel-detail-body {
+//         grid-template-columns: 100%;
+//     }
+// }

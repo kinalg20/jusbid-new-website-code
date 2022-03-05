@@ -1,0 +1,19 @@
+<div class="aministies-desc">
+    <ul style="list-style: none;">
+        <ng-container *ngFor="let amenity of amenities.slice(0,10)">
+            <li>
+                <!-- <div [innerHTML]="amenity.icon | safeHtml"></div> -->
+                <img [src]="getImageUrl(amenity.icon)" alt="" class="amenity-icon">
+                 <span> {{amenity.name}}</span> 
+            </li>
+        </ng-container>
+        <div class="show-amenity">
+            <button class="btn-all-amenity" (click)="isShowRoomModel=!isShowRoomModel">Show all amenities</button>
+        </div>
+    </ul>
+</div>
+
+
+<jusbid-model [isShowJusbidModel]="isShowRoomModel" (closeJusbidModel)="closeRoomModel($event)" [isShowClose]="false">
+    <room-amenity-model (closeRoomModel)="closeRoomModel($event)" [aminityModel]="amenities"></room-amenity-model>
+</jusbid-model>

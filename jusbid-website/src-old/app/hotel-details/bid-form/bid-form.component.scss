@@ -1,0 +1,66 @@
+.bid-form-container {
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    font-family: system-ui;
+    border-radius: 5px;
+    .bid-form-heading {
+        text-align: center;
+        background: linear-gradient(270deg, #dc2430, #7b4397);
+        h2 {
+            margin: 0;
+            padding: 0;
+            padding: 6px;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}
+
+.age-group {
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 13px;
+        color: #495057;
+        margin-left: 5px;
+    }
+}
+.bid-price {
+    color: #e22124;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.Bid-form-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    h5 {
+        color: #e22124;
+        margin: 0;
+        text-align: right;
+        font-size: 1.3rem;
+
+    }
+    label{
+        margin-bottom: -15px;
+    }
+    
+}
+label{
+    font-size: 15px;
+}
+
+.bid-jusbid-submit{
+    width: 100%;
+    padding: 10px 12px;
+
+    button{
+        background-color: #e22124;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        color: #fff;
+    }
+}

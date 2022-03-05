@@ -1,0 +1,44 @@
+<form action="" #myForm="ngForm">
+
+    <section *ngIf="!sendOTP">
+        <div class="row">
+            <div class="column-12">
+                <div class="form-control">
+                    <label for="phone-number">Enter your registered mobile number</label>
+                    <div class="phone-input">
+                        <span>+91</span>
+                        <input type="text" id="phone-number" name="phone-number" ngModel required autocomplete="off"
+                            [(ngModel)]="reqPhoneNo" name="mobile" maxlength="10" (input)="enableButton($event)" (keypress)="this._InputValidation.numericOnly($event)">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-12">
+                <button class="jusbid-btn" style="width: 40%;" type="submit"  [disabled]="disableMobile" (click)="send_OTP()"> SEND OTP</button>
+            </div>
+        </div>
+    </section>
+    <section *ngIf="sendOTP">
+        <!-- sendOTP -->
+        <div class="form-group">
+            <div class="form-control" style="margin-bottom: 5%;">
+                <label for="mobile" class="form-label">We have sent a OTP to you at
+                    +91-{{
+                    reqPhoneNo }}
+                    <a class="text-primary"
+                        (click)="sendOTP = !sendOTP" style="cursor: pointer;">Edit</a>
+                </label>
+            </div>
+           
+            <ng-otp-input (onInputChange)="onOtpChange($event)" [config]="{ length: 6 }">
+            </ng-otp-input>
+            <p>
+                <a class="cursor-pointer" (click)="send_OTP()" style="cursor: pointer;">Resend OTP?</a>
+            </p>
+        </div>
+        
+        <button class="jusbid-btn" type="submit" (click)="verifyOTP()"> VERIFY</button>
+    </section>
+</form>

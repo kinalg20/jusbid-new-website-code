@@ -1,0 +1,14 @@
+<div class="desc-desc">
+    <div [innerHtml]="hotelDescDetail" class="hotel_desc" [ngClass]="{'limitTextHeight': !isReadMore}"></div>
+        <button (click)="showMoreHotelDesc(hotelDescDetail)">{{ !isReadMore ? 'Read More': 'Read Less' }}</button>
+</div>
+<!-- <div class="desc-details">
+    <div class="check-in">
+        <p class="check-in-heading">check in</p>
+        <p class="check-in-info">12:00</p>
+    </div>
+    <div class="check-in">
+        <p class="check-in-heading">check out</p>
+        <p class="check-in-info">12:00</p>
+    </div>
+</div> -->

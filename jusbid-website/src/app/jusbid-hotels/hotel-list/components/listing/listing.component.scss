@@ -1,0 +1,195 @@
+section.app__body {
+  background: transparent;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 22% auto;
+  section.filter__section {
+    border-right: 1px solid #e1e2e3;
+    border-radius: 4px;
+    height: auto;
+    position: sticky;
+    bottom: 0;
+    vertical-align: bottom;
+    display: inline-block;
+    min-height: 100vh;
+    padding: 0;
+  }
+  section.listing__section {
+    width: 100%;
+    padding: 2% 0 4% 2%;
+  }
+}
+
+.loader {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing__section {
+  .list-card-header {
+    display: grid;
+    grid-template-columns: auto 23% 21%;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dedede;
+    .total-hotels-count {
+      margin: 0;
+      padding: 0;
+    }
+    .searchby-filter {
+      display: flex;
+      border: 1px solid #dedede;
+      border-radius: 30px;
+      height: 40px;
+      position: relative;
+      input {
+        border: none;
+        border-radius: 30px;
+        width: 170px;
+        padding: 0;
+        font-size: 16px;
+        margin-left: 12px;
+        color: #000;
+        &:focus-visible {
+          border: none;
+          outline-color: transparent;
+          box-shadow: none;
+        }
+      }
+      div {
+        width: fit-content;
+        background-color: #de3151;
+        border-radius: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 5px;
+        top: 4px;
+        cursor: pointer;
+        svg {
+          width: 30px;
+        }
+      }
+    }
+    .popularity-filter {
+      display: flex;
+      align-items: center;
+      max-width: 300px;
+      h6 {
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+        font-weight: 500;
+      }
+      select {
+        border: 1px solid #dedede;
+        border-radius: 30px;
+        height: 40px;
+        padding: 0 15px;
+        option {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+::ng-deep {
+  // .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  //   background: var(--primary-gradient-hvr);
+  //   border-radius: 100%;
+  //   color: #fff;
+  // }
+  // .p-paginator .p-paginator-pages .p-paginator-page {
+  //   border-radius: 100%;
+  // }
+  // .p-paginator .p-paginator-first,
+  // .p-paginator .p-paginator-prev,
+  // .p-paginator .p-paginator-next,
+  // .p-paginator .p-paginator-last {
+  //   border-radius: 100%;
+  // }
+ .popularity-filter{
+  p-dropdown {
+    .p-dropdown {
+      border-radius: 35px;
+      border: 1px solid #dedede;
+      &:focus {
+        box-sizing: none !important;
+        box-shadow: none !important;
+        outline: none;
+      }
+      &:hover {
+        border-color: #dedede !important;
+        box-sizing: none !important;
+        box-shadow: none;
+        outline: none;
+      }
+      .pi {
+        font-size: 0.7rem;
+      }
+      .p-dropdown-clear-icon {
+        position: absolute;
+        top: 60%;
+      }
+
+      .pi-chevron-down {
+        position: absolute;
+        top: 38%;
+      }
+
+      .p-dropdown-panel {
+        margin-top: 3px;
+        border-radius: 0.6rem;
+      }
+    }
+
+    .p-dropdown:not(.p-disabled).p-focus {
+      box-shadow: none;
+      border-color: #dedede !important;
+    }
+  }
+ }
+}
+@media (max-width: 1500px) {
+  section.app__body {
+    section.listing__section {
+      padding: 5% 0 4% 2%;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .listing__section {
+    .list-card-header {
+      grid-template-columns: auto 30% 21%;
+      .searchby-filter {
+        input {
+          width: 160px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  section.app__body {
+    section.listing__section {
+      padding: 10% 0 4% 2%;
+    }
+  }
+  .listing__section {
+    .list-card-header {
+      grid-template-columns: auto 35% 25%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  section.app__body {
+    grid-template-columns: 100%;
+  }
+  section.app__body section.filter__section {
+    display: none;
+  }
+}

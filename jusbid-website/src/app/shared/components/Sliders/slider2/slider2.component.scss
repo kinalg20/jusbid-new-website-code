@@ -1,0 +1,296 @@
+section {
+  padding: 0 0 5% 0;
+  .hotels-slider {
+    margin: 0;
+    padding: 0 90px;
+    .card-header {
+      padding: 0 5px 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        font-size: 2.2rem;
+        margin-top: 0;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      .sub-head-section {
+        display: flex;
+        p {
+          font-size: 18px;
+          line-height: 169.2%;
+          color: rgba(0, 0, 0, 0.4);
+          margin-right: 5px;
+        }
+      }
+    }
+    .blog-page {
+      .card {
+        cursor: pointer;
+        position: relative;
+        .blank {
+          position: absolute;
+          top: 0;
+          height: 500px;
+          width: 100%;
+          z-index: 999;
+          display: none;
+        }
+        .blog-body {
+          overflow: hidden;
+          border-radius: 15px;
+          .img-hover-zoom {
+            height: 500px;
+            img {
+              object-fit: cover;
+              transition: transform 0.5s ease;
+            }
+            img:hover {
+              cursor: pointer;
+              opacity: 0.9;
+            }
+          }
+          .blog-title {
+            text-align: start;
+            position: absolute;
+            bottom: 25px;
+            padding: 0px 15px;
+            color: white;
+            h1 {
+              font-size: 2.8rem;
+            }
+            p {
+              font-size: 1.8rem;
+            }
+          }
+        }
+        transition: all 2s;
+      }
+      .card:hover .blank {
+        display: block;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        transition: all 2s;
+      }
+      .card:hover .blog-title {
+        z-index: 9999;
+      }
+      .card:hover img {
+        transform: scale(1.2);
+      }
+    }
+    .slider-controls {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      .control-btn {
+        font-size: 25px;
+        z-index: 2;
+        cursor: pointer;
+        padding: 10px;
+        color: #222;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 30px;
+      }
+      .control-btn:disabled {
+        cursor: default;
+      }
+    }
+  }
+}
+::ng-deep {
+  ion-slides {
+    z-index: -1 !important;
+  }
+  .swiper-slide img {
+    height: 500px;
+  }
+  ion-content {
+    height: 500px;
+    --offset-bottom: auto !important;
+    --overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1399px) {
+  section {
+    .hotels-slider {
+      .blog-page {
+        .card {
+          .blog-body {
+            .blog-title {
+              bottom: 15px;
+              h1 {
+                font-size: 2.5rem;
+              }
+              p {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  section {
+    .hotels-slider {
+      padding: 0 70px;
+      .card-header {
+        padding: 0 5px 35px;
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .blog-page {
+        .card {
+          .blank {
+            height: 450px;
+          }
+          .blog-body {
+            .img-hover-zoom {
+              height: 450px;
+            }
+            .blog-title {
+              bottom: 15px;
+              h1 {
+                font-size: 2.3rem;
+              }
+              p {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+      .slider-controls {
+        .control-btn {
+          font-size: 20px;
+          width: 45px;
+          height: 45px;
+        }
+      }
+      ion-content {
+        height: 450px;
+      }
+    }
+    .swiper-slide img {
+      height: 450px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  section {
+    .hotels-slider {
+      padding: 0 70px;
+      .card-header {
+        padding: 0 5px 25px;
+        h1 {
+          font-size: 1.8rem;
+        }
+        .sub-head-section {
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+      .blog-page {
+        .card {
+          .blank {
+            height: 400px;
+          }
+          .blog-body {
+            .img-hover-zoom {
+              height: 400px;
+            }
+            .blog-title {
+              bottom: 20px;
+              h1 {
+                font-size: 2rem;
+              }
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+      .slider-controls {
+        .control-btn {
+          font-size: 18px;
+          width: 40px;
+          height: 40px;
+          margin: 0 0 0 25px;
+        }
+      }
+      ion-content {
+        height: 400px;
+      }
+    }
+    .swiper-slide img {
+      height: 400px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  section {
+    .hotels-slider {
+      padding: 0 60px;
+      .blog-page {
+        .card {
+          .blog-body {
+            .blog-title {
+              h1 {
+                font-size: 2.5rem;
+              }
+              p {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  section {
+    .hotels-slider {
+      padding: 0 40px;
+      .card-header {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .blog-page {
+        .card {
+          .blog-body {
+            .blog-title {
+              h1 {
+                font-size: 2.2rem;
+              }
+              p {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+      .slider-controls {
+        .control-btn {
+          font-size: 16px;
+          width: 35px;
+          height: 35px;
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+  }
+}

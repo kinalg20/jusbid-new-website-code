@@ -1,0 +1,219 @@
+<app-header [isHome]="false"></app-header>
+<main>
+  <section class="container">
+    <div class="header-details">
+      <nav class="bid-header">
+        <ol>
+          <li>
+            <span class="setting">
+              <a routerLink="/profile/customer-profile-details">Home</a>
+            </span>
+          </li>
+          <li>
+            <div class="errow" style="margin-left: 16px; margin-right: 16px">
+              <svg
+                viewBox="0 0 18 18"
+                role="presentation"
+                aria-hidden="true"
+                focusable="false"
+                style="height: 10px; width: 10px; fill: rgb(118, 118, 118)"
+              >
+                <path
+                  d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <span aria-current="step" class="setting">Booking History</span>
+          </li>
+        </ol>
+      </nav>
+      <div class="bid-head">
+        <h1>
+          <div class="bid-title">Booking History</div>
+        </h1>
+        <div class="filters">
+          <button class="filter-btn">
+            <span><ion-icon name="filter-outline"></ion-icon> Filters</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- //Missed Bid// -->
+    <div class="recent-bid-history">
+      <div class="bidding-card-container">
+        <div class="card">
+          <div class="card-data">
+            <div class="hotel-image">
+              <img src="\assets\images\istockphoto-472899538-170667a.jpg" />
+            </div>
+            <div class="hotel-details">
+              <div class="hotel-name">
+                <h1>Palette-Hotel Almeida</h1>
+              </div>
+              <div class="hotel-address">
+                <p>Near Paras Down Town Mall, Zirakpur</p>
+              </div>
+              <div class="per-night-price">
+                <div class="room-price">
+                  <p>₹5000.00/night</p>
+                </div>
+              </div>
+              <div class="bid-date">
+                <p>June 15, 2022 - June 17, 2022</p>
+              </div>
+              <div class="guest-details">1 Guest, 1 Room, 2 Days</div>
+            </div>
+            <div class="price-details">
+              <div class="room-price">
+                <p>₹5000.00/-</p>
+              </div>
+              <div class="discount-price">
+                <p>₹6500.00/-</p>
+              </div>
+              <div class="btns">
+                <div class="missed-bid">
+                  <p>Missed</p>
+                </div>
+              </div>
+              <div class="bid-again-btn">
+                <button class="bid-again">Bid Again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //Rejected Bid// -->
+      <!-- <div class="bidding-card-container">
+            <div class="card">
+              <div class="card-data">
+                <div class="hotel-image">
+                  <img src="/assets/images/hotel image/pexels-photo-164595.jpeg" />
+                </div>
+                <div class="hotel-details">
+                  <div class="hotel-name">
+                    <h1>Palette-Hotel Almeida</h1>
+                  </div>
+                  <div class="hotel-address">
+                    <p>Near Paras Down Town Mall, Zirakpur</p>
+                  </div>
+                  <div class="per-night-price">
+                    <div class="room-price">
+                      <p>₹5000.00/night</p>
+                    </div>
+                  </div>
+                  <div class="bid-date">
+                    <p>June 15, 2022 - June 17, 2022</p>
+                  </div>
+                  <div class="guest-details">1 Guest, 1 Room, 2 Days</div>
+                </div>
+                <div class="price-details">
+                  <div class="room-price">
+                    <p>₹5000.00/-</p>
+                  </div>
+                  <div class="discount-price">
+                    <p>₹6500.00/-</p>
+                  </div>
+                  <div class="btns">
+                    <div class="rejected-bid">
+                      <p>Rejected</p>
+                    </div>
+                  </div>
+                  <div class="bid-again-btn">
+                    <button class="bid-again">Bid Again</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+      <!-- //Ready to Book Bid// -->
+      <!-- <div class="bidding-card-container">
+            <div class="card">
+              <div class="card-data">
+                <div class="hotel-image">
+                  <img src="/assets/images/hotel image/pexels-photo-164595.jpeg" />
+                </div>
+                <div class="hotel-details">
+                  <div class="hotel-name">
+                    <h1>Palette-Hotel Almeida</h1>
+                  </div>
+                  <div class="hotel-address">
+                    <p>Near Paras Down Town Mall, Zirakpur</p>
+                  </div>
+                  <div class="per-night-price">
+                    <div class="room-price">
+                      <p>₹5000.00/night</p>
+                    </div>
+                  </div>
+                  <div class="bid-date">
+                    <p>June 15, 2022 - June 17, 2022</p>
+                  </div>
+                  <div class="guest-details">1 Guest, 1 Room, 2 Days</div>
+                </div>
+                <div class="price-details">
+                  <div class="room-price">
+                    <p>₹5000.00/-</p>
+                  </div>
+                  <div class="discount-price">
+                    <p>₹6500.00/-</p>
+                  </div>
+                  <div class="btns">
+                    <div class="booking-bid">
+                      <p>Ready to Book</p>
+                    </div>
+                  </div>
+                  <div class="bid-again-btn">
+                    <button class="book-now">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+      <!-- //Booked Bid// -->
+      <!-- <div class="bidding-card-container">
+            <div class="card">
+              <div class="card-data">
+                <div class="hotel-image">
+                  <img src="/assets/images/hotel image/pexels-photo-164595.jpeg" />
+                </div>
+                <div class="hotel-details">
+                  <div class="hotel-name">
+                    <h1>Palette-Hotel Almeida</h1>
+                  </div>
+                  <div class="hotel-address">
+                    <p>Near Paras Down Town Mall, Zirakpur</p>
+                  </div>
+                  <div class="per-night-price">
+                    <div class="room-price">
+                      <p>₹5000.00/night</p>
+                    </div>
+                  </div>
+                  <div class="bid-date">
+                    <p>June 15, 2022 - June 17, 2022</p>
+                  </div>
+                  <div class="guest-details">1 Guest, 1 Room, 2 Days</div>
+                </div>
+                <div class="price-details">
+                  <div class="room-price">
+                    <p>₹5000.00/-</p>
+                  </div>
+                  <div class="discount-price">
+                    <p>₹6500.00/-</p>
+                  </div>
+                  <div class="btns">
+                    <div class="booking-bid">
+                      <p>Booked</p>
+                    </div>
+                  </div>
+                  <div class="bid-again-btn">
+                    <button class="invoice">View Invoice</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+    </div>
+  </section>
+</main>
+
+<app-footer></app-footer>

@@ -1,0 +1,24 @@
+<div class="hotel-front-container" *ngIf="this.hotelImageDetail.length>0">
+  <div class="main-image">
+    <hotel-image-gallery *ngIf="!isShow360View" [imageurl]="this.hotelImageDetail[0].path"></hotel-image-gallery>
+    <three-sixty-view *ngIf="isShow360View"></three-sixty-view>
+    <button (click)="isShow360View = !isShow360View">
+      <!-- <ion-icon [name]="!isShow360View?'globe':'images-outline'"></ion-icon> -->
+      <ion-icon name="images-outline" style="font-size: 2.2rem;" *ngIf="isShow360View"></ion-icon>
+      <img src="https://icon-library.com/images/360-degree-icon/360-degree-icon-9.jpg" width="40px" alt=""
+        *ngIf="!isShow360View">
+      <!-- <span> {{ !isShow360View ? "Show 360&#176;" : "Show Images" }}</span> -->
+    </button>
+  </div>
+
+  <div class="thumbnail-images">
+    <ng-container *ngFor="let data of hotelImageDetail.slice(0,7)">
+      <div>
+        <img [src]="getImageUrl(data.path)" alt="">
+      </div>
+    </ng-container>
+    <!-- <div class="more-image">
+      <p>More</p>
+    </div> -->
+  </div>
+</div>

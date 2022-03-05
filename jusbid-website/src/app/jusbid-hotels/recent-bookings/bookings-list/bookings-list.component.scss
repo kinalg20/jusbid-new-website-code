@@ -1,0 +1,192 @@
+.container {
+  padding: 30px;
+  .header-details {
+    margin: 40px 0;
+    .bid-header {
+      li {
+        display: inline-block;
+        .errow {
+          display: inline-block;
+        }
+        a {
+          margin: 0px;
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 1.28571em;
+          color: rgb(72, 72, 72);
+          text-decoration: none;
+        }
+        .setting {
+          margin: 0px;
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 1.28571em;
+          color: rgb(72, 72, 72);
+        }
+      }
+    }
+    .bid-head {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 89% 11%;
+      .bid-title {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.125em;
+        color: rgb(72, 72, 72);
+      }
+      .filters {
+        align-self: center;
+        .filter-btn {
+          background: #ffffff;
+          padding: 10px 25px;
+          border: 1px solid rgb(0, 0, 0);
+          border-radius: 10px;
+          box-shadow: 2px 2px #888888;
+          span {
+            font-size: 18px;
+            font-weight: 800;
+            color: rgb(75 75 75);
+          }
+        }
+      }
+    }
+  }
+  .recent-bid-history {
+    .bidding-card-container {
+      margin-bottom: 30px;
+      .card {
+        margin-bottom: 30px;
+        background: #ffffff;
+        padding: 20px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0.5rem 1rem #00000026;
+        .card-data {
+          display: grid;
+          grid-template-columns: 25% auto 20%;
+          .hotel-image {
+            img {
+              height: 200px;
+              border-radius: 30px;
+              margin-right: 30px;
+            }
+          }
+          .hotel-details {
+            .hotel-name {
+              h1 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0;
+                padding: 0;
+              }
+            }
+            .hotel-address {
+              p {
+                color: rgb(65 78 103);
+                font-size: 1.1rem;
+                line-height: 50px;
+                margin-bottom: 10px;
+              }
+            }
+            .per-night-price {
+              .room-price {
+                p {
+                  font-size: 1rem;
+                  font-weight: 600;
+                }
+              }
+            }
+            .bid-date {
+              p {
+                color: rgb(65 78 103);
+                font-size: 1.1rem;
+                line-height: 40px;
+              }
+            }
+            .guest-details {
+              color: rgb(65 78 103);
+              font-size: 1.1rem;
+            }
+          }
+          .price-details {
+            text-align: right;
+            .room-price {
+              p {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: #58ad30;
+                line-height: 40px;
+              }
+            }
+            .discount-price {
+              text-decoration: line-through;
+              font-size: 1.3rem;
+              font-weight: 600;
+              color: #000000;
+              line-height: 40px;
+            }
+            .btns {
+              .missed-bid {
+                p {
+                  font-size: 1.2rem;
+                  font-weight: 600;
+                  color: rgb(218 88 88);
+                  line-height: 40px;
+                  margin-bottom: 10px;
+                }
+              }
+            //   .rejected-bid {
+            //     p {
+            //       color: rgb(255 131 16);
+            //       font-size: 25px;
+            //       font-weight: 600;
+            //       line-height: 40px;
+            //       margin-bottom: 10px;
+            //     }
+            //   }
+            // }
+            // .booking-bid {
+            //   p {
+            //     font-size: 25px;
+            //     font-weight: 600;
+            //     color: #58ad30;
+            //     line-height: 40px;
+            //     margin-bottom: 10px;
+            //   }
+            }
+            .bid-again-btn {
+              .bid-again {
+                border: 1px solid #000000;
+                padding: 10px 16px;
+                border-radius: 8px;
+                color: #000000;
+                font-size: 1.2rem;
+                box-shadow: 2px 2px #888888;
+                background: #ffffff;
+              }
+              //   .book-now {
+              //     border: 1px solid #58ad30;
+              //     padding: 10px 16px;
+              //     border-radius: 8px;
+              //     color: #58ad30;
+              //     font-size: 20px;
+              //     box-shadow: 2px 2px #888888;
+              //     background: #ffffff;
+              //   }
+              //   .invoice {
+              //     border: 1px solid rgb(222 222 222);
+              //     padding: 10px 16px;
+              //     border-radius: 8px;
+              //     color: rgb(0, 0, 0);
+              //     font-size: 20px;
+              //     box-shadow: 2px 2px #888888;
+              //     background: rgb(222 222 222);
+              //   }
+            }
+          }
+        }
+      }
+    }
+  }
+}

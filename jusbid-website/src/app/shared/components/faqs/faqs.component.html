@@ -1,0 +1,82 @@
+<section>
+  <div class="faq-section">
+    <div class="desktop-screen">
+      <div class="heading-section">
+        <h1>FAQ</h1>
+        <div class="img-section">
+          <img src="assets/images/icons/Arrow-Vector.svg" alt="" />
+        </div>
+      </div>
+      <hr style="border-top: 1px solid black" />
+      <div class="faq-body">
+        <ng-container *ngFor="let item of faqData">
+          <div class="half-body">
+            <h3>Q. How to book a hotel online with Jusbid?</h3>
+            <p>{{ item.Answer }}</p>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+    <div class="responsive-faq">
+      <ion-accordion-group class="numbers">
+        <ng-container *ngFor="let item of faqData">
+          <ion-accordion class="colors">
+            <ion-item slot="header">
+              <ion-label>
+                <h3>Q. How to book a hotel online with Jusbid?</h3></ion-label
+              >
+            </ion-item>
+            <ion-list slot="content">
+              <ion-item>
+                <ion-label>
+                  <p>{{ item.Answer }}</p></ion-label
+                >
+              </ion-item>
+            </ion-list>
+          </ion-accordion>
+        </ng-container>
+      </ion-accordion-group>
+    </div>
+  </div>
+</section>
+
+<!-- <ion-accordion-group>
+  <ion-accordion value="colors">
+    <ion-item slot="header">
+      <ion-label>
+        <h3>Q. How to book a hotel online with Jusbid?</h3></ion-label
+      >
+    </ion-item>
+
+    <ion-list slot="content">
+      <ion-item>
+        <ion-label>
+            <p>{{ item.Answer }}</p></ion-label
+          >
+      </ion-item>
+      <ion-item>
+        <ion-label>Green</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Blue</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-accordion>
+  <ion-accordion value="shapes">
+    <ion-item slot="header">
+      <ion-label>Shapes</ion-label>
+    </ion-item>
+
+    <ion-list slot="content">
+      <ion-item>
+        <ion-label>Circle</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Triangle</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Square</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-accordion>
+</ion-accordion-group> -->

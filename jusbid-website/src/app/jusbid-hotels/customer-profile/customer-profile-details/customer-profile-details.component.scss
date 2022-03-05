@@ -1,0 +1,163 @@
+.container {
+  padding: 30px;
+  .user-profile {
+    color: rgb(34, 34, 34);
+    margin: 48px auto 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1064px;
+    .user-profile-content {
+      display: flex;
+      .card {
+        padding-left: 8px;
+        padding-right: 8px;
+        .card-details {
+          margin-left: 0px;
+          margin-right: auto;
+          border: 1px solid rgb(221, 221, 221);
+          background: #ffffff;
+          border-radius: 12px;
+          max-width: 308px;
+          padding: 24px;
+          .upload-photo {
+            margin-top: 8px;
+            text-align: center;
+            .edit-photo {
+              color: #222222;
+              font-weight: 600;
+            }
+          }
+          .user-profile-image {
+            width: 128px;
+            margin: auto auto 32px;
+            .image {
+              img {
+                border-radius: 100%;
+                object-fit: cover;
+                vertical-align: bottom;
+              }
+            }
+          }
+          .verified-user {
+            margin-bottom: 16px;
+          }
+          .verification {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
+          }
+          .verification-text {
+            line-height: 20px;
+            margin-bottom: 16px;
+          }
+          .badge-btn {
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            line-height: 20px;
+            font-weight: 600;
+            border-radius: 8px;
+            border-width: 1px;
+            border-style: solid;
+            outline: none;
+            padding: 13px 23px;
+            color: #222222;
+          }
+          .break-line {
+            margin: 32px 0;
+            .line {
+              border-bottom-width: 1px;
+              border-bottom-style: solid;
+              border-bottom-color: #ebebeb;
+            }
+          }
+          .confirmation {
+            margin-bottom: 24px;
+            .user-name {
+              h1 {
+                color: inherit;
+                font-size: 1em;
+                font-weight: inherit;
+                line-height: inherit;
+                margin: 0px;
+                padding: 0px;
+                span.user-confirm {
+                  font-size: 22px;
+                  line-height: 26px;
+                }
+              }
+            }
+          }
+          .number-confirmation {
+            margin-bottom: 16px;
+            .user-no-details {
+              display: flex;
+              .icon {
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+      }
+      .user-reviews-section {
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 50%;
+        .user-rate {
+          margin-left: 50px;
+          .user-profile-data {
+            margin-bottom: 48px;
+            .user-profile-name {
+              .name {
+                font-size: 2rem;
+                margin: 0px;
+                font-weight: 600;
+                margin-bottom: 8px;
+              }
+            }
+            .join-date {
+              font-size: 14px;
+              color: #717171;
+            }
+            .edit-profile {
+              display: flex;
+              margin-top: 16px;
+              .edit-btn {
+                text-decoration: underline;
+                font-weight: 600;
+              }
+            }
+          }
+          .star-rate {
+            h2 {
+              span {
+                font-weight: 600;
+                font-size: 22px;
+                .review-section-title {
+                  display: flex;
+                  align-items: center;
+                  .star {
+                    margin-right: 10px;
+                  }
+                }
+              }
+            }
+          }
+          .break-line {
+            margin: 32px 0;
+            .line {
+              border-bottom-width: 1px;
+              border-bottom-style: solid;
+              border-bottom-color: #ebebeb;
+            }
+          }
+          .reviews-by-user {
+            color: #222222;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<section>
+  <div class="destination-slider">
+    <div class="head-section">
+      <div>
+        <h1>{{ content.heading }}</h1>
+        <div class="sub-head-section">
+          <p>{{ content.sub_heading }}</p>
+          <img src="\assets\images\icons\Verified.svg" />
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button
+          type="button"
+          class="control-btn back-btn"
+          (click)="this.slides.slidePrev()"
+          [disabled]="disabled_back"
+        >
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <button
+          type="button"
+          class="control-btn next-btn"
+          (click)="this.slides.slideNext()"
+          [disabled]="disabled_next"
+        >
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <ion-content (click)="gotoList()">
+      <ion-slides
+        pager="false"
+        [options]="slideOpts"
+        (ionSlideDidChange)="slideChanged()"
+        #slides
+      >
+        <ng-container *ngFor="let item of content.data">
+          <ion-slide>
+            <div class="destination-section">
+              <div class="destination-image">
+                <img [src]="item.previewImageSrc" />
+              </div>
+              <div class="card-section">
+                <div class="card-background"></div>
+                <div class="card-text">
+                  <h4 class="destination-name">{{ item.cities }}</h4>
+                  <p>450 Propertys</p>
+                </div>
+              </div>
+            </div>
+          </ion-slide>
+        </ng-container>
+      </ion-slides>
+    </ion-content>
+  </div>
+</section>

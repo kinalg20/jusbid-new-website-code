@@ -1,0 +1,111 @@
+section {
+    .hotel-details-container {
+        .hotel-detail-body {
+            display: grid;
+            grid-template-columns: auto 30%;
+            grid-gap: 40px;
+            margin-top: 4%;
+            .hotel-detail-section {
+                .hotel_name {
+                    margin-top: 0px;
+                    .hotel-detail-hotel-name {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        h1 {
+                            font-weight: 700;
+                            font-family: system-ui;
+                            margin: 0;
+                        }
+                        .hotel-rating {
+                            .hotel-ratings {
+                                padding: 8px;
+                                border-radius: 5px;
+                                background: gray;
+                                color: #fff;
+                                font-weight: 600;
+                                display: flex;
+                                align-items: center;
+                                ion-icon {
+                                    font-size: 17px;
+                                }
+                                span {
+                                    margin-top: 3px;
+                                    font-size: 16px;
+                                    margin-left: 2px;
+                                }
+                            }
+                        }
+                    }
+                    .hotel-address {
+                        color: #646161;
+                        font-family: system-ui;
+                        p {
+                            font-size: 1.05rem;
+                            display: flex;
+                            align-items: center;
+                            font-weight: 400;
+                            margin: 10px 0;
+                            margin-left: -8px;
+                            ion-icon {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+                .hotel-description {
+                    padding: 50px 0;
+                    border-bottom: 1px solid #dedede;
+                }
+                .Aminities-section {
+                    padding: 30px 0;
+                    border-bottom: 1px solid #dedede;
+                }
+                .select-room-section {
+                    border-bottom: 1px solid #dedede;
+                    padding: 30px 0;
+                    .room-card-heading {
+                        h2 {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .policy-section {
+                    padding: 30px 0;
+                }
+            }
+        }
+        .google-map {
+            padding: 30px 0;
+        }
+        .recommendation-model {
+            padding: 30px 0;
+        }
+    }
+}
+// @media (max-width: 1024px) {
+//     .hotel-details-container {
+//         section.hotel-detail-section {
+//             margin-top: 10%;
+//         }
+//     }
+//     .hotel-address {
+//         p {
+//             span {
+//                 font-size: 15px;
+//             }
+//         }
+//     }
+// }
+// @media (max-width: 991px) {
+//     .hotel-details-container {
+//         .hotel-detail-body {
+//             display: grid;
+//             grid-template-columns: 100%;
+//             grid-gap: 0;
+//             .bid-form{
+//                 display: none;
+//             }
+//         }
+//     }
+// }

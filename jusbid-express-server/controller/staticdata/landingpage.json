@@ -1,0 +1,208 @@
+[
+    {
+        "popular_hotels": [
+            {
+                "id": "60c2eb4098a3073eba91e42f",
+                "name": "Amrai Valley Resort ",
+                "view_name": "Amrai Valley Resort ",
+                "image": "/images/hotel/2021/06/12/1087ca66-cd62-48f3-96c6-b8505fe3d06b_min.jpg",
+                "city": "Udaipur",
+                "room_price": 2800
+            },
+            {
+                "id": "6149ad0102b5cb3c954efc59",
+                "name": "JusBid ",
+                "view_name": "",
+                "image": "/images/hotel/2021/10/12/76e4eb9f-141b-4b4c-9556-dbc658c815c9_min.jpg",
+                "city": "Udaipur",
+                "room_price": 8000
+            },
+            {
+                "id": "60c989489b3b7b43efacf55c",
+                "name": "royal palace",
+                "view_name": "ROYAL PALACE",
+                "image": "/images/hotel/2021/10/07/f93b90df-86e9-42c1-b0b8-d1497be886ce_min.jpg",
+                "city": "Noida",
+                "room_price": 2000
+            },
+            {
+                "id": "60cb0f3d25c9e66157ea50a8",
+                "name": "Hotel Laxmi Palace",
+                "view_name": "Hotel Laxmi Palace",
+                "image": "/images/hotel/2021/08/14/66b7114c-cefd-49a5-b30d-3ebec5294d28_min.jpg",
+                "city": "Udaipur",
+                "room_price": 1500
+            },
+            {
+                "id": "60cc2101c00377093fea8f98",
+                "name": "Dolat Garh Desert Camp ",
+                "view_name": "Dolatgarh Desert Camp Jaisalmer",
+                "image": "/images/hotel/2021/08/11/e752dc3d-93c8-492b-9f98-9f4b0f02dddb_min.jpg",
+                "city": "Jaisalmer",
+                "room_price": 2000
+            },
+            {
+                "id": "60d436f6d45b6b445b1077b4",
+                "name": "Panna Vilas Palace",
+                "view_name": "Panna Vilas Palace",
+                "image": "/images/hotel/2021/08/16/80de0e98-224f-4689-8450-d2d512eea5de_min.jpg",
+                "city": "Udaipur",
+                "room_price": 5000
+            },
+            {
+                "id": "60c1c7e3f1c9e920584ccadd",
+                "name": "Hotel Manwar",
+                "view_name": "Hotel Manwar",
+                "image": "/images/hotel/2021/08/11/f496d711-c93c-4b05-af5e-6819a7d09c0a_min.jpg",
+                "city": "Udaipur",
+                "room_price": 2650
+            },
+            {
+                "id": "60cdee99fa00d92cffd49045",
+                "name": "Goodwill Hotel",
+                "view_name": "Goodwill Hotel",
+                "image": "/images/hotel/2021/10/07/1a9b5ef2-4252-4f2e-b7f6-631a2c4357e2_min.jpg",
+                "city": "Delhi",
+                "room_price": 2500
+            },
+            {
+                "id": "60d5a8cd367563611da37297",
+                "name": "HOTEL MADURAI",
+                "view_name": "HOTEL MADURAI",
+                "image": "/images/hotel/2021/08/14/a15c080f-0270-4a33-ba6d-672372367ad5.jpg",
+                "city": "Udaipur",
+                "room_price": 1500
+            },
+            {
+                "id": "60d9463f79f0814a4230424d",
+                "name": "Hotel Swati Deluxe",
+                "view_name": " Hotel Swati Deluxe ",
+                "image": "/images/hotel/2021/08/14/baa72bde-205a-403e-9510-af4f009f473f_min.jpg",
+                "city": "Delhi",
+                "room_price": 2500
+            }
+        ],
+        "popular_cities": [
+            {
+                "hotels": 156,
+                "image": "/images/hotel/2021/07/08/4b64c0c2-1653-44ee-b072-47501bf01cce.jpg",
+                "city": "Amritsar"
+            },
+            {
+                "hotels": 121,
+                "image": "/images/hotel/2021/06/12/1087ca66-cd62-48f3-96c6-b8505fe3d06b_min.jpg",
+                "city": "Udaipur"
+            },
+            {
+                "hotels": 115,
+                "image": "/images/hotel/2021/07/06/5adf052b-4bb4-4372-96bd-ec684a92cf9f_min.jpg",
+                "city": "Dehradun"
+            },
+            {
+                "hotels": 101,
+                "image": "/images/hotel/2021/08/05/3441cf03-3a90-4f40-9f20-7613a49ee8a4_min.jpg",
+                "city": "Bengaluru"
+            },
+            {
+                "hotels": 47,
+                "image": "/images/hotel/2021/07/09/0726e845-2b74-4e95-bc1f-12054ef40bbb_min.jpg",
+                "city": "Madikeri"
+            },
+            {
+                "hotels": 46,
+                "image": "/images/hotel/2021/07/07/72bcb3ce-fbe0-4a31-a32f-20c1904898c1_min.jpg",
+                "city": "Kolkata"
+            },
+            {
+                "hotels": 44,
+                "image": "/images/hotel/2021/08/11/65e70461-bd48-4bf0-9f64-59c313a1172a_min.jpg",
+                "city": "Kodaikanal"
+            },
+            {
+                "hotels": 42,
+                "image": "/images/hotel/2021/08/05/eec6045b-0c70-4405-93e7-803e5831db04_min.jpg",
+                "city": "Coimbatore"
+            },
+            {
+                "hotels": 41,
+                "image": "/images/hotel/2021/08/18/a69ced23-46c7-40f1-a5dc-7b0c13a05bdd_min.jpg",
+                "city": "Haridwar"
+            },
+            {
+                "hotels": 31,
+                "image": "/images/hotel/2021/10/07/1a9b5ef2-4252-4f2e-b7f6-631a2c4357e2_min.jpg",
+                "city": "Delhi"
+            },
+            {
+                "hotels": 31,
+                "image": "/images/hotel/2021/08/31/c41f8744-3541-4049-af45-79381bbb017c_min.jpg",
+                "city": "New Delhi"
+            },
+            {
+                "hotels": 27,
+                "image": "/images/hotel/2021/06/26/2ad2d5da-9381-42ae-b5b7-deecea6b8dda_min.jpg",
+                "city": "Idukki"
+            },
+            {
+                "hotels": 25,
+                "image": "/images/hotel/2021/08/01/5df4f5d6-001c-4028-adf7-5621109713fe_min.jpg",
+                "city": "Cochin"
+            },
+            {
+                "hotels": 23,
+                "image": "/images/hotel/2021/07/05/21d07873-8b6c-40d6-98b9-678c31934ab9_min.jpg",
+                "city": "Munnar"
+            },
+            {
+                "hotels": 22,
+                "image": "/images/hotel/2021/07/08/f1ae4b5d-9fff-4e94-976a-322658f7d8d8_min.jpg",
+                "city": "Villupuram"
+            },
+            {
+                "hotels": 21,
+                "image": "/images/hotel/2021/07/19/3bbcd314-732b-420e-b983-d2bbb8a16e5c_min.jpg",
+                "city": "Chennai"
+            },
+            {
+                "hotels": 19,
+                "image": "/images/hotel/2021/07/16/6f241cc0-c023-4fb0-876d-4b6d0becff89_min.jpg",
+                "city": "Mussoorie"
+            },
+            {
+                "hotels": 18,
+                "image": "/images/hotel/2021/07/08/0ee7b81e-3642-4cc5-a03e-1a3158d313b6_min.jpg",
+                "city": "Mysore"
+            },
+            {
+                "hotels": 18,
+                "image": "/images/hotel/2021/07/13/95f2507b-bdd6-48ee-ba2d-988354165494_min.jpg",
+                "city": "Gwalior"
+            },
+            {
+                "hotels": 15,
+                "image": "/images/hotel/2021/07/08/82082941-44f5-40f2-8c8f-ba52543fb401_min.jpg",
+                "city": "Vīrarājendrapet"
+            },
+            {
+                "hotels": 14,
+                "image": "/images/hotel/2021/09/18/02336a3f-f4ab-457f-8adb-b106a095d882_min.jpg",
+                "city": "Kochi"
+            },
+            {
+                "hotels": 13,
+                "image": "/images/hotel/2021/08/12/f9f814a8-8c08-4f04-af13-87ece1ef2dd2_min.jpg",
+                "city": "Manali"
+            },
+            {
+                "hotels": 13,
+                "image": "/images/hotel/2021/09/16/d2b36308-c8b9-4e1c-9ba3-f51dbe778ab0_min.jpg",
+                "city": "Pondicherry"
+            },
+            {
+                "hotels": 12,
+                "image": "/images/hotel/2021/07/08/ca04e632-bc65-4ceb-b5c0-22e5ddbcb33d_min.jpg",
+                "city": "Rajsamand"
+            }
+        ]
+    }
+]

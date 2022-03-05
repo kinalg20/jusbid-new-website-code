@@ -1,0 +1,93 @@
+<main>
+  <section class="container">
+    <div class="card">
+      <div class="card-header">
+        <h1>Confirm and Pay</h1>
+      </div>
+      <div class="card-body">
+        <div class="guest-data">
+          <h1>Your trip</h1>
+          <div class="date">
+            <div class="checkin-checkout-date">
+              <label for="" class="">Dates</label>
+              <div class="edit-btn">
+                <button class="edit" (click)="showcalender = !showcalender">
+                  Edit
+                </button>
+              </div>
+            </div>
+            <p-calendar
+              [(ngModel)]="rangeDates"
+              [inline]="showcalender"
+              [showWeek]="false"
+              [showTransitionOptions]="'2ms'"
+              [hideTransitionOptions]="'2ms'"
+              selectionMode="range"
+              class="input-datepicker"
+              dateFormat="D, dd M"
+              [minDate]="today"
+              [readonlyInput]="true"
+            ></p-calendar>
+          </div>
+          <div class="guests">
+            <div class="guest-count">
+              <label for="" class="">Guests</label>
+              <div class="edit-btn">
+                <button
+                  class="edit"
+                  (click)="
+                    guests_n_rooms_picker_toggle = !guests_n_rooms_picker_toggle
+                  "
+                >
+                  Edit
+                </button>
+                <div class="guest-toggle">
+                  <guests-and-rooms-picker
+                    *ngIf="guests_n_rooms_picker_toggle"
+                    (closeContainer)="isCloseContainer($event)"
+                    (roomGuestCount)="getTotalRoomAndGuestCount($event)"
+                  ></guests-and-rooms-picker>
+                </div>
+              </div>
+            </div>
+            <p>2 guests</p>
+          </div>
+        </div>
+        <div class="payment-type">
+          <h1>Pay with</h1>
+          <div class="payment-option">
+            <ion-item>
+              <ion-label>RazorPay</ion-label>
+              <ion-radio value="RazorPay"></ion-radio>
+            </ion-item>
+          </div>
+        </div>
+        <div class="coupon">
+          <h1>Enter a coupon</h1>
+        </div>
+        <div class="cancellation-policy">
+          <h1>Cancellation policy</h1>
+          <p>
+            <b>Free cancellation for 48 hours. </b>After that, cancel before
+            1:00pm on 24 feb and get 50% refund, minus the service fee.
+            <a href="/">Learn more</a>
+          </p>
+          <p>
+            Our Extenuating Circumtances policy does not cover travel
+            disruptions caused by COVID-19. <a href="/">Learn more</a>
+          </p>
+        </div>
+        <div class="refund">
+          <p>
+            By selecting the button below, I agree to the
+            <b>Host's House Rules, Jusbid's COVID-19 Saftey. Requirements </b
+            >and the <b>Guest Refund Policy.</b>
+          </p>
+        </div>
+        <div class="pay-button">
+          <button class="confirm">Confirm and Pay</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,79 @@
+.recommendation-hotels {
+    padding: 30px 0;
+    position: relative;
+}
+
+.slider-controls {
+    display: grid;
+    grid-template-columns: 86% 5% 5%;
+    align-items: baseline;
+    grid-gap: 22px;
+    .back-btn {
+        font-size: 25px;
+        z-index: 2;
+        cursor: pointer;
+        padding: 10px;
+        background: whitesmoke;
+        color: #222;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+    .back-btn:hover {
+        box-shadow: 0 0 10px #ccc;
+    }
+    .next-btn {
+        font-size: 25px;
+        z-index: 2;
+        cursor: pointer;
+        background: #fff;
+        border-radius: 100%;
+        padding: 10px;
+        background: whitesmoke;
+        color: #222;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .next-btn:hover {
+        box-shadow: 0 0 10px #ccc;
+    }
+}
+
+::ng-deep {
+    .recommendation-hotels {
+        ion-content {
+            height: 390px;
+            cursor: pointer;
+        }
+    }
+    recommended-hotel-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider-controls {
+        grid-template-columns: 89% 6% 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-controls {
+        grid-template-columns: 85% 8% 8%;
+    }
+}
+
+@media (max-width: 425px) {
+    .slider-controls {
+        grid-template-columns: 73% 10% 13%;
+        grid-gap: 15px;
+    }
+}

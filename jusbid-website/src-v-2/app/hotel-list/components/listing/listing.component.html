@@ -1,0 +1,44 @@
+<app-header [isHome]="false" ></app-header>
+<main>
+    <!-- start app body -->
+    <section class="app__body">
+        
+        <!-- start filter section -->
+        <section class="filter__section" >
+            <app-filters></app-filters>
+        </section>
+        <!-- end filter section -->
+        
+        
+        <!-- start listing section -->
+        <section class="listing__section">
+
+            <!-- <div style="width: 100%;height: 100px;background: whitesmoke;border-radius: 0.8rem;border: 1px solid #dedede;padding: 10px;position: sticky;top: 15%;z-index: 9;">
+                <h1 style="margin: 0;padding: 0;">Selected filters</h1>
+            </div> -->
+            
+            <!-- List of Text Items -->
+                <ng-container *ngFor="let hotel of hotels;">
+                    <app-list-card [hotelData]="hotel"></app-list-card>
+                </ng-container>
+
+                <div class="loader" *ngIf="!hotels">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                </div>
+    
+                <div style="width: 100%;display: flex;justify-content: center;align-items: center;margin: 5% 0;">
+                    <button style="background: transparent;font-size: 1rem;font-weight: 600;display: flex;align-items: center;">
+                        <ion-icon name="refresh-outline" style="font-size: 1.5rem;margin: 5px;"></ion-icon>
+                    <span>Load more</span>
+                    </button>
+                </div>
+    
+        </section>
+        <!-- end listing section -->
+    
+        <!-- end app body -->
+    
+    </section>
+</main>

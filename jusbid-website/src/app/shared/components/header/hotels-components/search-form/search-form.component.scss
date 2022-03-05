@@ -1,0 +1,147 @@
+.search-bar-container {
+  background: whitesmoke;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 10%);
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 46px;
+  display: grid;
+  grid-template-columns: 35% 30% 20% 15%;
+  align-items: center;
+  input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    &:focus {
+      outline: none;
+    }
+  }
+  .search-location-input {
+    display: flex;
+    align-items: center;
+    input {
+      padding: 0 10px 0 20px;
+    }
+    button.current-location {
+      padding: 4px 8px;
+      width: 150px;
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #dedede;
+      ion-icon {
+        margin-right: 5px;
+      }
+      &:hover {
+        background: #f2f2f2;
+      }
+    }
+  }
+  .guest-select-input {
+    position: relative;
+  }
+  .search-button {
+    height: 100%;
+    button.search-btn {
+      width: 100%;
+      height: 100%;
+      background: var(--primary-gradient);
+      border-left: 1px solid var(--primary-gradient);
+      color: #fff;
+      border-top-right-radius: 0.4rem;
+      border-bottom-right-radius: 0.4rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  }
+  .checkin-checkout-input {
+    border-left: 1px solid hsla(0, 0%, 60%, 0.4);
+    border-right: 1px solid hsla(0, 0%, 60%, 0.4);
+    margin: 0 10px;
+    padding: 0 0px;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+::ng-deep {
+  p-calendar {
+    .p-calendar {
+      display: flex !important;
+      .p-datepicker {
+        border: 1px solid rgb(207, 207, 207);
+        box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+        transition: opacity 0.4s ease 0s, top 0.4s ease 0s;
+        border-radius: 0.8rem;
+        top: 44px !important;
+
+        span.p-highlight {
+          background: var(--primary-gradient) !important;
+          color: var(--white) !important;
+        }
+      }
+    }
+    .p-inputtext {
+      background: transparent;
+      width: 100%;
+      color: #000;
+      font-weight: 600;
+      font-size: 0.875rem;
+      border: none !important;
+      cursor: pointer;
+
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+    .p-datepicker-today {
+      span {
+        background: transparent !important;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .p-datepicker table td {
+      padding: 1px !important;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .search-bar-container {
+    input {
+      font-size: 0.8rem;
+    }
+  }
+  p-calendar {
+    .p-inputtext {
+      font-size: 0.8rem;
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .search-bar-container {
+    display: grid;
+    // grid-template-columns: 30% 25% 20% 15%;
+  }
+}
+@media (max-width: 992px) {
+  .search-bar-container {
+    .search-button {
+      button.search-btn {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+input {
+  font-size: 0.875rem;
+}

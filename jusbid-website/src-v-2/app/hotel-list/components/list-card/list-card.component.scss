@@ -1,0 +1,380 @@
+.list-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 39% auto 19%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: var(--white);
+  position: relative;
+  border: 1px solid #e1e2e3;
+  margin-top: 20px;
+  border-radius: 0.8rem;
+  .list-card-image {
+    position: inherit;
+    img {
+      width: 100%;
+      height: 278px;
+      border-top-left-radius: 0.8rem;
+      border-bottom-left-radius: 0.8rem;
+    }
+  }
+  .list-card-desc {
+    padding: 12px;
+    position: inherit;
+    .hotelname-rating {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      .list-hotel-name {
+        h3 {
+          margin: 0;
+          padding: 0;
+          font-weight: 600;
+        }
+      }
+      .hotel-star {
+        margin-left: 5px;
+        color: #f99e00;
+      }
+    }
+    .hotel-address {
+      margin: 10px 0;
+      p {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        color: #4a4a4a;
+        span {
+          margin-left: 5px;
+          font-size: 13px;
+        }
+        ion-icon {
+          font-size: 20px;
+        }
+      }
+    }
+    .hotel-distance {
+      margin: 10px 0;
+      p {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        span {
+          margin-left: 5px;
+          font-size: 13px;
+          color: #4266cf;
+        }
+        ion-icon {
+          font-size: 20px;
+          color: #4a4a4a;
+        }
+      }
+    }
+    .hotel-aminities {
+      margin-left: 2px;
+      display: flex;
+      flex-wrap: wrap;
+      .aminity-border {
+        width: fit-content;
+        height: fit-content;
+        border: 1.7px solid #04a74c;
+        border-radius: 2px;
+        color: #04a74c;
+        padding: 3px 6px;
+        margin: 2px 3px;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 7px;
+        }
+      }
+    }
+    .extra-facility {
+      .Free-Cancellation {
+        display: none;
+      }
+      .Discount-Applied {
+        display: none;
+      }
+      .Book-Now {
+        display: none;
+      }
+    }
+    .suggestion-box-container {
+      margin-left: 5px;
+      margin-top: 10px;
+      .column-5 {
+        color: #fff;
+        h6 {
+          background-color: #04a74c;
+          font-size: 13px;
+          padding: 6px 3px;
+        }
+      }
+      .column-7 {
+        h6 {
+          border: 1.5px solid #04a74c;
+          width: 100%;
+          font-size: 13px;
+          padding: 4.5px 5px;
+        }
+      }
+    }
+  }
+  .list-card-price {
+    padding: 0 10px;
+    .responsive-price-section {
+      position: initial;
+      width: 100%;
+      height: 100%;
+      padding: 8px;
+      margin: 30px 0;
+    }
+    position: inherit;
+    border-left: 1px solid #dedede;
+    .total-rating-section {
+      display: flex;
+      justify-content: end;
+      .total-rating {
+        display: flex;
+        align-items: center;
+        background-color: #f99e00;
+        padding: 8px;
+        border-radius: 5px;
+        width: fit-content;
+        height: fit-content;
+        color: var(--white);
+        ion-icon{
+          margin-right: 4px;
+        }
+      }
+      .excellent {
+        font-size: 15px;
+        max-width: 70px;
+        margin-left: 5px;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    .hotel-price-section {
+      .disc-price {
+        width: 100%;
+        font-size: 15px;
+        text-decoration: line-through;
+        text-align: right;
+        color: #929292;
+      }
+      .hotel-price {
+        display: flex;
+        justify-content: right;
+        .total-price {
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          margin: 0;
+        }
+        p {
+          font-size: 12px;
+          text-align: right;
+          color: #747171;
+        }
+      }
+    }
+    .detail-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-left: auto;
+      margin-top: 20px;
+      button {
+        padding: 12px 0px;
+        width: 100%;
+        color: var(--white);
+        background-color: #ef6515;
+        border-radius: 0.3rem;
+        font-size: 14px;
+      }
+    }
+    .cancellation {
+      float: right;
+      padding: 10px;
+      p {
+        display: flex;
+        align-items: center;
+        color: #04a74c;
+        font-weight: 500;
+        white-space: nowrap;
+        margin: 0;
+        span {
+          font-size: 9.9px;
+          // flex-wrap: wrap;
+        }
+        ion-icon {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .list-card .list-card-price .cancellation {
+    padding: 0 2px;
+  }
+  .list-card .list-card-desc .suggestion-box-container {
+    .column-5 h6 {
+      background-color: #04a74c;
+      font-size: 12px;
+      padding: 6px 3px;
+    }
+  }
+  .list-card .list-card-desc .suggestion-box-container .column-7 h6 {
+    padding: 4px 4px;
+  }
+  .list-card .list-card-price .detail-button {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-card {
+    grid-template-columns: 100%;
+    border-radius: 5px;
+    .list-card-image {
+      height: 200px;
+      border-radius: 5px;
+      img {
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+    .list-card-desc {
+      padding: 10px;
+      .hotelname-rating {
+        justify-content: space-between;
+      }
+      .suggestion-box-container {
+        display: none;
+      }
+      .hotel-aminities {
+        display: none;
+      }
+      .extra-facility {
+        display: flex;
+        justify-content: space-between;
+        max-width: 360px;
+        margin-top: 70px;
+        .Free-Cancellation {
+          display: block;
+          width: fit-content;
+          color: #019605;
+          border-radius: 20px;
+          background-color: #cff8d0;
+          padding: 5px;
+          font-size: 10px;
+          p {
+            display: flex;
+            align-items: center;
+            span {
+              margin-left: 3px;
+              flex-wrap: wrap;
+            }
+          }
+        }
+        .Discount-Applied {
+          display: block;
+          width: fit-content;
+          color: #4976b6;
+          border-radius: 20px;
+          background-color: #deebfe;
+          padding: 5px;
+          font-size: 10px;
+          p {
+            display: flex;
+            align-items: center;
+            span {
+              margin-left: 3px;
+            }
+          }
+        }
+        .Book-Now {
+          display: block;
+          width: fit-content;
+          color: #000;
+          border-radius: 20px;
+          background-color: #feefc2;
+          padding: 5px;
+          font-size: 10px;
+          p {
+            display: flex;
+            align-items: center;
+            span {
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+    }
+    .list-card-price {
+      .responsive-price-section {
+        position: absolute;
+        bottom: 115px;
+        right: 0;
+        padding: 8px;
+        width: 0;
+        height: 0;
+        h3 {
+          margin-bottom: 0;
+        }
+      }
+      .detail-button {
+        display: none;
+      }
+      .cancellation {
+        display: none;
+      }
+      .total-rating-section {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .list-card {
+    .list-card-price {
+      .total-rating-section {
+        text-align: right;
+        margin-left: 67px;
+        .total-rating {
+          padding: 5px;
+          font-size: 13px;
+        }
+        .excellent {
+          font-size: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .list-card {
+    .list-card-price {
+      .hotel-price-section {
+        .hotel-price {
+          .total-price {
+            font-size: 20px;
+          }
+        }
+      }
+      .detail-button {
+        button {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

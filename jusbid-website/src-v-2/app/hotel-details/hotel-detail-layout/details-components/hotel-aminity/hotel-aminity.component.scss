@@ -1,0 +1,24 @@
+
+    .aministies-desc {
+        ul {
+            display: grid;
+            grid-template-columns: auto auto;
+            li {
+                flex-wrap: wrap;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                ion-icon {
+                    font-size: 30px;
+                }
+                span {
+                    margin-left: 20px;
+                    color: #222222 !important;
+                    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+                    font-weight: 400 !important;
+                    font-size: 16px !important;
+                    line-height: 20px !important;
+                }
+            }
+        }
+    }

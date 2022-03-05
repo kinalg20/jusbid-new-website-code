@@ -1,0 +1,82 @@
+<header [ngClass]="addShadow ? 'shadow' : ''">
+    <div class="brand-logo">
+        <img src="assets/images/logo.png" alt="Jusbid Logo" (click)="gotoHome()">
+    </div>
+
+    <ng-container *ngIf="!isHome">
+        <div class="search-bar-container">
+            <div class="search-location-input">
+                <input type="text" name="searchLocation" id="" class="input-search" placeholder="Search Hotel by City"
+                    [(ngModel)]="searchLocation">
+
+                <button class="current-location" (click)="getCurrentLocation()">
+                    <span>
+                        <ion-icon name="locate-outline" *ngIf="!loadLocation"></ion-icon>
+                        <div class="spinner-border spinner-border-sm" role="status" *ngIf="loadLocation"
+                            style="margin-right: 4px;"></div>
+                    </span>
+                    <span>Near Me</span>
+                </button>
+
+                <!-- Suggestions Box  -->
+                <div class="suggestion-box" *ngIf="false">
+                    <ul>
+                        <ng-container *ngFor="let i of [].constructor(50);">
+                            <li>
+                                <div class="location-item">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    <div class="location">
+                                        <p>Location address is here</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ng-container>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checkin-checkout-input">
+                <p-calendar [(ngModel)]="rangeDates" [touchUI]="false" [showTransitionOptions]="'2ms'"
+                    [hideTransitionOptions]="'2ms'" selectionMode="range" class="input-datepicker" dateFormat="D, dd M"
+                    [minDate]="today" [readonlyInput]="true"></p-calendar>
+            </div>
+
+            <div class="guest-select-input">
+                <input type="text" name="" id="" class="guest-input"
+                    value="{{totalRoomGuestCount.roomQty}} Room, {{totalRoomGuestCount.guestQty}} Guest" readonly
+                    style="cursor: pointer;" (click)="guests_n_rooms_picker_toggle = !guests_n_rooms_picker_toggle">
+                <guests-and-rooms-picker *ngIf="guests_n_rooms_picker_toggle"
+                    (closeContainer)="isCloseContainer($event)" (roomGuestCount)="getTotalRoomAndGuestCount($event)">
+                </guests-and-rooms-picker>
+            </div>
+
+            <div class="search-button">
+                <button class="search-btn" (click)="searchHotel()">
+                    <span><ion-icon name="search-outline" mode="ios"></ion-icon></span>
+                    <span>Search</span>
+                </button>
+            </div>
+        </div>
+    </ng-container>
+
+    <ul>
+        <li *ngIf="!user.firstname">
+            <button class="login-button" (click)="gotoAuth()">
+                <ion-icon name="log-in-outline" mode="ios" class="login-icon"></ion-icon>
+                <span>Login / Signup</span>
+            </button>
+        </li>
+        <li *ngIf="user.firstname">
+            <button class="user-profile-btn" type="button" (click)="this.isShowSideBar = !this.isShowSideBar">
+                <ion-icon name="person-outline" mode="ios"></ion-icon>
+                <span style="text-transform: capitalize;">Hi, {{user.firstname}}</span>
+            </button>
+        </li>
+    </ul>
+
+</header>
+
+
+
+
+<app-sidebar [isShowSideBar]="this.isShowSideBar" (closeSiderbar)="this.closeSiderbar($event)"></app-sidebar>

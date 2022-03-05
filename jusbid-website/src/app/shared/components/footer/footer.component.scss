@@ -1,0 +1,219 @@
+.footer-data {
+  position: relative;
+  .footer-top {
+    background: #333;
+    letter-spacing: 0.2px;
+    .top-container {
+      padding: 70px 90px;
+      color: #ffffff;
+      .top-content {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        .amazing-offers {
+          text-align: justify;
+          p {
+            line-height: 1.8;
+          }
+        }
+        .social-media {
+          margin-left: 50px;
+          h1 {
+            color: #999;
+          }
+          .social-media-links {
+            svg {
+              width: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    background: #000;
+    padding: 70px 90px 0;
+    display: grid;
+    grid-template-columns: 100%;
+    .important-links {
+      .link-container {
+        display: grid;
+        grid-template-columns: 100%;
+        h1 {
+          color: #fff;
+        }
+        .popular-cities {
+          display: grid;
+          grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+          color: #fff;
+          p {
+            margin: 5px 0;
+            color: #999;
+          }
+          p:hover {
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .bottom-container {
+      padding: 90px 0;
+      color: #ffffff;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      p {
+        margin: 5px 0;
+        color: #999;
+      }
+      .bottom-content {
+        .footer-bottom-categories {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          border-right: 1px solid;
+          right: 0;
+          .about-company {
+            ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              .head {
+                margin-bottom: 12px;
+                font-weight: bold;
+              }
+              li {
+                margin-bottom: 12px;
+                a {
+                  color: #fff;
+                  font-size: 13px;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          .help {
+            ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              .head {
+                margin-bottom: 12px;
+                font-weight: bold;
+              }
+              li {
+                margin-bottom: 12px;
+                a {
+                  color: #fff;
+                  font-size: 13px;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right-footer-part {
+        margin-left: 100px;
+        .head {
+          margin-bottom: 12px;
+          font-weight: bold;
+        }
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: grid;
+          grid-template-columns: 50% 50%;
+          li {
+            display: flex;
+            align-items: center;
+            a {
+              img {
+                width: 200px;
+              }
+            }
+            p {
+              text-align: center;
+              line-height: 24px;
+              color: #ffffff;
+              text-decoration: none;
+              // width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    button {
+      background: var(--primary-gradient);
+      font-size: 30px;
+      color: #fff;
+      border-radius: 100%;
+      padding: 8px 10px;
+      // box-shadow: 2px 0px 3px 1px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .footer-data {
+    .footer-top {
+      .top-container {
+        .top-content {
+          display: grid;
+          grid-template-columns: 75% 25%;
+        }
+      }
+    }
+    .footer-bottom {
+      .bottom-container {
+        .right-footer-part {
+          ul {
+            li {
+              a {
+                img {
+                  width: 170px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .footer-data {
+    .footer-top {
+      .top-container {
+        .top-content {
+          .social-media {
+            .social-media-links {
+              svg {
+                width: 30px;
+              }
+            }
+          }
+          .amazing-offers {
+            h1 {
+              font-size: 1.4rem;
+            }
+            p {
+              font-size: 0.9rem;
+            }
+          }
+          .social-media {
+            h1 {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

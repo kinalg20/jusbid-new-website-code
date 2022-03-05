@@ -1,0 +1,142 @@
+<div class="bidform" *ngIf="selectedRoom">
+    <div class="bid-form-container">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
+            <h3 style="margin: 0; padding: 0;">Bid Form</h3>
+            <div style="display: block;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <h3 style="margin: 0; padding: 0;">
+                        <set-price [price]="selectedRoom.price" [symbol]="'INR'"></set-price>
+                    </h3><sub style="font-size: 16px; margin-left: 3px;">/ night</sub>
+                    <!-- <h5>{{selectedRoom.room_type}}</h5> -->
+                </div>
+                <div style=" text-align: right;">
+                    <small style="color: gray; text-decoration: underline; cursor: pointer;">including of all
+                        taxes</small>
+                </div>
+            </div>
+        </div>
+        <div class="bid-form">
+            <div class="row">
+                <div class="column">
+                    <div class="form-control">
+                        <label for="checkin-checkout">Check-In & Check-Out</label>
+                        <p-calendar [(ngModel)]="rangeDates" [touchUI]="false" id="checkin-checkout"
+                            [showTransitionOptions]="'2ms'" [hideTransitionOptions]="'2ms'" selectionMode="range"
+                            class="input-datepicker" dateFormat="D, dd M" [minDate]="today" [readonlyInput]="true">
+                        </p-calendar>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column" style="border-right: 1px solid rgb(185, 182, 182);">
+                    <div class="form-control">
+                        <label for="Guests">Guests</label>
+                        <input type="text" id="" style="font-size: 1.15rem;font-weight: 600; cursor: pointer;" name=""
+                            value="{{totalAdultChildCount.adultCount + ' adult'}} {{', '+ totalAdultChildCount.childCount + ' child'}}"
+                            onKeyPress="if(this.value.length>=2) return false" (click)="countDropDown=!countDropDown"
+                            readonly />
+                        <app-adult-child-count *ngIf="countDropDown" (closeContainer)="closeContainer($event)"
+                            (totalAdultChildCount)="getTotalAdultChildCount($event)"></app-adult-child-count>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="form-control">
+                        <label for="Rooms">Rooms</label>
+                        <input type="number" placeholder="Rooms" value="1" id="Rooms"
+                            style="font-size: 1.2rem;font-weight: 600;" name="roomsCount" [(ngModel)]="roomsCount"
+                            onKeyPress="if(this.value.length>=2) return false" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="form-control">
+                        <div class="room-type">
+                            <label for="room-category">Select Room Category</label>
+                            <p-dropdown [options]="hotel_rooms" id="room-category" [(ngModel)]="selectedRoom"
+                                optionLabel="room_type"></p-dropdown>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="border-bottom: none;">
+                <div class="column">
+                    <div class="form-control">
+                        <label for="bidAmt" *ngIf="!this.isValidBidAmt(bidAmt)">Please enter your Bid Amount</label>
+                        <label class="Error" *ngIf="this.isValidBidAmt(bidAmt)">
+                            {{
+                            !bidAmt ? 'Please enter bid amount' : 'The Bid amount must be more than '+ this.minBidAmt
+                            }}
+                        </label>
+                        <div class="bid-price">
+                            <span>₹</span>
+                            <input type="number" placeholder="Please Enter Your bid price" name="bidAmt" id="bidAmt"
+                                [(ngModel)]="bidAmt" style="font-size: 1.2rem;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="form-control">
+                    <div class="checkbox">
+                        <label for=""><span style="font-weight: 600;">Note :</span> Child Below 6 years old</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" class="bid-jusbid-submit" (click)="getBidResponse()"
+                [disabled]="this.isValidBidAmt(bidAmt)" routerLink="/hotels/bid-confirmation">Bid Now</button>
+        </div>
+        <!-- <div class="imp-info">
+            <p>you won't be charged yet</p>
+            <ul class="all-details">
+                <li>
+                    <span>
+                        <set-price [price]="selectedRoom.price" [symbol]="'INR'"></set-price>
+                        <span style="position: relative;" *ngIf="!rangeDates[0] || !rangeDates[1]">
+                            <ion-spinner name="dots" mode="ios" style="position: absolute;left: 14px;bottom: -4px;">
+                            </ion-spinner>
+                        </span>
+                        <span *ngIf="rangeDates[0] && rangeDates[1]"> X {{this.calculateDays(rangeDates[0],
+                            rangeDates[1])}} night</span>
+                    </span>
+                    <span>
+                        <set-price [price]="4500 * this.calculateDays(rangeDates[0],
+                        rangeDates[1])" [symbol]="'INR'" *ngIf="rangeDates[0] && rangeDates[1]"></set-price>
+                        <span style="position: relative;" *ngIf="!rangeDates[0] || !rangeDates[1]">
+                            <ion-spinner name="dots" mode="ios" style="position: absolute;right: -2px;bottom: -20px;">
+                            </ion-spinner>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span>Service fee</span>
+                    <span>
+                        <set-price [price]="'0'" [symbol]="'INR'"></set-price>
+                    </span>
+                </li>
+                <li>
+                    <span>Occupancy taxes and fees</span>
+                    <span>
+                        <set-price [price]="'420'" [symbol]="'INR'"></set-price>
+                    </span>
+                </li>
+            </ul>
+            <ul style="border-top:1px solid rgb(221, 221, 221);">
+                <li style="font-weight: 600">
+                    <span>Total before Taxes</span>
+                    <span>
+                        <set-price [price]="'9420'" [symbol]="'INR'">
+                        </set-price>
+                    </span>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="#" style="color: #222;">Terms & Conditions</a>
+    </div>
+</div>

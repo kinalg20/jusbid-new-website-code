@@ -1,0 +1,266 @@
+<!-- <div class="list-card" *ngIf="false">
+  <div class="list-card-image">
+    <img [src]="this.getImageUrl(hotelData.image)" alt="" />
+  </div>
+  <div class="list-card-desc">
+    <div class="hotelname-rating">
+      <div class="list-hotel-name">
+        <h3 style="text-transform: capitalize;">{{hotelData.name}}</h3>
+      </div>
+    </div>
+    <div class="hotel-address">
+      <p>
+        <ion-icon name="location"></ion-icon
+        ><span style="text-transform: capitalize;">{{hotelData.area ? hotelData.area : hotelData.address}}</span>
+      </p>
+    </div>
+    <div class="hotel-distance">
+      <p>
+        <ion-icon name="navigate-circle"></ion-icon
+        ><span>1.64 km from Bangalore</span>
+      </p>
+    </div>
+    <div class="hotel-aminities">
+      <ng-container *ngFor="let aminity of [].constructor(6)">
+        <div class="aminity-border">
+          <p><ion-icon name="cafe"></ion-icon></p>
+        </div>
+      </ng-container>
+    </div>
+    <div class="extra-facility">
+      <div class="Free-Cancellation">
+        <p>
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          <span> Free Cancellation </span>
+        </p>
+      </div>
+      <div class="Discount-Applied">
+        <p>
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          <span> Discount Applied </span>
+        </p>
+      </div>
+      <div class="Book-Now">
+        <p>
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          <span> Book Now And Save 850Rs. </span>
+        </p>
+      </div>
+    </div>
+    <div class="suggestion-box-container">
+      <div class="row">
+        <div class="column-5">
+          <h6>Highly recommended!</h6>
+        </div>
+        <div class="column-7">
+          <h6>Preferred by all the guests</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="list-card-price">
+    <div>
+      <div style="align-items: center; padding-top: 20px">
+        <div class="total-rating-section">
+          <p class="total-rating"><ion-icon name="star"></ion-icon> 4.5</p>
+          <p class="excellent">Excellent <span>reviews</span></p>
+        </div>
+        <div class="responsive-price-section" >
+          <div class="hotel-price-section">
+            <div class="hotel-price">
+              <div>
+                <h3 class="disc-price"><span>&#8377;</span>3000</h3>
+                <h1 class="total-price"><span>&#8377;</span> {{hotelData.room_price}}</h1>
+                <p>Per Night</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail-button">
+            <button type="submit" routerLink="/hotels/:id">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- New UI -->
+
+<!-- <ng-container *ngIf="true">
+  <div class="list-card">
+    <div class="list-card-image">
+      <img
+      [src]="this.getImageUrl(hotelData.image)"
+        alt=""
+      />
+    </div>
+    <div class="list-card-desc">
+      <div class="hotelname-rating">
+        <div class="list-hotel-name">
+          <h3 style="text-transform: capitalize;">{{hotelData.name}}</h3>
+        </div>
+      </div>
+      <div class="hotel-address">
+        <p>
+          <ion-icon name="location"></ion-icon
+          ><span>{{hotelData.area ? hotelData.area : hotelData.address}}</span>
+        </p>
+      </div>
+      <div class="hotel-distance">
+        <p>
+          <ion-icon name="navigate-circle"></ion-icon
+          ><span>1.64 km from Bangalore</span>
+        </p>
+      </div>
+      <div class="hotel-aminities">
+        <ng-container *ngFor="let aminity of [].constructor(5)">
+          <div class="aminity-border">
+            <p><ion-icon name="cafe"></ion-icon><span>cafe</span></p>
+          </div>
+        </ng-container>
+      </div>
+      <div class="extra-facility">
+        <div class="Free-Cancellation">
+          <p>
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <span> Free Cancellation </span>
+          </p>
+        </div>
+        <div class="Discount-Applied">
+          <p>
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <span> Discount Applied </span>
+          </p>
+        </div>
+        <div class="Book-Now">
+          <p>
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <span> Book Now And Save 850Rs. </span>
+          </p>
+        </div>
+      </div>
+      <div class="suggestion-box-container">
+        <div class="row">
+          <div class="column-5">
+            <h6>Highly recommended!</h6>
+          </div>
+          <div class="column-7">
+            <h6>Preferred by all the guests</h6>
+          </div>
+        </div>
+      </div>
+      <div class="bedroom">
+        <img
+          src="https://img.icons8.com/external-xnimrodx-lineal-gradient-xnimrodx/64/000000/external-bathroom-interior-xnimrodx-lineal-gradient-xnimrodx.png"
+        />
+        <p>4 Bedrooms</p>
+      </div>
+      <div class="bathroom">
+        <img
+          src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bedroom-hotel-essentials-justicon-flat-justicon.png"
+        />
+        <p>3 Bathrooms</p>
+      </div>
+    </div>
+    <div class="list-card-price">
+      <div style="">
+        <div style="align-items: center; padding-top: 40px">
+          <div class="total-rating-section">
+            <p class="total-rating">4.5</p>
+            <p class="excellent">Excellent <span>reviews</span></p>
+          </div>
+          <div class="responsive-price-section">
+            <div class="hotel-price-section">
+              <div class="hotel-price">
+                <div>
+                  <h3 class="disc-price"><set-price [price]="hotelData.room_price" [symbol]="'INR'"></set-price></h3>
+                  <h1 class="total-price"><set-price [price]="hotelData.room_price" [symbol]="'INR'"></set-price></h1>
+                  <p>Per Night</p>
+                </div>
+              </div>
+            </div>
+            <div class="detail-button">
+              <button type="button" routerLink="/hotels/:id">View Details</button>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container> -->
+
+
+
+
+
+
+<div class="listing-card" *ngIf="fetchedHotelAmenityData">
+  <div class="list-card">
+    <div class="list-card-image">
+      <img [src]="this.getImageUrl(hotelData.image)" alt="">
+    </div>
+    <div class="list-card-desc">
+      <div class="hotel-address">
+        <p>{{hotelData.area ? hotelData.area : hotelData.address}}</p>
+      </div>
+      <div class="list-hotel-name">
+        <h1>{{hotelData.name}}</h1>
+      </div>
+      <div class="list-hotel-desc">
+        <p>Making way for a hearty meal is Amrai Valley Resort in Pali-Rajasthan. This place is synonymous with
+          delicious
+          food that can satiate all food cravings. It is home to some of the most appreciated cuisines.</p>
+      </div>
+      <div class="list-hotel-amenities">
+        <ng-container *ngFor="let data of fetchedHotelAmenityData.slice(0,5)">
+          <div class="hotel-aminity">
+            <img [src]="getImageUrl(data.icon)" alt="">
+            <span class="amenity-name">{{data.name}}</span>
+          </div>
+        </ng-container>
+      </div>
+      <div class="list-suggestion-box">
+        <div class="highly-recomm">
+          <div class="highly-recomm-logo">
+            <img src="assets/images/icons/Icon awesome-shield-alt.svg" alt="">
+          </div>
+          <div class="highly-recomm-text">
+            <p>Highly recommended!</p>
+          </div>
+        </div>
+        <div class="santized-room">
+          <div class="santized-room-logo">
+            <img src="../../../../../assets/images/icons/santized-room.svg" alt="">
+          </div>
+          <div class="santized-room-text">
+            <p>Preferred by all the guests</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-hotel-distance">
+        <div class="hotel-distance-icon">
+          <ion-icon name="location"></ion-icon>
+          <span>1.64 km from Banglore</span>
+        </div>
+      </div>
+    </div>
+    <div class="list-card-price">
+      <div class="list-hotel-rating">
+        <button class="rating">4.5</button>
+        <p><span>Excellent</span><span style="font-weight: 600;">reviews</span>
+        </p>
+      </div>
+
+      <div class="hotel-price-detail">
+        <div class="hotel-price">
+          <set-price [price]="hotelData.room_price" [symbol]="'INR'"></set-price><span>/night</span>
+        </div>
+        <div class="view-detail-button" (click)="getHotelDetail(hotelData.id)">
+          <button class="detail-button">View Detail</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

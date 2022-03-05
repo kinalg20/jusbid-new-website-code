@@ -1,0 +1,52 @@
+<section class="auth-section-container">
+    <div class="brand-logo">
+        <img src="assets/images/jusbid_white_logo.png" alt="Jusbid Logo" (click)="gotoHome()">
+    </div>
+
+    <div class="form-card">
+        <div class="form-header">
+            <div>
+                <h2 *ngIf="activeForm === 'sign-in' || activeForm === 'sign-up'">{{ activeForm === 'sign-in' ? 'Sign In' :
+                    'Sign Up' }}</h2>
+                <h2 *ngIf="activeForm === 'otp-login'">{{ activeForm === 'otp-login' ? 'Login with OTP' : '' }}</h2>
+            </div>
+            <div>
+                <button class="close-btn"><ion-icon name="close-outline" mode="ios" (click)="gotoHome()"></ion-icon></button>
+            </div>
+        </div>
+
+        <app-sign-up *ngIf="activeForm === 'sign-up'"></app-sign-up>
+        <app-sign-in *ngIf="activeForm === 'sign-in'"></app-sign-in>
+        <otp-login *ngIf="activeForm === 'otp-login'"> </otp-login>
+
+        <div class="footer">
+            <p *ngIf="activeForm === 'sign-in'">
+                If you don't have any account
+                <a (click)="changeForm('sign-up')" class="cursor-pointer">Create account</a>
+            </p>
+            <p *ngIf="activeForm === 'sign-up'">
+                Already have an account ?
+                <a (click)="changeForm('sign-in')" class="cursor-pointer">Click here</a>
+            </p>
+            <div *ngIf="activeForm === 'sign-in'">
+                <p> Or </p>
+                <p class="otp-login-btn">
+                    <a (click)="changeForm('otp-login')" class="cursor-pointer">Login with Phone number</a>
+                </p>
+            </div>
+            <p *ngIf="activeForm === 'otp-login'">
+                Prefer to Sign in with password instead?
+                <a (click)="changeForm('sign-in')" class="cursor-pointer">Click here</a>
+            </p>
+        </div>
+
+        <div style="margin-top: 10%;">
+            <p style="color: #9b9b9b;font-size: 12px;
+            line-height: 12px;">
+                We’ll call or text you to confirm your number. Standard message and data rates apply. <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+
+    </div>
+
+</section>

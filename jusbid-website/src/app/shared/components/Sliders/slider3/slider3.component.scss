@@ -1,0 +1,225 @@
+section {
+  background: rgb(219, 183, 183);
+  padding: 5% 0;
+  .popular-hotels-slider {
+    padding: 0 90px;
+    .hotel-card-header {
+      padding: 0 5px 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .hotel-sub-head-section {
+        display: flex;
+      }
+      h1 {
+        font-size: 2.2rem;
+        margin-top: 0;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 18px;
+        line-height: 169.2%;
+        color: rgba(0, 0, 0, 0.4);
+        margin-right: 5px;
+      }
+    }
+    .popular-hotels-details {
+      .detail-card {
+        cursor: pointer;
+        background: #fff;
+        padding: 10px;
+        height: 500px;
+        border-radius: 10px;
+        .detail-card-image {
+          img {
+            width: 320px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+          }
+        }
+        .popular-hotel-details {
+          text-align: left;
+          margin-top: 20px;
+          span.popular-city-name {
+            color: #000;
+            font-size: 1.1rem;
+            color: rgba(0, 0, 0, 0.4);
+          }
+          h1.popular-hotel-name {
+            font-size: 1.4rem;
+            margin-top: 10px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .hotel-slider-controls {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      .control-btn {
+        font-size: 25px;
+        z-index: 2;
+        cursor: pointer;
+        padding: 10px;
+        color: #222;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 30px;
+      }
+      .control-btn:disabled {
+        cursor: default;
+      }
+    }
+  }
+}
+::ng-deep {
+  .swiper-slide {
+    padding: 0 5px;
+  }
+}
+@media (max-width: 1399px) {
+  section {
+    .popular-hotels-slider {
+      .popular-hotels-details {
+        .detail-card {
+          height: 450px;
+          .detail-card-image {
+            img {
+              height: 275px;
+            }
+          }
+        }
+      }
+      ion-content {
+        height: 450px;
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  section {
+    .popular-hotels-slider {
+      padding: 0 70px;
+      .hotel-card-header {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .popular-hotels-details {
+        .detail-card {
+          .detail-card-image {
+            img {
+              width: 330px;
+            }
+          }
+        }
+      }
+      .hotel-slider-controls {
+        .control-btn {
+          font-size: 20px;
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  section {
+    .popular-hotels-slider {
+      .hotel-card-header {
+        padding: 0 5px 25px;
+        h1 {
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+      .popular-hotels-details {
+        .detail-card {
+          .detail-card-image {
+            img {
+              width: 350px;
+            }
+          }
+        }
+      }
+      .hotel-slider-controls {
+        .control-btn {
+          font-size: 18px;
+          width: 40px;
+          height: 40px;
+          margin: 0 0 0 25px;
+        }
+        .control-btn:disabled {
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  section {
+    .popular-hotels-slider {
+      padding: 0 60px;
+      .popular-hotels-details {
+        .detail-card {
+          height: 400px;
+          .detail-card-image {
+            img {
+              height: 230px;
+            }
+          }
+        }
+      }
+      ion-content {
+        height: 400px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  section {
+    .popular-hotels-slider {
+      padding: 0 40px;
+      .hotel-card-header {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .popular-hotels-details {
+        .detail-card {
+          height: 345px;
+          .detail-card-image {
+            img {
+              height: 200px;
+            }
+          }
+          .popular-hotel-details {
+            h1.popular-hotel-name {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+      .hotel-slider-controls {
+        .control-btn {
+          font-size: 16px;
+          width: 35px;
+          height: 35px;
+          margin: 0 0 0 20px;
+        }
+      }
+      ion-content {
+        height: 370px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div class="aministies-desc">
+    <ul style="list-style: none;">
+        <ng-container *ngFor="let amenity of aminities">
+            <li>
+                <div [innerHTML]="amenity.icon | safeHtml"></div>
+                <span> {{ amenity.name}}</span>
+            </li>
+        </ng-container>
+    </ul>
+</div>

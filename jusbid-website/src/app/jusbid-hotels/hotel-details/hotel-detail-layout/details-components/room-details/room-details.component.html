@@ -1,0 +1,70 @@
+<div class="room-details-section">
+    <div style="display: flex; align-items: center; justify-content: space-between;padding: 20px 20px;">
+        <h2 style="font-weight: 600;margin: 0;">{{RoomDetails.room_type}}</h2>
+        <ion-icon name="close-circle-outline" style="cursor: pointer; font-size: 25px; margin-right: 15px;"
+            (click)="CloseRoomDetailModel(false)">
+        </ion-icon>
+    </div>
+    <div class="card-body" style="padding:0 20px;">
+        <image-gallery [isShowThumnails]="false" [imageGalleryUrl]="RoomDetails.room_images"
+            *ngIf="RoomDetails.room_images"></image-gallery>
+        <div class="room-details-container">
+            <section class="room-desc-container">
+                <h4 style="font-weight: 600;">Description</h4>
+                <div class="room-desc">
+                    <div [innerHtml]="RoomDetails.description.slice(0,desc_len)"></div>
+                </div>
+                <a (click)="readMoreDesc(RoomDetails.description)" href="javascript: void(0)">
+                    {{ !isReadMoreDesc ? 'Read More': 'Read Less' }}
+                </a>
+            </section>
+
+            <section class="room-desc-container">
+                <h4 style="font-weight: 600;">Room Amenities</h4>
+                <div class="room-amenities">
+                    <ng-container *ngFor="let data of FetchedAmenity.slice(0,amenity_len)">
+                        <div class="model-room-amenity">
+                            <div style="width: 20px;">
+                                <img [src]="getRoomImageUrl(data.icon)" alt="" style="width:100%; height: 100%;">
+                            </div>
+                            <span>{{data.name}}</span>
+                        </div>
+                    </ng-container>
+                </div>
+                <a (click)="readMoreAmenity(FetchedAmenity)" href="javascript: void(0)">
+                    {{ !isReadMorebutton ? 'Read More': 'Read Less' }}
+                </a>
+            </section>
+
+            <section class="room-desc-container" *ngIf="RoomDetails.room_views.length>0">
+                <div class="room-views">
+                    <h4 style="font-weight: 600;">Room Views</h4>
+                    <div style=" max-width: 250px;
+                    display: flex;
+                    justify-content: space-between;">
+                        <ng-container *ngFor="let room_view of RoomDetails.room_views">
+                            <div style="display: flex; align-items: center;">
+                                <ion-icon name="star"></ion-icon> <span style="margin-left: 5px;">{{room_view}}</span>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="room-desc-container">
+                <div class="room-policy">
+                    <h4 style="font-weight: 600;">Policy</h4>
+                    <div [innerHtml]="hotel_desc" class="hotel_desc"></div>
+                </div>
+            </section>
+
+            <section class="room-desc-container">
+                <div class="room-policy">
+                    <h4 style="font-weight: 600;">Terms & Conditions</h4>
+                    <div [innerHtml]="hotel_desc" class="hotel_desc"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

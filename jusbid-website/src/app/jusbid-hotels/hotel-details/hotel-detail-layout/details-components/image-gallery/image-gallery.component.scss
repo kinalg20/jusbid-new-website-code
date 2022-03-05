@@ -1,0 +1,19 @@
+::ng-deep {
+    .p-galleria .p-galleria-thumbnail-container {
+        background: transparent;
+    }
+    .p-link:focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: none !important;
+    }
+    .p-galleria .p-galleria-item-nav:not(.p-disabled):hover {
+        background: none;
+    }
+
+    .full-image{
+        button.p-galleria-thumbnail-prev, button.p-galleria-thumbnail-next{
+            display: none;
+        }
+    }
+}

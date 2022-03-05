@@ -1,0 +1,98 @@
+<div class="filter">
+  <div class="filter-header">
+    <h2>Filters</h2>
+    <a href="#">Clear all</a>
+  </div>
+  <section class="price-range">
+    <div class="section-heading">
+      <h2>Price</h2>
+    </div>
+    <ng-container *ngIf="rangeValues">
+      <p-slider
+        [(ngModel)]="rangeValues"
+        [range]="true"
+        [max]="maximum"
+        [min]="0"
+        (onSlideEnd)="handleChange($event)"
+      ></p-slider>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 15px;
+          font-size: 14px;
+          color: #1e2022;
+        "
+      >
+        <b>{{ rangeValues[0] | currency: "INR" }}</b>
+        <b>{{ rangeValues[1] | currency: "INR" }}</b>
+      </div>
+    </ng-container>
+  </section>
+  <hr style="background: rgba(224, 224, 224, 1)" />
+  <section class="filter-section">
+    <div class="popular-filters">
+      <div class="section-heading">
+        <h2>Aminities</h2>
+        <button (click)="showAll(amenitiesFilter)" class="show-more-btn">
+          <i class="fa fa-plus"></i>
+          {{ !isShowAllAmenities ? "Show More" : "Show Less" }}
+        </button>
+      </div>
+      <ul class="filter-ul">
+        <ng-container
+          *ngFor="let amenity of amenitiesFilter.slice(0, showAmenities)"
+        >
+          <li>
+            <div class="filter-details">
+              <div class="chkbox-input">
+                <input
+                  type="checkbox"
+                  class="chkbox"
+                  [value]="amenity"
+                  (change)="getAmenityFilter(amenity)"
+                />
+                <p>{{ amenity.name }}</p>
+              </div>
+            </div>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </section>
+  <hr style="background: rgba(224, 224, 224, 1)" />
+  <section class="filter-section">
+    <div class="popular-filters">
+      <div class="section-heading">
+        <h2>Categories</h2>
+        <button
+          (click)="showAllCategories(hotelCategoryData)"
+          class="show-more-btn"
+        >
+          <i class="fa fa-plus"></i>
+          {{ !isShowAllCategories ? "Show More" : "Show Less" }}
+        </button>
+      </div>
+      <ul class="category-ul">
+        <ng-container
+          *ngFor="let category of hotelCategoryData.slice(0, showCategories)"
+        >
+          <li>
+            <div class="amenity-details">
+              <div class="chkbox-input">
+                <input
+                  type="checkbox"
+                  class="chkbox"
+                  [value]="category"
+                  (change)="getCatagoryFilter(category)"
+                />
+                <p>{{ category }}</p>
+              </div>
+            </div>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </section>
+</div>

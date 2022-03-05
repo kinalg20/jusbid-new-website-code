@@ -1,0 +1,91 @@
+.child-adult-model-container {
+    .child-adult-model {
+        border: 1px solid rgb(207, 207, 207);
+        box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+        transition: opacity 0.4s ease 0s, top 0.4s ease 0s;
+        border-radius: 0.6rem;
+        position: absolute;
+        top: 8.8rem;
+        padding: 20px 10px;
+        background: var(--white);
+        width: 97%;
+        left:6px;
+        z-index: 99;
+        .adult {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .adult-label {
+                p {
+                    font-weight: bolder;
+                }
+            }
+            .adult-counter-control {
+                width: fit-content;
+                .adult-count {
+                    width: 25px !important;
+                    height: 25px !important;
+                    border-radius: 100%;
+                    background: none;
+                    border: 1px solid rgb(176, 176, 176) !important;
+                }
+                span {
+                    margin: 0 5px;
+                }
+                .adult-label {
+                    p {
+                        font-size: 15px;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .child {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            .child-label {
+                p {
+                    font-weight: bolder;
+                }
+            }
+            .child-counter-control {
+                width: fit-content;
+
+                .child-count {
+                    width: 25px !important;
+                    height: 25px !important;
+                    border-radius: 100%;
+                    background: none;
+                    border: 1px solid rgb(176, 176, 176) !important;
+                    font-weight: bolder;
+                }
+                span {
+                    margin: 0 5px;
+                }
+                .child-label {
+                    p {
+                        font-size: 15px;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .apply-button {
+            .apply {
+                padding: 10px;
+                width: 70px;
+                background: var(--primary-gradient);
+                border-radius: 0.5rem;
+                color: #fff;
+            }
+        }
+    }
+}

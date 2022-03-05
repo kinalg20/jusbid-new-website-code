@@ -1,0 +1,97 @@
+.guests-and-rooms-picker-container {
+  border: 1px solid rgb(207, 207, 207);
+  box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+  transition: opacity 0.4s ease 0s, top 0.4s ease 0s;
+  border-radius: 0.8rem;
+  position: absolute;
+  top: 36px;
+  padding: 10px 20px;
+  background: var(--white);
+  width: 290px;
+  z-index: 99;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .close-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    button {
+      border-radius: 100%;
+      background: none;
+      ion-icon {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    label {
+      font-size: 0.9rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid hsla(0, 0%, 60%, 0.4);
+      .Guest-room-controller,
+      .guest-counter-control {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          padding: 10px 10px;
+          border: 1px solid hsla(0, 0%, 60%, 0.4);
+          border-radius: 5px;
+          &:focus {
+            outline: none;
+          }
+        }
+        span {
+          padding: 0 5px;
+        }
+        label {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    button {
+      background: transparent;
+      font-size: 0.9rem;
+      font-weight: 600;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .apply-button-container {
+    width: 100%;
+    button {
+      width: 100%;
+      background: var(--primary-gradient);
+      color: var(--white);
+      padding: 10px 0;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  }
+}

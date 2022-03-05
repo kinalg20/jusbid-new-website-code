@@ -1,0 +1,32 @@
+<div class="guests-and-rooms-picker-container">
+    <div class="close-container"><button (click)="closeRoomGuestCounterContainer(false)"><ion-icon name="close-circle-outline" mode="ios"></ion-icon></button></div>
+
+    <div class="header">
+        <label for="room-label">Rooms</label>
+        <label for="guest-label">Guests</label>
+    </div>
+
+    <ul>
+        <ng-container *ngFor="let room of roomCountArray;index as i">
+            <li>
+                <div class="Guest-room-controller">
+                    <label for="room-count">Room {{i+1}}</label>
+                    <div class="guest-counter-control">
+                        <button (click)="decreaseGuestCount(i)">-</button>
+                        <span>{{room.guestQty}}</span>
+                        <button (click)="increaseGuestCount(i)">+</button>
+                    </div>
+                </div>
+            </li>
+        </ng-container>
+    </ul>
+
+    <div class="footer">
+        <button (click)="removeRoom()" [disabled]="roomCountArray.length<=1">Delete Room</button>
+        <button (click)="addNewRoom()" [disabled]="roomCountArray.length>=6">Add Room</button>
+    </div>
+
+    <div class="apply-button-container">
+        <button (click)="apply_button()">Apply</button>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+.search-box {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  height: 50px;
+  background-color: #fff;
+  margin-top: 20px;
+  .where {
+    padding: 15px 14px;
+    .where-input {
+      border: none;
+      outline: none;
+    }
+  }
+  .check-in {
+    border-left: 1px solid #e6e6e6;
+    .in-input {
+      padding: 15px 14px;
+      border: none;
+      outline: none;
+    }
+  }
+  .check-out {
+    border-left: 1px solid #e6e6e6;
+    .out-input {
+      padding: 15px 14px;
+      border: none;
+      outline: none;
+    }
+  }
+  .guest {
+    border-left: 1px solid #e6e6e6;
+    .guest-count {
+      padding: 15px 14px;
+      border: none;
+      outline: none;
+    }
+  }
+  .search-btn {
+    padding: 15px 14px;
+    border: 1px solid #1dd38f;
+    font-size: 14px;
+    background-color: #1dd38f;
+    border-radius: 2px;
+    cursor: pointer;
+    border-radius: 0;
+    .search-hotel {
+      color: #fff;
+      font-weight: 500;
+      background: none;
+      font-size: 18px;
+      margin-right: 80px;
+    }
+  }
+}

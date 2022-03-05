@@ -1,0 +1,33 @@
+<app-header [isHome]="false"></app-header>
+<main>
+    <div class="hotel-details-container">
+        <div class="container">
+            <div class="hotel-detail-body">
+                <section class="hotel-detail-section">
+                    <app-hotel-detail-image></app-hotel-detail-image>
+                    <section class="hotel-description">
+                        <div class="hotel-description-body">
+                            <section-title [title]="'About Hotel Hilltop Palace'"></section-title>
+                            <app-hotel-description></app-hotel-description>
+                        </div>
+                    </section>
+                    <section class="Aminities-section">
+                        <div class="hotel-aminities-body">
+                            <section-title [title]="'Amenities'"></section-title>
+                            <app-hotel-aminity></app-hotel-aminity>
+                        </div>
+                    </section>
+                    <section class="select-room-section">
+                        <section-title [title]="'Select Room'"></section-title>
+                        <ng-container *ngFor="let room of [].constructor(3)">
+                            <app-hotel-room-section></app-hotel-room-section>
+                        </ng-container>
+                    </section>
+                </section>
+                <section class="bid-form">
+                    <app-bid-form></app-bid-form>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>

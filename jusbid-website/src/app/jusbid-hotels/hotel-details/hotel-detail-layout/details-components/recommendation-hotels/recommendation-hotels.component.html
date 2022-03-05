@@ -1,0 +1,33 @@
+<!-- <div class="recommendation-hotels">
+    <p-carousel [value]="recommendationHotel" [numVisible]="3" [numScroll]="3" [circular]="false" [showIndicators]="false"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+                <recommended-hotel-card [recommendedCard]="product"></recommended-hotel-card>
+        </ng-template>
+    </p-carousel>
+</div> -->
+
+<section>
+    <div class="slider-controls">
+        <div>
+            <section-title [title]="'Recommendation Hotels For You'"></section-title>
+        </div>
+            <div class="back-btn" (click)="prevSlide()">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+            <div class="next-btn" (click)="nextSlide()">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+    </div>
+    <div class="recommendation-hotels">
+        <ion-content (click)="gotoList()">
+            <ion-slides [options]="slideOpts" #slides>
+                <ng-container *ngFor="let item of recommendationHotel">
+                    <ion-slide>
+                        <recommended-hotel-card [recommendedCard]="item"></recommended-hotel-card>
+                    </ion-slide>
+                </ng-container>
+            </ion-slides>
+        </ion-content>
+    </div>
+</section>

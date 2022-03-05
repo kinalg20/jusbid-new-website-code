@@ -1,0 +1,34 @@
+<div class="customer-rating-container">
+    <div class="close-div">
+        <ion-icon name="close-circle-outline" class="close-outline" (click)="closeReviewModel(false)"></ion-icon>
+    </div>
+    <div class="customer-rating-review-section">
+        <div class="rating-measures-section">
+            <div class="rating-measure-heading">
+                <p class="ratings">
+                    <span>
+                        <ion-icon name="star" class="customer-star"></ion-icon>
+                    </span>
+                    <span class="rating-total">4.80</span>
+                    <span class="rating"><span>.</span> 5 reviews</span>
+                </p>
+            </div>
+            <ng-container *ngFor="let rating of [].constructor(6)">
+                <div class="rating-measures-style">
+                    <div>
+                        <span>Cleanliness</span>
+                    </div>
+                    <div class="measure-line">
+                        <span class="rating-range-line"></span>
+                    </div>
+                    <span class="customer-total-rating">4.6</span>
+                </div>
+            </ng-container>
+        </div>
+        <div class="rating-desc-section">
+            <ng-container *ngFor="let data of customerRating, index as i">
+                <customer-review-card [data]="data"></customer-review-card>
+            </ng-container>
+        </div>
+    </div>
+</div>
